@@ -19,7 +19,7 @@
 
 **Style Settings** 提供主題的自訂控制項；可選的 **[Animal Island Calendar](https://community.obsidian.md/plugins/animal-island-calendar)** 則提供配套日期／時間選擇器，以及本主題設定的獨立語言切換。
 
-**目前狀態：0.1.3 初始測試版。** 目前已驗證 macOS / Obsidian 1.14.5；手機、其他桌面系統及最低宣告版本 1.5.0 尚未完成實測。
+**目前狀態：0.1.4 初始測試版。** 目前已驗證 macOS / Obsidian 1.14.5；手機、其他桌面系統及最低宣告版本 1.5.0 尚未完成實測。
 
 [完整樣式指南](docs/STYLE_GUIDE.zh-TW.md) · [English setting reference](docs/SETTINGS.en.md) · [發佈說明](RELEASE_NOTES.md)
 
@@ -44,7 +44,7 @@ Tiffany Iong 將這套設計改寫為 Obsidian CSS 主題與配套月曆。這�
 
 ## 下載中英文 Markdown 使用範例
 
-[英文範例](examples/Animal%20Island%20Example%20-%20English.md) · [繁體中文範例](examples/Animal%20Island%20Example%20-%20中文.md) · [完整範例 ZIP](https://github.com/tiffanyiong/obsidian-animal-island/releases/download/0.1.3/animal-island-examples.zip)
+[英文範例](examples/Animal%20Island%20Example%20-%20English.md) · [繁體中文範例](examples/Animal%20Island%20Example%20-%20中文.md) · [完整範例 ZIP](https://github.com/tiffanyiong/obsidian-animal-island/releases/download/0.1.4/animal-island-examples.zip)
 
 可在 GitHub 用 **Download raw file** 下載 `.md`，放進 vault 後切換閱讀模式；保留檔名即可使用內部快速跳轉。若用 ZIP，請保留 `examples/` 和 `docs/images/` 的相對位置，圖片圓角範例才會顯示；也可以把圖片連結換成自己的圖片。
 
@@ -226,7 +226,7 @@ Language 可選跟隨 Obsidian、English、繁體中文、简体中文；獨立�
 
 - [完整樣式指南與 Markdown 範例](docs/STYLE_GUIDE.zh-TW.md)
 - [English reference: all controls and default values](docs/SETTINGS.en.md)
-- [0.1.3 測試版發佈說明](RELEASE_NOTES.md)
+- [0.1.4 測試版發佈說明](RELEASE_NOTES.md)
 
 目前的桌面驗證涵蓋閱讀／即時預覽表格、明暗模式、分頁紙片／膠囊區別、日期儲存／清空／取消、保留時間及插件重啟。這不是所有配色、平台或無障礙情境的完整認證。主題不會把筆記變成有拖曳事件的行事曆，也不會增加輪播、上傳或分頁等 React 元件功能。
 

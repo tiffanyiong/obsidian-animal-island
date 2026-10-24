@@ -51,7 +51,7 @@ Tiffany Iong adapted that design into an Obsidian CSS theme and optional calenda
 
 Download the [English Markdown example](examples/Animal%20Island%20Example%20-%20English.md) or the [繁體中文 Markdown example](examples/Animal%20Island%20Example%20-%20中文.md). Use GitHub's **Download raw file**, put both notes in your vault, and switch to Reading view. Keep the filenames if you want their internal jump links to work.
 
-To include the image-corner sample, keep `docs/images/backgrounds.png` beside the `examples` directory as in this repository, or change that image link to your own image. You can also download [animal-island-examples.zip](https://github.com/tiffanyiong/obsidian-animal-island/releases/download/0.1.3/animal-island-examples.zip) and copy its contents into your vault, preserving the folder structure.
+To include the image-corner sample, keep `docs/images/backgrounds.png` beside the `examples` directory as in this repository, or change that image link to your own image. You can also download [animal-island-examples.zip](https://github.com/tiffanyiong/obsidian-animal-island/releases/download/0.1.4/animal-island-examples.zip) and copy its contents into your vault, preserving the folder structure.
 
 The notes include H1–H6, formatted text, task lists, tables, Java/JSON code, tags, callouts, quotes, all six fixed divider examples, six background swatches, and date/datetime Properties. In a new vault, set `island-date` and `island-empty-date` to **Date**, and `island-time` to **Date & time**. The matching picker requires the optional companion.
 
@@ -186,7 +186,7 @@ The companion also activates the theme's independent **Language** choice and tra
 
 ## Compatibility and testing
 
-Initial beta, version 0.1.3. Tested on macOS with Obsidian 1.14.5 and upstream Style Settings 1.0.9, including clean-vault loading and runtime language switching. Date arithmetic, staged saving, cancellation, conflict detection, time preservation, and mobile event interception have automated checks.
+Initial beta, version 0.1.4. Tested on macOS with Obsidian 1.14.5 and upstream Style Settings 1.0.9, including clean-vault loading and runtime language switching. Date arithmetic, staged saving, cancellation, conflict detection, time preservation, and mobile event interception have automated checks.
 
 Mobile layout fixes have received user testing; the latest iOS native-picker suppression still needs confirmation on a physical device. Windows, Linux, popout windows, minimum supported Obsidian 1.5.0, and a complete accessibility audit remain unverified. Custom colors and third-party snippets can affect contrast and layout. The optional companion adapts to upstream DOM and Style Settings internals, which may change in future versions.
 

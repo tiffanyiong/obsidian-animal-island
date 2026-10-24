@@ -1,6 +1,6 @@
 /*
  * Animal Island Cozy for Obsidian
- * Version 0.1.3
+ * Version 0.1.4
  * A warm, rounded theme adapted from the animal-island-ui design language.
  */
 
@@ -1435,6 +1435,42 @@ body {
   font-weight: 700;
 }
 
+/* Round virtualized row highlights at each folder's indentation guide. */
+.nav-files-container .nav-folder-children {
+  container-type: inline-size;
+}
+.nav-files-container .nav-folder-children > .nav-file > .nav-file-title,
+.nav-files-container .nav-folder-children > .nav-folder > .nav-folder-title {
+  clip-path: inset(0 0 0 max(0px, calc(100% - 100cqw - var(--nav-item-children-padding-start, 4px))) round var(--animal-radius-sm));
+}
+
+/* Outline highlights follow each heading level with rounded left corners. */
+.workspace-leaf-content[data-type="outline"] .tree-item-children {
+  container-type: inline-size;
+}
+.workspace-leaf-content[data-type="outline"] .tree-item-children > .tree-item > .tree-item-self {
+  clip-path: inset(0 0 0 max(0px, calc(100% - 100cqw - var(--nav-item-children-padding-start, 4px))) round var(--animal-radius-sm));
+}
+
+/* Give top-level Outline arrows the same breathing room as folders. */
+.workspace-leaf-content[data-type="outline"] .tree-item-self:not(.tree-item-children .tree-item-self) {
+  margin-inline-start: -6px;
+  padding-inline-start: 18px;
+}
+/* Extend jump-to-heading flashes without shifting the heading text. */
+.markdown-rendered :is(h1, h2, h3, h4, h5, h6, .el-h1, .el-h2, .el-h3, .el-h4, .el-h5, .el-h6).is-flashing {
+  margin-inline: -16px;
+  padding-inline: 16px;
+  margin-block: -4px;
+  padding-block: 4px;
+}
+
+/* Keep folder disclosure arrows comfortably inside the rounded row. */
+.nav-files-container .nav-folder-title {
+  margin-inline-start: -6px;
+  padding-inline-start: 18px;
+}
+
 .nav-file-title-content,
 .nav-folder-title-content {
   padding-block: 3px;
@@ -1687,7 +1723,7 @@ body.animal-title-peach {
   --animal-title-back: #b75d36;
   --animal-title-ink: #ffffff;
 }
-body .inline-title {
+body .inline-title:not(h1, h2, h3, h4, h5, h6):not(.markdown-rendered) {
   position: relative;
   width: fit-content;
   max-width: 100%;
@@ -1707,13 +1743,13 @@ body .inline-title {
   text-decoration: none;
   overflow-wrap: anywhere;
 }
-body .inline-title { margin-top: 0.4em; }
+body .inline-title:not(h1, h2, h3, h4, h5, h6):not(.markdown-rendered) { margin-top: 0.4em; }
 body .HyperMD-header-1 .cm-header-1 {
   color: inherit;
   font-size: inherit;
 }
 /* Raised ribbon face with separate swallowtails and folded corners. */
-body:not(.animal-title-ribbon):not(.animal-title-tab):not(.animal-title-plain) .inline-title {
+body:not(.animal-title-ribbon):not(.animal-title-tab):not(.animal-title-plain) .inline-title:not(h1, h2, h3, h4, h5, h6):not(.markdown-rendered) {
   margin-inline: 0.75em;
   max-width: calc(100% - 1.5em);
   margin-bottom: 1.15em;
@@ -1722,7 +1758,7 @@ body:not(.animal-title-ribbon):not(.animal-title-tab):not(.animal-title-plain) .
   box-shadow: none;
   overflow: visible;
 }
-body:not(.animal-title-ribbon):not(.animal-title-tab):not(.animal-title-plain) .inline-title::before {
+body:not(.animal-title-ribbon):not(.animal-title-tab):not(.animal-title-plain) .inline-title:not(h1, h2, h3, h4, h5, h6):not(.markdown-rendered)::before {
   content: "";
   position: absolute;
   inset: 0.35em -0.7em -0.3em;
@@ -1730,7 +1766,7 @@ body:not(.animal-title-ribbon):not(.animal-title-tab):not(.animal-title-plain) .
   clip-path: polygon(0 0, 100% 0, calc(100% - 0.32em) 50%, 100% 100%, 0 100%, 0.32em 50%);
   pointer-events: none;
 }
-body:not(.animal-title-ribbon):not(.animal-title-tab):not(.animal-title-plain) .inline-title::after {
+body:not(.animal-title-ribbon):not(.animal-title-tab):not(.animal-title-plain) .inline-title:not(h1, h2, h3, h4, h5, h6):not(.markdown-rendered)::after {
   content: "";
   position: absolute;
   inset: 100% 0 auto;
@@ -1739,20 +1775,20 @@ body:not(.animal-title-ribbon):not(.animal-title-tab):not(.animal-title-plain) .
   clip-path: polygon(0 0, 0.5em 0, 0.5em 100%, 0 0, 100% 0, calc(100% - 0.5em) 100%, calc(100% - 0.5em) 0);
   pointer-events: none;
 }
-body.animal-title-ribbon .inline-title {
+body.animal-title-ribbon .inline-title:not(h1, h2, h3, h4, h5, h6):not(.markdown-rendered) {
   padding-inline: 1.1em;
   border-radius: 0;
   box-shadow: none;
   border-bottom: 0.18em solid var(--animal-title-back);
   clip-path: polygon(0 0, 100% 0, calc(100% - 0.45em) 50%, 100% 100%, 0 100%, 0.45em 50%);
 }
-body.animal-title-tab .inline-title {
+body.animal-title-tab .inline-title:not(h1, h2, h3, h4, h5, h6):not(.markdown-rendered) {
   padding-inline-end: 1.2em;
   box-shadow: none;
   background: linear-gradient(225deg, transparent 0.55em, var(--animal-title-front) 0.56em);
   clip-path: polygon(0 0, calc(100% - 0.8em) 0, 100% 0.8em, 100% 100%, 0 100%);
 }
-body.animal-title-tab .inline-title::after {
+body.animal-title-tab .inline-title:not(h1, h2, h3, h4, h5, h6):not(.markdown-rendered)::after {
   content: "";
   position: absolute;
   inset: 0 0 auto auto;
@@ -1762,7 +1798,7 @@ body.animal-title-tab .inline-title::after {
   clip-path: polygon(0 0, 0 100%, 100% 100%);
   pointer-events: none;
 }
-body.animal-title-plain .inline-title {
+body.animal-title-plain .inline-title:not(h1, h2, h3, h4, h5, h6):not(.markdown-rendered) {
   padding: 0;
   color: var(--h1-color);
   background: transparent;
@@ -3312,4 +3348,201 @@ body.mod-macos.is-hidden-frameless:not(.is-mobile):not(.is-popout-window) .sideb
   min-height: var(--header-height);
   padding-block: 0;
   align-items: center;
+}
+
+/* Keep each rendered tag intact; wrap between pills instead of inside one. */
+body a.tag {
+  display: inline-block;
+  white-space: nowrap;
+  overflow-wrap: normal;
+  word-break: normal;
+  max-width: 100%;
+  vertical-align: middle;
+}
+body .cm-hashtag {
+  white-space: nowrap;
+  overflow-wrap: normal;
+  word-break: normal;
+}
+/* Align mobile Properties on a shared first-line control height. */
+body.is-mobile .metadata-container .metadata-property {
+  --input-height: 28px;
+}
+body.is-mobile .metadata-container .metadata-property-key {
+  min-height: 28px;
+  align-items: center;
+}
+body.is-mobile .metadata-container .metadata-property-icon {
+  height: 28px;
+  min-height: 28px;
+  padding-block: 0;
+  align-items: center;
+  justify-content: center;
+}
+body.is-mobile .metadata-container .metadata-property-icon::before {
+  content: none;
+}
+body.is-mobile .metadata-container .metadata-property-key-input {
+  height: 28px;
+  min-height: 28px;
+  line-height: 26px;
+}
+body.is-mobile .metadata-container .metadata-property-value {
+  min-height: 28px;
+  align-items: flex-start;
+}
+body.is-mobile .metadata-container .metadata-property-value input:is([type="date"], [type="datetime-local"]) {
+  height: 28px;
+  min-height: 28px;
+  min-width: 0;
+  line-height: 26px;
+  margin-block: 0;
+}
+body.is-ios .metadata-container .metadata-property-value input:is([type="date"], [type="datetime-local"]) {
+  padding-inline-start: 6px;
+  padding-left: 6px;
+}
+body.is-mobile .metadata-container .metadata-property-value input::-webkit-date-and-time-value {
+  text-align: start;
+  margin: 0;
+}
+body.is-mobile .metadata-container .multi-select-container {
+  padding-block: 0;
+  min-height: 28px;
+  align-items: center;
+}
+body.is-mobile .metadata-container .multi-select-pill {
+  min-height: 26px;
+  align-items: center;
+}
+body.is-mobile .metadata-container .metadata-property-value .multi-select-pill-remove-button {
+  align-self: center;
+}
+
+/* Align every callout icon/fold control with the title's first text line. */
+body .callout-title {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  line-height: 1.5;
+}
+body .callout-title-inner {
+  min-width: 0;
+  line-height: 1.5;
+  padding-block: 0;
+}
+body .callout-title :is(.callout-icon, .callout-fold) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  height: 1.5em;
+  min-width: 1.5em;
+  padding: 0;
+  margin-block: 0;
+  box-sizing: border-box;
+}
+body .callout-title :is(.callout-icon, .callout-fold)::after {
+  content: none;
+}
+body .callout-title :is(.callout-icon, .callout-fold) .svg-icon {
+  display: block;
+  margin: 0;
+  flex: 0 0 auto;
+}
+
+/* More breathing room for desktop quotes; keep mobile spacing unchanged. */
+body:not(.is-mobile) .markdown-rendered blockquote {
+  padding-block: 20px;
+}
+body:not(.is-mobile) .markdown-source-view.mod-cm6 .cm-line.HyperMD-quote {
+  padding-block: 6px;
+}
+
+/* CodeMirror splits hashtags into tokens: draw one joined pill. */
+body .markdown-source-view.mod-cm6 .cm-hashtag {
+  border-radius: 0;
+  border-inline-width: 0;
+  padding-inline: 0;
+  margin-inline: 0;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+body .markdown-source-view.mod-cm6 .cm-hashtag.cm-hashtag-begin {
+  border-start-start-radius: var(--animal-radius-pill);
+  border-end-start-radius: var(--animal-radius-pill);
+  border-inline-start-width: 1px;
+  padding-inline-start: 10px;
+}
+body .markdown-source-view.mod-cm6 .cm-hashtag.cm-hashtag-end {
+  border-start-end-radius: var(--animal-radius-pill);
+  border-end-end-radius: var(--animal-radius-pill);
+  border-inline-end-width: 1px;
+  padding-inline-end: 10px;
+}
+
+/* Keep link-pane icons inside their rounded hover/selection surface. */
+.workspace-leaf-content:is([data-type="outgoing-link"], [data-type="backlink"]) .tree-item-self {
+  padding-inline-start: 28px;
+  padding-block: 8px;
+}
+
+/* Keep the Properties disclosure icon inside Page preview's card. */
+.hover-popover .metadata-container .metadata-properties-heading {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+}
+.hover-popover .metadata-properties-heading .collapse-indicator {
+  position: static;
+  inset-inline-start: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 18px;
+  width: 18px;
+  padding: 0;
+  margin: 0;
+}
+
+/* Section previews can mark a body heading as inline-title; it is not a filename. */
+.hover-popover .markdown-rendered :is(h1, h2, h3, h4, h5, h6).inline-title {
+  width: auto;
+  max-width: 100%;
+  padding: 0;
+  margin-inline: 0;
+  background: transparent;
+  border-radius: 0;
+  box-shadow: none;
+  clip-path: none;
+}
+.hover-popover .markdown-rendered h1.inline-title { font-size: var(--h1-size); color: var(--h1-color); }
+.hover-popover .markdown-rendered h2.inline-title { font-size: var(--h2-size); color: var(--h2-color); }
+.hover-popover .markdown-rendered h3.inline-title { font-size: var(--h3-size); color: var(--h3-color); }
+.hover-popover .markdown-rendered h4.inline-title { font-size: var(--h4-size); color: var(--h4-color); }
+.hover-popover .markdown-rendered h5.inline-title { font-size: var(--h5-size); color: var(--h5-color); }
+.hover-popover .markdown-rendered h6.inline-title { font-size: var(--h6-size); color: var(--h6-color); }
+
+/* Obsidian wraps section-preview headings in div.inline-title.markdown-rendered. */
+body .hover-popover .inline-title.markdown-rendered {
+  display: block;
+  position: static;
+  width: auto;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  clip-path: none;
+  font-size: var(--font-text-size);
+  font-weight: var(--font-text-weight, 500);
+  line-height: var(--line-height-normal);
+  color: var(--text-normal);
+}
+body .hover-popover .inline-title.markdown-rendered::before,
+body .hover-popover .inline-title.markdown-rendered::after {
+  content: none;
 }

@@ -1,8 +1,39 @@
-# Animal Island Cozy 0.1.3 Beta
+# Animal Island Cozy 0.1.4 Beta
 
 A cozy Obsidian theme with warm paper backgrounds, soft coordinated colors, ribbon filenames, and rounded UI details.
 
-## New in 0.1.3
+## New in 0.1.4
+
+### Sidebar and Outline
+
+- Add breathing room around folder disclosure arrows and the top-level Outline arrow.
+- Start nested file and Outline hover/selection backgrounds at their own indentation guides, keeping both left and right corners rounded through deeper levels.
+- Add internal left and vertical padding to Links and Backlinks rows so link icons stay inside their highlight surface.
+
+### Heading navigation and Page preview
+
+- Extend the yellow jump-to-heading highlight with 16px horizontal and 4px vertical breathing room while compensating margins to keep text in place.
+- Move the Properties collapse arrow inside its card in Page preview, with an 8px gap before the label.
+- Fix section-preview headings incorrectly receiving the filename ribbon. Obsidian wraps these headings in an inline-title container; that section wrapper now keeps its original heading level, color, and size. Real filenames retain their selected title decoration.
+
+### Properties, tags, and callouts
+
+- Align mobile Properties labels, icons, date/time inputs, and tag controls on a common first-line height; keep multiline values aligned to the first line and remove the unnecessary iOS date-input left gutter.
+- Keep rendered tag pills together when wrapping on desktop and mobile, rather than splitting a tag at its hyphen.
+- Join the editing-mode hashtag marker and text into a single visual pill, retaining filled, outline, and soft palettes.
+- Align icons, title text, and collapse controls across all callout types on desktop and mobile. Wrapped titles align their icons to the first line.
+- Increase vertical quote spacing in desktop Reading view and Live Preview. Mobile quote spacing is unchanged.
+
+### Setup and documentation
+
+- Add Style Settings install/enable steps near the start of both English and Traditional Chinese READMEs, with an actual settings screenshot.
+- Link the theme and standalone Calendar through their Obsidian installation pages, with separate source/release references and original Animal Island UI credit preserved.
+
+### Validation and scope
+
+Desktop changes were reviewed locally during this iteration. The user confirmed the mobile Properties alignment and tag-wrap fixes on their phone. Section-preview markup was checked against the installed Obsidian renderer and reproduced in an isolated rendering check. Isolated mobile layout checks using the installed Obsidian CSS and release theme CSS at 375px and 390px verified nested file/Outline rounded boundaries, heading-flash padding and no horizontal page overflow. These are browser size simulations, not a physical-iPhone full regression pass. A complete cross-platform/mobile regression pass has not been performed. This is a theme-only release: no new Calendar runtime or draggable Properties-resize feature is included. Saved setting IDs, defaults, and font sizes remain unchanged.
+
+## Previous update: 0.1.3
 
 Compressed the four bundled Nunito fonts from TTF to WOFF2, reducing theme.css from 776,889 to approximately 332,673 bytes (57% smaller). All four weights retain their glyph outlines, character maps, metrics and layout tables. Fonts remain embedded for offline use. Theme colors, layout and saved setting IDs are unchanged.
 
