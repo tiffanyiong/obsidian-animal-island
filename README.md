@@ -27,6 +27,25 @@ Tiffany Iong adapted that design into an Obsidian CSS theme and optional calenda
 - Offline bundled Nunito, with separate interface, body, and code font settings.
 - Optional paper-style date and datetime picker with English, Traditional Chinese, and Simplified Chinese labels.
 
+## Try the example notes
+
+Download the [English Markdown example](examples/Animal%20Island%20Example%20-%20English.md) or the [繁體中文 Markdown example](examples/Animal%20Island%20Example%20-%20中文.md). Use GitHub's **Download raw file**, put both notes in your vault, and switch to Reading view. Keep the filenames if you want their internal jump links to work.
+
+To include the image-corner sample, keep `docs/images/backgrounds.png` beside the `examples` directory as in this repository, or change that image link to your own image. You can also download [animal-island-examples.zip](https://github.com/tiffanyiong/obsidian-animal-island/releases/download/0.1.0/animal-island-examples.zip) and copy its contents into your vault, preserving the folder structure.
+
+The notes include H1–H6, formatted text, task lists, tables, Java/JSON code, tags, callouts, quotes, all six fixed divider examples, six background swatches, and date/datetime Properties. In a new vault, set `island-date` and `island-empty-date` to **Date**, and `island-time` to **Date & time**. The matching picker requires the optional companion.
+
+### Real Markdown notes in Obsidian
+
+These are actual Reading-view screenshots of the downloadable `.md` files in a clean demo vault, using the default cream/grid palette. They complement the isolated CSS comparison sheets below.
+
+| English example | 繁體中文 example |
+| --- | --- |
+| **Text, formatting and tasks** ![English Markdown text and tasks](docs/images/example-en-reading.png) | **正文、文字效果與待辦** ![中文 Markdown 正文與待辦](docs/images/example-zh-reading.png) |
+| **Tables** ![English Markdown table](docs/images/example-en-tables.png) | **表格** ![中文 Markdown 表格](docs/images/example-zh-tables.png) |
+| **Java and JSON code** ![English Markdown code blocks](docs/images/example-en-code.png) | **Java 與 JSON 程式碼** ![中文 Markdown 程式碼](docs/images/example-zh-code.png) |
+| **Fixed divider samples** ![English Markdown divider examples](docs/images/example-en-dividers.png) | **固定分隔線樣本** ![中文 Markdown 分隔線](docs/images/example-zh-dividers.png) |
+
 ## Visual style guide
 
 Open **Settings → Style Settings → Animal Island** to try these styles. The comparison sheets below are rendered from this release's actual theme CSS in isolated samples, rather than screenshots of the original UI library. The overview and calendar images are real Obsidian captures using demo notes. Layout can vary with app version, screen size, and your settings.

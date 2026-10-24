@@ -25,6 +25,25 @@ Tiffany Iong 將這套設計改寫為 Obsidian CSS 主題與配套月曆。這�
 - 離線內嵌 Nunito；介面、正文和程式碼可各選字體。
 - 可選的 Animal Island Calendar：圓點紙張背景、小尺寸月曆、日期時間選擇。
 
+## 下載中英文 Markdown 使用範例
+
+[英文範例](examples/Animal%20Island%20Example%20-%20English.md) · [繁體中文範例](examples/Animal%20Island%20Example%20-%20中文.md) · [完整範例 ZIP](https://github.com/tiffanyiong/obsidian-animal-island/releases/download/0.1.0/animal-island-examples.zip)
+
+可在 GitHub 用 **Download raw file** 下載 `.md`，放進 vault 後切換閱讀模式；保留檔名即可使用內部快速跳轉。若用 ZIP，請保留 `examples/` 和 `docs/images/` 的相對位置，圖片圓角範例才會顯示；也可以把圖片連結換成自己的圖片。
+
+兩份筆記都包含 H1–H6、文字標記、待辦、表格、Java／JSON、標籤、提示框、引用、六種分隔線和六種背景。新 vault 中請將 `island-date`、`island-empty-date` 設為「日期」，`island-time` 設為「日期與時間」；配套月曆需要另外啟用。
+
+### Markdown 筆記實際效果
+
+以下是兩份可下載 `.md` 在乾淨示範 vault 裡的 **Obsidian 閱讀模式實際截圖**，使用預設奶油／方格配色，與下方單獨元件比較圖分開展示。
+
+| English | 繁體中文 |
+| --- | --- |
+| **正文與待辦** ![英文正文與待辦](docs/images/example-en-reading.png) | **正文與待辦** ![中文正文與待辦](docs/images/example-zh-reading.png) |
+| **表格** ![英文表格](docs/images/example-en-tables.png) | **表格** ![中文表格](docs/images/example-zh-tables.png) |
+| **Java／JSON** ![英文程式碼](docs/images/example-en-code.png) | **Java／JSON** ![中文程式碼](docs/images/example-zh-code.png) |
+| **分隔線** ![英文分隔線](docs/images/example-en-dividers.png) | **分隔線** ![中文分隔線](docs/images/example-zh-dividers.png) |
+
 ## 樣式圖片圖鑑
 
 到 **設定 → Style Settings → Animal Island** 調整。以下比較圖直接用本版本的主題 CSS 渲染，並非原 UI 官網截圖；總覽和月曆則使用乾淨示範 vault 的 Obsidian 實際畫面。圖示範代表性設定值，實際排版仍會隨螢幕和設定改變。

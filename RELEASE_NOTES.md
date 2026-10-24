@@ -18,6 +18,10 @@ The [README visual guide](https://github.com/tiffanyiong/obsidian-animal-island#
 - 46 Style Settings controls, an English reference, and a full Traditional Chinese style guide.
 - Optional Animal Island Calendar companion: compact dotted-paper date/datetime picker and runtime settings translation without modifying third-party files.
 
+## Editable Markdown examples
+
+Try the [English and Traditional Chinese example notes](https://github.com/tiffanyiong/obsidian-animal-island/tree/main/examples), or download `animal-island-examples.zip`. The README includes eight actual Obsidian Reading-view screenshots of these files, covering text, tasks, tables, code and dividers. Keep the ZIP folder structure for its image sample; property types need assigning once in a new vault.
+
 ## Downloads
 
 Install `theme.css` and `manifest.json` in `.obsidian/themes/Animal Island/` and select the theme in Appearance. Style Settings is optional for customization. Install `animal-island-calendar.zip` separately for the custom picker and independent language selector. Full instructions are in the README.
