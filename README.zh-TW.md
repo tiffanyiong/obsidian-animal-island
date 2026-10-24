@@ -2,6 +2,19 @@
 
 低飽和配色、紙張背景、緞帶文件名，以及柔和圓角組成的 Obsidian 主題。靈感來自 [animal-island-ui](https://github.com/guokaigdg/animal-island-ui)，以原生 Obsidian CSS 重新實作，沒有載入 React 元件庫。
 
+## 使用 Style Settings 自訂主題
+
+安裝 **Animal Island Cozy** 後會套用預設外觀。若要調整檔名標題的造型與顏色、背景、字體、分頁、表格、分隔線等樣式，需要另外安裝 **[Style Settings](https://community.obsidian.md/plugins/obsidian-style-settings)** 社群插件：
+
+1. 開啟 **設定 → 社群插件 → 瀏覽**。
+2. 搜尋 **Style Settings**，按「安裝」，再按「啟用」。
+3. 前往 **設定 → Style Settings → Animal Island Cozy**。
+4. 展開想調整的分類，更改選項後即可看到效果。
+
+建議先從「介面配色」「字體」「背景」和「檔名標題」開始。檔名標題控制筆記頂部的裝飾標題；正文 H1–H6 標題有各自的設定。
+
+**Style Settings** 提供主題的自訂控制項；可選的 **[Animal Island Calendar](https://community.obsidian.md/plugins/animal-island-calendar)** 則提供配套日期／時間選擇器，以及本主題設定的獨立語言切換。
+
 **目前狀態：0.1.3 初始測試版。** 目前已驗證 macOS / Obsidian 1.14.5；手機、其他桌面系統及最低宣告版本 1.5.0 尚未完成實測。
 
 [完整樣式指南](docs/STYLE_GUIDE.zh-TW.md) · [English setting reference](docs/SETTINGS.en.md) · [發佈說明](RELEASE_NOTES.md)

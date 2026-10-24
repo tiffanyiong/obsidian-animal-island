@@ -2,6 +2,19 @@
 
 A cozy home for your notes: warm paper, soft colors, ribbon titles, and gentle rounded shapes. Built based on **Animal Island UI by guokaigdg**, adapted for Obsidian.
 
+## Customize the theme with Style Settings
+
+Installing **Animal Island Cozy** applies its default appearance. To customize filename title shapes and colors, backgrounds, fonts, tabs, tables, dividers, and other styles, install the **[Style Settings](https://community.obsidian.md/plugins/obsidian-style-settings)** community plugin:
+
+1. Open **Settings → Community plugins → Browse**.
+2. Search for **Style Settings**, then select **Install** and **Enable**.
+3. Open **Settings → Style Settings → Animal Island Cozy**.
+4. Expand a section and adjust its options. Changes apply immediately.
+
+Start with **App colors**, **Fonts**, **Background**, and **Filename title**. Filename title settings change the decorative title at the top of a note; Markdown H1–H6 headings have separate controls.
+
+**Style Settings** provides the theme’s customization controls. The optional **[Animal Island Calendar](https://community.obsidian.md/plugins/animal-island-calendar)** plugin adds the matching date/time picker and independent language switching for this theme’s settings.
+
 **Companion plugin:** [Animal Island Calendar](https://community.obsidian.md/plugins/animal-island-calendar) adds the matching Properties date/time picker and optional theme-settings language switching. Install it separately; the theme works without it.
 
 ![Animal Island Cozy light appearance](screenshot.png)
