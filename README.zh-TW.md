@@ -175,7 +175,7 @@ Language 可選跟隨 Obsidian、English、繁體中文、简体中文；獨立�
 
 ## 配套月曆
 
-月曆是**另外安裝的插件**，不包含在主題 CSS 的執行功能中。獨立專案：[Animal Island Calendar](https://github.com/tiffanyiong/obsidian-animal-island-calendar)，包含最新[版本下載](https://github.com/tiffanyiong/obsidian-animal-island-calendar/releases)、[安裝說明](https://github.com/tiffanyiong/obsidian-animal-island-calendar#installation)與問題回報；也可開啟 [Obsidian 插件頁](https://community.obsidian.md/plugins/animal-island-calendar)。本主題內的 companion 資料夾是隨主題版本附上的副本。
+月曆是**另外安裝的插件**，不包含在主題 CSS 的執行功能中。安裝插件：[Animal Island Calendar](https://community.obsidian.md/plugins/animal-island-calendar)。獨立專案包含最新[版本下載](https://github.com/tiffanyiong/obsidian-animal-island-calendar/releases)、[安裝說明](https://github.com/tiffanyiong/obsidian-animal-island-calendar#installation)與問題回報；也可開啟 [Obsidian 插件頁](https://community.obsidian.md/plugins/animal-island-calendar)。本主題內的 companion 資料夾是隨主題版本附上的副本。
 
 可在社群插件搜尋 **Animal Island Calendar** 並安裝。若手動安裝：
 

@@ -2,7 +2,7 @@
 
 A cozy home for your notes: warm paper, soft colors, ribbon titles, and gentle rounded shapes. Built based on **Animal Island UI by guokaigdg**, adapted for Obsidian.
 
-**Companion plugin:** [Animal Island Calendar](https://github.com/tiffanyiong/obsidian-animal-island-calendar) adds the matching Properties date/time picker and optional theme-settings language switching. Install it separately; the theme works without it.
+**Companion plugin:** [Animal Island Calendar](https://community.obsidian.md/plugins/animal-island-calendar) adds the matching Properties date/time picker and optional theme-settings language switching. Install it separately; the theme works without it.
 
 ![Animal Island Cozy light appearance](screenshot.png)
 
@@ -160,7 +160,7 @@ The individual reset buttons restore each setting. Export your preferences befor
 
 ## Optional calendar and language companion
 
-The theme does not install executable plugins. **[Animal Island Calendar](https://github.com/tiffanyiong/obsidian-animal-island-calendar) is maintained in its own repository**, with [installation instructions](https://github.com/tiffanyiong/obsidian-animal-island-calendar#installation), [releases](https://github.com/tiffanyiong/obsidian-animal-island-calendar/releases), and an [Obsidian plugin listing](https://community.obsidian.md/plugins/animal-island-calendar). Install and enable it separately from Community plugins. For manual installation, use `main.js`, `manifest.json`, and `styles.css` from the calendar repository’s release in `<vault>/.obsidian/plugins/animal-island-calendar/`, restart Obsidian, and enable the plugin. The [companion folder](companion/animal-island-calendar) here is the copy bundled with this theme release; use the standalone repository for current calendar releases and issues.
+The theme does not install executable plugins. **[Animal Island Calendar](https://community.obsidian.md/plugins/animal-island-calendar) is available from the Obsidian plugin directory** and maintained in its [own repository](https://github.com/tiffanyiong/obsidian-animal-island-calendar), with [installation instructions](https://github.com/tiffanyiong/obsidian-animal-island-calendar#installation), [releases](https://github.com/tiffanyiong/obsidian-animal-island-calendar/releases), and an [Obsidian plugin listing](https://community.obsidian.md/plugins/animal-island-calendar). Install and enable it separately from Community plugins. For manual installation, use `main.js`, `manifest.json`, and `styles.css` from the calendar repository’s release in `<vault>/.obsidian/plugins/animal-island-calendar/`, restart Obsidian, and enable the plugin. The [companion folder](companion/animal-island-calendar) here is the copy bundled with this theme release; use the standalone repository for current calendar releases and issues.
 
 Click a date property, choose a day, and press **Confirm**. **Today** selects today; **Clear** stages an empty value. Closing or pressing Escape cancels. Datetime properties also show a time control, and changing the date preserves the existing time. This is a Properties picker, not an event planner.
 
