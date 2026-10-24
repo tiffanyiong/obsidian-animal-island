@@ -1,0 +1,27 @@
+# Animal Island 0.1.0 Beta
+
+A cozy Obsidian theme with warm paper backgrounds, soft coordinated colors, ribbon filenames, and rounded UI details.
+
+## Included
+
+- Six app palettes plus custom colors; independent accents and frame colors.
+- Four filename shapes, colorful ribbons, six backgrounds, and six dividers.
+- Rounded striped tables with dashed row and column separators.
+- Palette-matched code blocks, inline code, tags, and light/dark styling.
+- Offline Nunito fonts, configurable navigation, tabs, Properties, and controls.
+- 46 Style Settings controls, an English reference, and a full Traditional Chinese style guide.
+- Optional Animal Island Calendar companion: compact dotted-paper date/datetime picker and runtime settings translation without modifying third-party files.
+
+## Downloads
+
+Install `theme.css` and `manifest.json` in `.obsidian/themes/Animal Island/` and select the theme in Appearance. Style Settings is optional for customization. Install `animal-island-calendar.zip` separately for the custom picker and independent language selector. Full instructions are in the README.
+
+The built-in default is cream and mint, a green layered ribbon, subtle grid paper, and pill tabs. Existing preferences are preserved.
+
+## Verified and remaining testing
+
+Clean-vault loading and language switching were exercised on macOS / Obsidian 1.14.5 with unmodified Style Settings 1.0.9. Calendar behavior tests cover staged changes, cancellation, conflict protection, time preservation, and mobile event interception. The fixed right sidebar toggle now shares the tab actions' vertical centerline.
+
+This is an initial beta. Latest iOS picker suppression needs physical-device confirmation; Windows, Linux, popout windows, Obsidian 1.5.0, and a complete accessibility audit remain unverified. The calendar is a Properties picker, not an event scheduler. Generic Obsidian/plugin UI remains in its own language. Custom colors may need contrast adjustments.
+
+MIT theme and companion; Nunito under SIL OFL 1.1. See included credits and license files.

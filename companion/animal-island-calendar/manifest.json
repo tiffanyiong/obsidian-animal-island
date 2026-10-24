@@ -1,0 +1,9 @@
+{
+  "id": "animal-island-calendar",
+  "name": "Animal Island Calendar",
+  "version": "0.1.0",
+  "minAppVersion": "1.5.0",
+  "description": "A cozy keyboard-accessible date picker for note Properties.",
+  "author": "Tiffany",
+  "isDesktopOnly": false
+}
