@@ -11,6 +11,10 @@
 3. 前往 **設定 → Style Settings → Animal Island Cozy**。
 4. 展開想調整的分類，更改選項後即可看到效果。
 
+![Obsidian Style Settings：Animal Island Cozy 分類與檔名標題控制項](docs/images/style-settings-obsidian.png)
+
+*乾淨示範 vault 中的實際 Obsidian 設定頁。展開 Filename title（檔名標題）即可調整造型、顏色與大小。*
+
 建議先從「介面配色」「字體」「背景」和「檔名標題」開始。檔名標題控制筆記頂部的裝飾標題；正文 H1–H6 標題有各自的設定。
 
 **Style Settings** 提供主題的自訂控制項；可選的 **[Animal Island Calendar](https://community.obsidian.md/plugins/animal-island-calendar)** 則提供配套日期／時間選擇器，以及本主題設定的獨立語言切換。

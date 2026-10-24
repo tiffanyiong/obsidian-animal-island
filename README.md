@@ -11,6 +11,10 @@ Installing **Animal Island Cozy** applies its default appearance. To customize f
 3. Open **Settings → Style Settings → Animal Island Cozy**.
 4. Expand a section and adjust its options. Changes apply immediately.
 
+![Style Settings in Obsidian: Animal Island Cozy categories and filename title controls](docs/images/style-settings-obsidian.png)
+
+*Actual Obsidian settings page in a clean demo vault. Expand Filename title to change its shape, color, and size.*
+
 Start with **App colors**, **Fonts**, **Background**, and **Filename title**. Filename title settings change the decorative title at the top of a note; Markdown H1–H6 headings have separate controls.
 
 **Style Settings** provides the theme’s customization controls. The optional **[Animal Island Calendar](https://community.obsidian.md/plugins/animal-island-calendar)** plugin adds the matching date/time picker and independent language switching for this theme’s settings.
