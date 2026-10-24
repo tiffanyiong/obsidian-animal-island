@@ -8,11 +8,11 @@ tags:
   - animal-island
   - little-moments
 source: https://guokaigdg.github.io/animal-island-ui/
-description: A working Markdown playground for Animal Island Notes. Try the date, time, tags and long text properties above.
+description: A working Markdown playground for Animal Island Cozy. Try the date, time, tags and long text properties above.
 ---
 
 > [!tip] Welcome to your little island
-> This is a real Markdown note. Open **Settings → Style Settings → Animal Island Notes**, change a setting, and return here to see it in action. Reading view is best for the fixed divider and background samples.
+> This is a real Markdown note. Open **Settings → Style Settings → Animal Island Cozy**, change a setting, and return here to see it in action. Reading view is best for the fixed divider and background samples.
 > The decorated filename above is separate from the body headings below. The theme changes appearance; it does not replace normal Markdown behavior.
 
 **Jump to:** [[Animal Island Example - English#Tables|Tables]] · [[Animal Island Example - English#Code and tags|Code and tags]] · [[Animal Island Example - English#Divider collection|Dividers]] · [[Animal Island Example - English#Background collection|Backgrounds]]
@@ -76,7 +76,7 @@ public class IslandNote {
     public static void main(String[] args) {
         LocalDate today = LocalDate.now();
         // Collect one little discovery each day.
-        System.out.println("Hello, Animal Island Notes! " + today);
+        System.out.println("Hello, Animal Island Cozy! " + today);
     }
 }
 ```
@@ -174,7 +174,7 @@ Choose the actual note background under **Background**. These fixed swatches are
 
 Change **Images and tasks → Image corner radius** to compare square and rounded image edges.
 
-![Animal Island Notes background styles](../docs/images/backgrounds.png)
+![Animal Island Cozy background styles](../docs/images/backgrounds.png)
 
 ## Calendar: date and time
 

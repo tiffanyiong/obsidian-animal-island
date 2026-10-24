@@ -1,4 +1,4 @@
-# Animal Island Notes — Complete Settings Reference
+# Animal Island Cozy — Complete Settings Reference
 
 [README / installation and limitations](../README.md) · [Traditional Chinese usage guide](STYLE_GUIDE.zh-TW.md)
 
