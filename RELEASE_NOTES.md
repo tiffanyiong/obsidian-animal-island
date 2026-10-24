@@ -1,10 +1,10 @@
-# Animal Island Cozy 0.1.2 Beta
+# Animal Island Cozy 0.1.3 Beta
 
 A cozy Obsidian theme with warm paper backgrounds, soft coordinated colors, ribbon filenames, and rounded UI details.
 
-## New in 0.1.2
+## New in 0.1.3
 
-Updated the theme name to **Animal Island Cozy**, the author’s chosen name for its community-directory draft. Existing Style Settings IDs and default appearance are preserved.
+Compressed the four bundled Nunito fonts from TTF to WOFF2, reducing theme.css from 776,889 to approximately 332,673 bytes (57% smaller). All four weights retain their glyph outlines, character maps, metrics and layout tables. Fonts remain embedded for offline use. Theme colors, layout and saved setting IDs are unchanged.
 
 ## Design credit
 

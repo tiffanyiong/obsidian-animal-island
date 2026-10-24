@@ -34,4 +34,4 @@ SOFTWARE.
 
 ## Nunito
 
-Nunito normal weights 400, 600, 700 and 800 are embedded in theme.css. Distributed under the SIL Open Font License 1.1; see Nunito-OFL.txt for copyright and full license. Source: https://fonts.google.com/specimen/Nunito
+Nunito normal weights 400, 600, 700 and 800 are embedded in theme.css as WOFF2 data URLs. The compression preserves glyph outlines, metrics and layout tables. Distributed under the SIL Open Font License 1.1; see Nunito-OFL.txt for copyright and full license. Source: https://fonts.google.com/specimen/Nunito
