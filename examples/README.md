@@ -1,6 +1,6 @@
-# Animal Island Markdown examples
+# Animal Island Notes Markdown examples
 
-Open either note in Obsidian with the Animal Island theme enabled. Use Reading view for fixed HTML divider/background swatches. Both files are independent, editable examples with matching sections in English and Traditional Chinese.
+Open either note in Obsidian with the Animal Island Notes theme enabled. Use Reading view for fixed HTML divider/background swatches. Both files are independent, editable examples with matching sections in English and Traditional Chinese.
 
 - [English](Animal%20Island%20Example%20-%20English.md)
 - [繁體中文](Animal%20Island%20Example%20-%20中文.md)

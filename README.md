@@ -1,8 +1,8 @@
-# Animal Island for Obsidian
+# Animal Island Notes for Obsidian
 
 A cozy home for your notes: warm paper, soft colors, ribbon titles, and gentle rounded shapes. Built based on **Animal Island UI by guokaigdg**, adapted for Obsidian.
 
-![Animal Island light appearance](screenshot.png)
+![Animal Island Notes light appearance](screenshot.png)
 
 [繁體中文](README.zh-TW.md) · [All settings](docs/SETTINGS.en.md) · [完整樣式指南](docs/STYLE_GUIDE.zh-TW.md) · [Release notes](RELEASE_NOTES.md)
 
@@ -31,7 +31,7 @@ Tiffany Iong adapted that design into an Obsidian CSS theme and optional calenda
 
 Download the [English Markdown example](examples/Animal%20Island%20Example%20-%20English.md) or the [繁體中文 Markdown example](examples/Animal%20Island%20Example%20-%20中文.md). Use GitHub's **Download raw file**, put both notes in your vault, and switch to Reading view. Keep the filenames if you want their internal jump links to work.
 
-To include the image-corner sample, keep `docs/images/backgrounds.png` beside the `examples` directory as in this repository, or change that image link to your own image. You can also download [animal-island-examples.zip](https://github.com/tiffanyiong/obsidian-animal-island/releases/download/0.1.0/animal-island-examples.zip) and copy its contents into your vault, preserving the folder structure.
+To include the image-corner sample, keep `docs/images/backgrounds.png` beside the `examples` directory as in this repository, or change that image link to your own image. You can also download [animal-island-examples.zip](https://github.com/tiffanyiong/obsidian-animal-island/releases/download/0.1.1/animal-island-examples.zip) and copy its contents into your vault, preserving the folder structure.
 
 The notes include H1–H6, formatted text, task lists, tables, Java/JSON code, tags, callouts, quotes, all six fixed divider examples, six background swatches, and date/datetime Properties. In a new vault, set `island-date` and `island-empty-date` to **Date**, and `island-time` to **Date & time**. The matching picker requires the optional companion.
 
@@ -48,85 +48,85 @@ These are actual Reading-view screenshots of the downloadable `.md` files in a c
 
 ## Visual style guide
 
-Open **Settings → Style Settings → Animal Island** to try these styles. The comparison sheets below are rendered from this release's actual theme CSS in isolated samples, rather than screenshots of the original UI library. The overview and calendar images are real Obsidian captures using demo notes. Layout can vary with app version, screen size, and your settings.
+Open **Settings → Style Settings → Animal Island Notes** to try these styles. The comparison sheets below are rendered from this release's actual theme CSS in isolated samples, rather than screenshots of the original UI library. The overview and calendar images are real Obsidian captures using demo notes. Layout can vary with app version, screen size, and your settings.
 
 ### App palettes, code & tags
 
 **App colors → Interface background palette**: Cream, Sage, Rose, Lavender, Mist blue, or Sand. Code blocks and tags coordinate with the chosen surface.
 
-![App palettes, code & tags — Animal Island for Obsidian](docs/images/palettes.png)
+![App palettes, code & tags — Animal Island Notes for Obsidian](docs/images/palettes.png)
 
 ### Independent accent colors
 
 **App colors → App accent palette**: Mint, Pink, Purple, Blue, Peach, or Green. Mix an accent with any interface palette, or use a custom color.
 
-![Independent accent colors — Animal Island for Obsidian](docs/images/accents.png)
+![Independent accent colors — Animal Island Notes for Obsidian](docs/images/accents.png)
 
 ### Filename title shapes
 
 **Filename title → Title style**: Layer, Ribbon, Tab, or Plain. This decorates the note filename; body H1–H6 headings use separate settings.
 
-![Filename title shapes — Animal Island for Obsidian](docs/images/title-shapes.png)
+![Filename title shapes — Animal Island Notes for Obsidian](docs/images/title-shapes.png)
 
 ### All filename colors
 
 **Filename title → Title palette**: 13 colorful palettes plus Parchment. Filename color is independent of your app palette.
 
-![All filename colors — Animal Island for Obsidian](docs/images/title-colors.png)
+![All filename colors — Animal Island Notes for Obsidian](docs/images/title-colors.png)
 
 ### Paper backgrounds
 
 **Background → Note background**: Plain, Cream dots, Mint dots, Pink dots, Grid, or Sprinkles. Adjust pattern strength and spacing; the samples use 18% for visibility, while the default grid uses 9%.
 
-![Paper backgrounds — Animal Island for Obsidian](docs/images/backgrounds.png)
+![Paper backgrounds — Animal Island Notes for Obsidian](docs/images/backgrounds.png)
 
 ### Every Markdown divider
 
 **Divider → Divider style**: Mint dots, Fine solid, Earth dashes, Hairline dashes, Golden wave, or Mint squiggle. Insert a normal Markdown `---` between paragraphs to use it.
 
-![Every Markdown divider — Animal Island for Obsidian](docs/images/dividers.png)
+![Every Markdown divider — Animal Island Notes for Obsidian](docs/images/dividers.png)
 
 ### Tables
 
 **Tables**: choose Striped or Clean, with a matching or mint header. Both include rounded corners and faint dashed row and column separators. Hover a body row to highlight the whole row.
 
-![Tables — Animal Island for Obsidian](docs/images/tables.png)
+![Tables — Animal Island Notes for Obsidian](docs/images/tables.png)
 
 ### Document tabs & file navigation
 
 **Navigation and tabs**: compare Paper, Pill, and Underline document tabs; Soft, Mint, and Outline file-tree selection. Sidebar icons are independent of document-tab styling.
 
-![Document tabs & file navigation — Animal Island for Obsidian](docs/images/navigation.png)
+![Document tabs & file navigation — Animal Island Notes for Obsidian](docs/images/navigation.png)
 
 ### Properties & callouts
 
 **Properties** offers Card, Dashed, or Flat. **Callouts** offers Card, Side accent, or Dashed. Properties width and row height are adjustable.
 
-![Properties & callouts — Animal Island for Obsidian](docs/images/panels.png)
+![Properties & callouts — Animal Island Notes for Obsidian](docs/images/panels.png)
 
 ### Tag shapes & body headings
 
 **Tags**: Filled, Outline, or Soft. **Body headings**: Simple, Underline, or Side marker. Tag colors continue to follow your app palette.
 
-![Tag shapes & body headings — Animal Island for Obsidian](docs/images/tags-headings.png)
+![Tag shapes & body headings — Animal Island Notes for Obsidian](docs/images/tags-headings.png)
 
 ### Inputs, buttons & tasks
 
 **Controls**: Pill or Rounded, with Raised or Flat primary buttons. **Tasks**: rounded or circular checkboxes. These are appearance options; normal Obsidian behavior stays the same.
 
-![Inputs, buttons & tasks — Animal Island for Obsidian](docs/images/controls.png)
+![Inputs, buttons & tasks — Animal Island Notes for Obsidian](docs/images/controls.png)
 
 ### Quotes, tooltips & typography
 
 **Quotes**: Card or Plain. Hover hints use borderless organic bubbles with a round direction marker. **Fonts** lets you independently set interface, body, and code font lists; Nunito is bundled offline.
 
-![Quotes, tooltips & typography — Animal Island for Obsidian](docs/images/quotes-tooltips.png)
+![Quotes, tooltips & typography — Animal Island Notes for Obsidian](docs/images/quotes-tooltips.png)
 
 ### Dark mode
 
 Select **Settings → Appearance → Base color scheme → Dark**. Dark surfaces, code, tags, and tables coordinate with the same palette choices. Three examples are shown below.
 
-![Dark mode — Animal Island for Obsidian](docs/images/dark.png)
+![Dark mode — Animal Island Notes for Obsidian](docs/images/dark.png)
 
 ### Calendar: date and date & time
 
@@ -138,15 +138,15 @@ These two images are captured inside Obsidian, not the CSS sample gallery.
 | --- | --- |
 | ![Actual Obsidian date picker](docs/images/calendar-obsidian.png) | ![Actual Obsidian datetime picker with time control](docs/images/datetime-obsidian.png) |
 
-**Language** controls this companion and the Animal Island settings labels: Follow Obsidian, English, 繁體中文, or 简体中文. The optional companion is required for independent settings-language switching. Obsidian's own menus keep their own language.
+**Language** controls this companion and the Animal Island Notes settings labels: Follow Obsidian, English, 繁體中文, or 简体中文. The optional companion is required for independent settings-language switching. Obsidian's own menus keep their own language.
 
 The [complete settings reference](docs/SETTINGS.en.md) also covers numeric controls for font size, reading width, line height, navigation density, table padding, media and overlay radii, calendar corners, and motion. Static images show representative values, not every possible slider position. Motion can be enabled or disabled and respects reduced-motion preferences.
 
 ## Installation
 
-Until the theme appears in Obsidian's community directory, download `theme.css` and `manifest.json` from [Releases](https://github.com/tiffanyiong/obsidian-animal-island/releases), place them in `<vault>/.obsidian/themes/Animal Island/`, then select **Settings → Appearance → Themes → Animal Island**.
+Until the theme appears in Obsidian's community directory, download `theme.css` and `manifest.json` from [Releases](https://github.com/tiffanyiong/obsidian-animal-island/releases), place them in `<vault>/.obsidian/themes/Animal Island Notes/`, then select **Settings → Appearance → Themes → Animal Island Notes**.
 
-The default appearance works without plugins. Install and enable the community plugin **Style Settings** to customize it under **Settings → Style Settings → Animal Island**. Select light or dark mode in Obsidian's Appearance settings.
+The default appearance works without plugins. Install and enable the community plugin **Style Settings** to customize it under **Settings → Style Settings → Animal Island Notes**. Select light or dark mode in Obsidian's Appearance settings.
 
 ## Your first island
 
@@ -166,7 +166,7 @@ The companion also activates the theme's independent **Language** choice and tra
 
 ## Compatibility and testing
 
-Initial beta, version 0.1.0. Tested on macOS with Obsidian 1.14.5 and upstream Style Settings 1.0.9, including clean-vault loading and runtime language switching. Date arithmetic, staged saving, cancellation, conflict detection, time preservation, and mobile event interception have automated checks.
+Initial beta, version 0.1.1. Tested on macOS with Obsidian 1.14.5 and upstream Style Settings 1.0.9, including clean-vault loading and runtime language switching. Date arithmetic, staged saving, cancellation, conflict detection, time preservation, and mobile event interception have automated checks.
 
 Mobile layout fixes have received user testing; the latest iOS native-picker suppression still needs confirmation on a physical device. Windows, Linux, popout windows, minimum supported Obsidian 1.5.0, and a complete accessibility audit remain unverified. Custom colors and third-party snippets can affect contrast and layout. The optional companion adapts to upstream DOM and Style Settings internals, which may change in future versions.
 

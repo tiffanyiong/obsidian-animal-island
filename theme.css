@@ -1,13 +1,13 @@
 /*
- * Animal Island for Obsidian
- * Version 0.1.0
+ * Animal Island Notes for Obsidian
+ * Version 0.1.1
  * A warm, rounded theme adapted from the animal-island-ui design language.
  */
 
 /* Fonts use installed families and local fallbacks; no blocking remote imports. */
 
 /* @settings
-name: Animal Island
+name: Animal Island Notes
 id: animal-island
 settings:
   - id: animal-language-section

@@ -8,11 +8,11 @@ tags:
   - animal-island
   - little-moments
 source: https://guokaigdg.github.io/animal-island-ui/
-description: Animal Island 中文使用示範。可直接操作上方日期、時間、標籤與較長文字欄位。
+description: Animal Island Notes 中文使用示範。可直接操作上方日期、時間、標籤與較長文字欄位。
 ---
 
 > [!tip] 歡迎來到你的小島書桌
-> 這是一篇真正的 Markdown 筆記。打開 **設定 → Style Settings → Animal Island**，調整後回來看效果。固定的分隔線和背景圖鑑，建議使用「閱讀模式」查看。
+> 這是一篇真正的 Markdown 筆記。打開 **設定 → Style Settings → Animal Island Notes**，調整後回來看效果。固定的分隔線和背景圖鑑，建議使用「閱讀模式」查看。
 > 最上方文件名的緞帶，與下面正文 H1–H6 標題是分開設定的。主題改變外觀，保留 Markdown 原本的行為。
 
 **快速跳轉：** [[Animal Island Example - 中文#表格|表格]] · [[Animal Island Example - 中文#程式碼與標籤|程式碼]] · [[Animal Island Example - 中文#分隔線圖鑑|分隔線]] · [[Animal Island Example - 中文#背景圖鑑|背景]]
@@ -76,7 +76,7 @@ public class IslandNote {
     public static void main(String[] args) {
         LocalDate today = LocalDate.now();
         // 每天收集一件小小的發現。
-        System.out.println("Hello, Animal Island! " + today);
+        System.out.println("Hello, Animal Island Notes! " + today);
     }
 }
 ```
@@ -174,7 +174,7 @@ public class IslandNote {
 
 調整 **圖片與待辦 → 圖片圓角**，比較方角與柔和圓角的效果。
 
-![Animal Island 背景樣式](../docs/images/backgrounds.png)
+![Animal Island Notes 背景樣式](../docs/images/backgrounds.png)
 
 ## 月曆：日期與時間
 

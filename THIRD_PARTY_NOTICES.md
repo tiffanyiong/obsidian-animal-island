@@ -2,7 +2,7 @@
 
 ## animal-island-ui
 
-Animal Island for Obsidian adapts the color, typography, spacing, radius, shadow, and motion tokens from [animal-island-ui](https://github.com/guokaigdg/animal-island-ui).
+Animal Island Notes for Obsidian adapts the color, typography, spacing, radius, shadow, and motion tokens from [animal-island-ui](https://github.com/guokaigdg/animal-island-ui).
 
 Original showcase: https://guokaigdg.github.io/animal-island-ui/
 

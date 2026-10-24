@@ -1,4 +1,4 @@
-# Animal Island — Complete Settings Reference
+# Animal Island Notes — Complete Settings Reference
 
 [README / installation and limitations](../README.md) · [Traditional Chinese usage guide](STYLE_GUIDE.zh-TW.md)
 

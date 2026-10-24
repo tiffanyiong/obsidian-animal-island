@@ -1,8 +1,8 @@
-# Animal Island for Obsidian
+# Animal Island Notes for Obsidian
 
 低飽和配色、紙張背景、緞帶文件名，以及柔和圓角組成的 Obsidian 主題。靈感來自 [animal-island-ui](https://github.com/guokaigdg/animal-island-ui)，以原生 Obsidian CSS 重新實作，沒有載入 React 元件庫。
 
-**目前狀態：0.1.0 初始測試版。** 目前已驗證 macOS / Obsidian 1.14.5；手機、其他桌面系統及最低宣告版本 1.5.0 尚未完成實測。
+**目前狀態：0.1.1 初始測試版。** 目前已驗證 macOS / Obsidian 1.14.5；手機、其他桌面系統及最低宣告版本 1.5.0 尚未完成實測。
 
 [完整樣式指南](docs/STYLE_GUIDE.zh-TW.md) · [English setting reference](docs/SETTINGS.en.md) · [發佈說明](RELEASE_NOTES.md)
 
@@ -27,7 +27,7 @@ Tiffany Iong 將這套設計改寫為 Obsidian CSS 主題與配套月曆。這�
 
 ## 下載中英文 Markdown 使用範例
 
-[英文範例](examples/Animal%20Island%20Example%20-%20English.md) · [繁體中文範例](examples/Animal%20Island%20Example%20-%20中文.md) · [完整範例 ZIP](https://github.com/tiffanyiong/obsidian-animal-island/releases/download/0.1.0/animal-island-examples.zip)
+[英文範例](examples/Animal%20Island%20Example%20-%20English.md) · [繁體中文範例](examples/Animal%20Island%20Example%20-%20中文.md) · [完整範例 ZIP](https://github.com/tiffanyiong/obsidian-animal-island/releases/download/0.1.1/animal-island-examples.zip)
 
 可在 GitHub 用 **Download raw file** 下載 `.md`，放進 vault 後切換閱讀模式；保留檔名即可使用內部快速跳轉。若用 ZIP，請保留 `examples/` 和 `docs/images/` 的相對位置，圖片圓角範例才會顯示；也可以把圖片連結換成自己的圖片。
 
@@ -46,7 +46,7 @@ Tiffany Iong 將這套設計改寫為 Obsidian CSS 主題與配套月曆。這�
 
 ## 樣式圖片圖鑑
 
-到 **設定 → Style Settings → Animal Island** 調整。以下比較圖直接用本版本的主題 CSS 渲染，並非原 UI 官網截圖；總覽和月曆則使用乾淨示範 vault 的 Obsidian 實際畫面。圖示範代表性設定值，實際排版仍會隨螢幕和設定改變。
+到 **設定 → Style Settings → Animal Island Notes** 調整。以下比較圖直接用本版本的主題 CSS 渲染，並非原 UI 官網截圖；總覽和月曆則使用乾淨示範 vault 的 Obsidian 實際畫面。圖示範代表性設定值，實際排版仍會隨螢幕和設定改變。
 
 ### 整體底色、程式碼與標籤配色
 
@@ -141,12 +141,12 @@ Language 可選跟隨 Obsidian、English、繁體中文、简体中文；獨立�
 1. 將 `manifest.json`、`theme.css` 和授權文件放入：
 
    ```text
-   <你的 vault>/.obsidian/themes/Animal Island/
+   <你的 vault>/.obsidian/themes/Animal Island Notes/
    ```
 
-2. 在 Obsidian 開啟 **設定 → 外觀 → 主題**，選擇 **Animal Island**。
+2. 在 Obsidian 開啟 **設定 → 外觀 → 主題**，選擇 **Animal Island Notes**。
 3. 若主題未出現，重新啟動 Obsidian；明暗模式由「外觀 → 基礎配色」控制。
-4. 從社群插件安裝並啟用 **Style Settings**，再到 **設定 → Style Settings → Animal Island** 調整外觀。
+4. 從社群插件安裝並啟用 **Style Settings**，再到 **設定 → Style Settings → Animal Island Notes** 調整外觀。
 
 只安裝主題也能使用預設外觀；Style Settings 提供自訂選項。這是獨立主題，不需要同時啟用其他主題或另外疊加 CSS snippet。
 
@@ -160,7 +160,7 @@ Language 可選跟隨 Obsidian、English、繁體中文、简体中文；獨立�
 
 首次啟用主題即可看到預設配色、背景和分頁造型，不必先匯入設定；Style Settings 的各項重設也使用這組新預設。有既存偏好的使用者不會被強制覆蓋。
 
-若想完整恢復這套設定，可在 Style Settings 使用 Import，匯入 [default-preset.json](default-preset.json)。匯入前先 Export 備份；這個檔案只包含 Animal Island 的設定，不包含作者其他主題偏好或 vault 資料。獨立語言功能需要可選配套插件。
+若想完整恢復這套設定，可在 Style Settings 使用 Import，匯入 [default-preset.json](default-preset.json)。匯入前先 Export 備份；這個檔案只包含 Animal Island Notes 的設定，不包含作者其他主題偏好或 vault 資料。獨立語言功能需要可選配套插件。
 
 ## 五分鐘開始
 
@@ -171,7 +171,7 @@ Language 可選跟隨 Obsidian、English、繁體中文、简体中文；獨立�
 5. **文件名稱**：選雙層緞帶及配色。只影響筆記最上方的檔名，不影響 `#` 正文標題。
 6. 到 **表格、程式碼、標籤** 調整密度與造型；配色會依介面底色搭配。
 
-右側的單項重設按鈕會恢復該控制項的預設值；Animal Island 標題的整組重設會清除整個主題的自訂設定。Style Settings 的 Export / Import 可備份與還原偏好。更換選項前建議先匯出自己喜歡的組合。
+右側的單項重設按鈕會恢復該控制項的預設值；Animal Island Notes 標題的整組重設會清除整個主題的自訂設定。Style Settings 的 Export / Import 可備份與還原偏好。更換選項前建議先匯出自己喜歡的組合。
 
 ## 配套月曆
 
@@ -207,7 +207,7 @@ Language 可選跟隨 Obsidian、English、繁體中文、简体中文；獨立�
 
 - [完整樣式指南與 Markdown 範例](docs/STYLE_GUIDE.zh-TW.md)
 - [English reference: all controls and default values](docs/SETTINGS.en.md)
-- [0.1.0 測試版發佈說明](RELEASE_NOTES.md)
+- [0.1.1 測試版發佈說明](RELEASE_NOTES.md)
 
 目前的桌面驗證涵蓋閱讀／即時預覽表格、明暗模式、分頁紙片／膠囊區別、日期儲存／清空／取消、保留時間及插件重啟。這不是所有配色、平台或無障礙情境的完整認證。主題不會把筆記變成有拖曳事件的行事曆，也不會增加輪播、上傳或分頁等 React 元件功能。
 

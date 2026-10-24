@@ -1,6 +1,10 @@
-# Animal Island 0.1.0 Beta
+# Animal Island Notes 0.1.1 Beta
 
 A cozy Obsidian theme with warm paper backgrounds, soft coordinated colors, ribbon filenames, and rounded UI details.
+
+## New in 0.1.1
+
+Renamed the theme to **Animal Island Notes** so it has a distinct name in the Obsidian community directory. Existing Style Settings IDs and default appearance are preserved.
 
 ## Design credit
 
@@ -24,7 +28,7 @@ Try the [English and Traditional Chinese example notes](https://github.com/tiffa
 
 ## Downloads
 
-Install `theme.css` and `manifest.json` in `.obsidian/themes/Animal Island/` and select the theme in Appearance. Style Settings is optional for customization. Install `animal-island-calendar.zip` separately for the custom picker and independent language selector. Full instructions are in the README.
+Install `theme.css` and `manifest.json` in `.obsidian/themes/Animal Island Notes/` and select the theme in Appearance. Style Settings is optional for customization. Install `animal-island-calendar.zip` separately for the custom picker and independent language selector. Full instructions are in the README.
 
 The built-in default is cream and mint, a green layered ribbon, subtle grid paper, and pill tabs. Existing preferences are preserved.
 

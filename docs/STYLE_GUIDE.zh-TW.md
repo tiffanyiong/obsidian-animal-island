@@ -1,8 +1,8 @@
-# Animal Island 完整樣式指南
+# Animal Island Notes 完整樣式指南
 
 [返回 README](../README.md) · [English reference](SETTINGS.en.md)
 
-所有控制項都在 **設定 → Style Settings → Animal Island**。下列順序、範圍與預設值直接對照目前 theme.css；切換外觀通常立即生效。明暗模式請到 Obsidian「設定 → 外觀」切換。插件更新後若功能改變，請先查看 README 的相容限制。
+所有控制項都在 **設定 → Style Settings → Animal Island Notes**。下列順序、範圍與預設值直接對照目前 theme.css；切換外觀通常立即生效。明暗模式請到 Obsidian「設定 → 外觀」切換。插件更新後若功能改變，請先查看 README 的相容限制。
 
 ## 常用搭配
 
@@ -239,7 +239,7 @@ tags:
 ```java
 public class IslandNote {
     public static void main(String[] args) {
-        System.out.println("Hello, Animal Island!");
+        System.out.println("Hello, Animal Island Notes!");
     }
 }
 ```
@@ -298,7 +298,7 @@ public class IslandNote {
 
 | 情況 | 檢查方式 |
 | --- | --- |
-| No style settings found | 確認啟用 Animal Island 與 Style Settings，再重新啟用插件或切換主題後重試；先 Export 保存偏好，不要刪設定檔 |
+| No style settings found | 確認啟用 Animal Island Notes 與 Style Settings，再重新啟用插件或切換主題後重試；先 Export 保存偏好，不要刪設定檔 |
 | 切換語言仍部分英文 | 獨立語言功能需要啟用 Animal Island Calendar；Default / Import / Export / Results 等插件自帶文字也未全部翻譯 |
 | 月曆仍是系統面板 | 確認 Animal Island Calendar 已啟用，且是筆記 Properties 的日期／日期時間欄位；第三方表單不接管 |
 | 字體沒有改 | 自訂字體必須已安裝，檢查拼寫及 fallback；只有 Nunito 內嵌，中文與其他字體不會自動下載 |
