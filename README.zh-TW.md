@@ -6,6 +6,14 @@
 
 [完整樣式指南](docs/STYLE_GUIDE.zh-TW.md) · [English setting reference](docs/SETTINGS.en.md) · [發佈說明](RELEASE_NOTES.md)
 
+## 設計來源與致謝：Animal Island UI
+
+**這個 Obsidian 主題是依照 [Animal Island UI](https://guokaigdg.github.io/animal-island-ui/) 建立的，原作者是 [guokaigdg](https://github.com/guokaigdg)。** 暖色配色、緞帶標題、柔和圓角、紙張背景與趣味細節的原始 UI 設計，皆應歸功於原作者。
+
+[原版 UI 展示](https://guokaigdg.github.io/animal-island-ui/) · [原始 GitHub 專案](https://github.com/guokaigdg/animal-island-ui) · [Animal Island UI Skill](https://guokaigdg.github.io/animal-island-ui/#/skill)
+
+Tiffany Iong 將這套設計改寫為 Obsidian CSS 主題與配套月曆。這是獨立移植專案，不是原作者的官方 Obsidian 版本。原專案 MIT 著作權與完整授權保留於 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。
+
 ## 外觀特色
 
 - 六種整體底色：奶油、鼠尾草、玫瑰、薰衣草、霧藍、沙杏，另可自訂。
@@ -16,6 +24,98 @@
 - 程式碼與標籤依 App 底色搭配專屬色盤，包含深色模式。
 - 離線內嵌 Nunito；介面、正文和程式碼可各選字體。
 - 可選的 Animal Island Calendar：圓點紙張背景、小尺寸月曆、日期時間選擇。
+
+## 樣式圖片圖鑑
+
+到 **設定 → Style Settings → Animal Island** 調整。以下比較圖直接用本版本的主題 CSS 渲染，並非原 UI 官網截圖；總覽和月曆則使用乾淨示範 vault 的 Obsidian 實際畫面。圖示範代表性設定值，實際排版仍會隨螢幕和設定改變。
+
+### 整體底色、程式碼與標籤配色
+
+介面底色提供奶油、鼠尾草、玫瑰、薰衣草、霧藍與沙杏；程式碼和標籤會自動搭配。
+
+![整體底色、程式碼與標籤配色](docs/images/palettes.png)
+
+### 獨立 App 主色
+
+薄荷、粉、紫、藍、桃與綠主色，可與底色獨立混搭。
+
+![獨立 App 主色](docs/images/accents.png)
+
+### 四種文件名稱造型
+
+雙層緞帶、緞帶、折角與簡潔文字，只套用最上方文件名，不影響正文 H1–H6。
+
+![四種文件名稱造型](docs/images/title-shapes.png)
+
+### 全部文件名稱配色
+
+13 種彩色加羊皮紙配色，與 App 底色獨立選擇。
+
+![全部文件名稱配色](docs/images/title-colors.png)
+
+### 六種紙張背景
+
+純色、奶油圓點、薄荷圓點、粉色圓點、方格與彩糖碎。圖中用 18% 濃度顯示紋理；預設方格是 9%。
+
+![六種紙張背景](docs/images/backgrounds.png)
+
+### 六種 Markdown 分隔線
+
+一般 Markdown `---` 可顯示薄荷圓點、細實線、大地虛線、細密虛線、金色波浪或薄荷曲線。
+
+![六種 Markdown 分隔線](docs/images/dividers.png)
+
+### 表格：斑馬紋、表頭與虛線
+
+斑馬紋／乾淨表格，配跟隨底色／薄荷表頭；橫列與直欄皆有淡虛線，hover 時整列變色。
+
+![表格：斑馬紋、表頭與虛線](docs/images/tables.png)
+
+### 文件分頁與目錄選取
+
+圓角紙片、膠囊與底線分頁，以及柔和、薄荷與描邊選取。側欄圖示不套用文件分頁造型。
+
+![文件分頁與目錄選取](docs/images/navigation.png)
+
+### Properties 屬性與提示卡片
+
+屬性面板可用卡片、虛線與平面；提示框可用卡片、側邊色條或虛線。
+
+![Properties 屬性與提示卡片](docs/images/panels.png)
+
+### 標籤造型與正文標題
+
+標籤提供實色、描邊、淡底；正文標題可用簡潔、底線與側邊標記。
+
+![標籤造型與正文標題](docs/images/tags-headings.png)
+
+### 輸入框、按鈕與待辦
+
+膠囊／圓角輸入框，立體／平面主要按鈕，以及待辦勾選框造型。
+
+![輸入框、按鈕與待辦](docs/images/controls.png)
+
+### 引用、無邊框氣泡與字體
+
+引用提供卡片與純文字；hover 提示使用無邊框有機氣泡。介面、正文、程式碼字體可分別設定，Nunito 已離線內嵌。
+
+![引用、無邊框氣泡與字體](docs/images/quotes-tooltips.png)
+
+### 深色模式
+
+到 Obsidian 外觀設定切換深色；程式碼、標籤與表格仍會跟隨底色搭配。
+
+![深色模式](docs/images/dark.png)
+
+### 月曆：日期與日期時間
+
+配套插件另行安裝。純日期欄位只顯示日期；日期時間欄位會增加時間控制。選擇後按「確定」才儲存，清空也需確認，關閉或 Escape 會取消。更換日期會保留原有時間。以下是 Obsidian 實際截圖。
+
+| 日期 | 日期與時間 |
+| --- | --- |
+| ![日期選擇器實際畫面](docs/images/calendar-obsidian.png) | ![含時間控制的月曆實際畫面](docs/images/datetime-obsidian.png) |
+
+Language 可選跟隨 Obsidian、English、繁體中文、简体中文；獨立語言切換需要配套插件，不改 Obsidian 本身選單語言。其餘字級、寬度、間距、圓角和動態等數值控制請看[完整指南](docs/STYLE_GUIDE.zh-TW.md)；靜態圖片並未窮舉每個滑桿數值。
 
 ## 安裝主題
 

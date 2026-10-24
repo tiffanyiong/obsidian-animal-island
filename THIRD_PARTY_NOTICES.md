@@ -4,9 +4,15 @@
 
 Animal Island for Obsidian adapts the color, typography, spacing, radius, shadow, and motion tokens from [animal-island-ui](https://github.com/guokaigdg/animal-island-ui).
 
+Original showcase: https://guokaigdg.github.io/animal-island-ui/
+
+Original Skill page: https://guokaigdg.github.io/animal-island-ui/#/skill
+
+Original UI design by guokaigdg; adapted for Obsidian by Tiffany Iong. This is an independent adaptation, not an official release by the original author.
+
 `animal-island-ui` is distributed under the MIT License.
 
-Copyright (c) guokaigdg and animal-island-ui contributors.
+Copyright (c) 2026 guokaigdg.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

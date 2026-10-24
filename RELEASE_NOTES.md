@@ -2,6 +2,12 @@
 
 A cozy Obsidian theme with warm paper backgrounds, soft coordinated colors, ribbon filenames, and rounded UI details.
 
+## Design credit
+
+Built based on [Animal Island UI](https://guokaigdg.github.io/animal-island-ui/) by [guokaigdg](https://github.com/guokaigdg). Credit for the original UI design belongs to its creator; Tiffany Iong adapted it for Obsidian. See the [original project](https://github.com/guokaigdg/animal-island-ui) and [Skill page](https://guokaigdg.github.io/animal-island-ui/#/skill).
+
+The [README visual guide](https://github.com/tiffanyiong/obsidian-animal-island#visual-style-guide) now shows all divider and background shapes, filename colors, app palettes, tables, navigation, panels, controls, tags, dark mode, and real date/datetime picker captures.
+
 ## Included
 
 - Six app palettes plus custom colors; independent accents and frame colors.
