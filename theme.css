@@ -2410,7 +2410,7 @@ body.animal-headings-line .markdown-rendered :is(h1,h2,h3,h4,h5,h6) {
   padding-bottom: 0.2em;
   border-bottom: 2px solid var(--animal-primary);
 }
-body.animal-headings-line .HyperMD-header { text-decoration: underline; text-decoration-color: var(--animal-primary); text-underline-offset: 5px; }
+body.animal-headings-line .HyperMD-header { text-decoration-line: underline; text-decoration-color: var(--animal-primary); text-underline-offset: 5px; }
 body.animal-headings-marker .markdown-rendered :is(h1,h2,h3,h4,h5,h6),
 body.animal-headings-marker .HyperMD-header { border-inline-start: 3px solid var(--animal-primary); padding-inline-start: 10px; }
 body :is(.tree-item-self, .nav-file-title, .nav-folder-title) {
@@ -3465,8 +3465,6 @@ body .markdown-source-view.mod-cm6 .cm-hashtag {
   border-inline-width: 0;
   padding-inline: 0;
   margin-inline: 0;
-  box-decoration-break: clone;
-  -webkit-box-decoration-break: clone;
 }
 body .markdown-source-view.mod-cm6 .cm-hashtag.cm-hashtag-begin {
   border-start-start-radius: var(--animal-radius-pill);
@@ -3515,7 +3513,6 @@ body .markdown-source-view.mod-cm6 .cm-hashtag.cm-hashtag-end {
   background: transparent;
   border-radius: 0;
   box-shadow: none;
-  clip-path: none;
 }
 .hover-popover .markdown-rendered h1.inline-title { font-size: var(--h1-size); color: var(--h1-color); }
 .hover-popover .markdown-rendered h2.inline-title { font-size: var(--h2-size); color: var(--h2-color); }
@@ -3536,7 +3533,6 @@ body .hover-popover .inline-title.markdown-rendered {
   border-radius: 0;
   background: transparent;
   box-shadow: none;
-  clip-path: none;
   font-size: var(--font-text-size);
   font-weight: var(--font-text-weight, 500);
   line-height: var(--line-height-normal);
@@ -3545,4 +3541,32 @@ body .hover-popover .inline-title.markdown-rendered {
 body .hover-popover .inline-title.markdown-rendered::before,
 body .hover-popover .inline-title.markdown-rendered::after {
   content: none;
+}
+
+/* Reserve a real text gutter beside heading markers in both editor and Reading view. */
+body.animal-headings-marker .markdown-rendered :is(h1, h2, h3, h4, h5, h6) {
+  padding-inline-start: 12px;
+}
+body.animal-headings-marker .markdown-source-view.mod-cm6 .cm-line.HyperMD-header {
+  /* CodeMirror writes inline padding while laying out editable lines. */
+  padding-inline-start: 12px !important;
+}
+
+/* Keep the document Properties disclosure inside its rounded card too. */
+body .metadata-container .metadata-properties-heading {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+}
+body .metadata-container .metadata-properties-heading .collapse-indicator {
+  position: static;
+  inset-inline-start: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 18px;
+  width: 18px;
+  padding: 0;
+  margin: 0;
 }

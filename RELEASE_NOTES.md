@@ -1,3 +1,31 @@
+# Animal Island Cozy 0.1.5 Beta
+
+## Spacing fixes
+
+- Move the Properties disclosure arrow inside the rounded card in normal notes, with an 8px gap before the label. Collapsing and expanding still work in Reading view and Live Preview.
+- Add a 12px text gutter beside side-marker body headings in Reading view and Live Preview, including an editor override so CodeMirror cannot remove that spacing.
+
+## CSS maintenance
+
+- Use the dedicated underline property for editor headings.
+- Remove redundant decoration-break rules from non-wrapping editor tags and two unnecessary Page preview clipping resets, preserving the existing tag pills, section-heading appearance, colors, fonts and saved settings.
+- This is a targeted cleanup; it does not remove all Community review warnings or the CSS size warning. Functional clipping and reduced-motion overrides remain.
+
+## Validation
+
+Verified Properties folding and heading spacing locally in Obsidian 1.14.5 using a clean test vault. A browser fixture using the installed Obsidian CSS at a verified 375px viewport showed no horizontal overflow and intact tag pills. The maintenance-only changes also passed five before/after screenshot comparisons with no pixel differences. Mobile checks are simulations, not a physical-iPhone regression pass. The Calendar plugin is unchanged.
+
+## 本次更新
+
+- 修正正文 Properties 箭頭太貼圓角框的問題，保留正常收合與展開。
+- 側邊色條標題增加 12px 文字留白，閱讀及編輯模式皆適用。
+- 整理不影響外觀的 CSS，保留原有配色、字型、標籤與設定；並非清除所有審查警告。
+- 已完成本機 Obsidian 測試及 375px 手機寬度模擬；日曆插件沒有更新。
+
+Design based on [Animal Island UI](https://guokaigdg.github.io/animal-island-ui/) by [guokaigdg](https://github.com/guokaigdg), adapted for Obsidian by Tiffany Iong.
+
+---
+
 # Animal Island Cozy 0.1.4 Beta
 
 A cozy Obsidian theme with warm paper backgrounds, soft coordinated colors, ribbon filenames, and rounded UI details.
