@@ -1,3 +1,51 @@
+# Animal Island Cozy 0.1.6
+
+## Highlights and customization
+
+- Add Text highlight with all 14 ribbon colors, independently selected for Markdown `==highlight==` in Reading view and Live Preview. Add a 0–6px corner-radius slider; default 6px retains the existing shape.
+- Keep Language first and sort the other Style Settings groups alphabetically. New settings include English, Traditional Chinese and Simplified Chinese labels.
+- Distinguish Rounded and Circle checkboxes and center their check marks. Add adjustable checkbox border width, default 2px.
+
+## Callouts and quotes
+
+- Preserve the original native callout color strategy, with yellow Warning distinct from orange Question. Titles and icons follow their type color; body text keeps its normal styling. Remove icon background badges.
+- Default callouts have no background or border. Add background opacity (0–1, default 0) and border width (0–4px, default 0); retain Card, Dashed and Side accent. Side accent uses twice the selected border width.
+- Replace the Quote Background/No background dropdown with Quote background opacity (0–1, default 0.14). Add all 14 ribbon colors for quotes, independent of filename colors. Opacity 0 removes the background and keeps the side line.
+
+## Alignment and maintenance
+
+- Align Properties link values, keep its disclosure arrow visible without hovering, and give desktop Reading/Live Preview Properties the same outer inset.
+- Correct over-tall Live Preview heading side markers and tighten number/bullet text spacing in Reading view and Live Preview; preserve checkbox positioning.
+- Replace two text-decoration shorthands and remove an unnecessary filename clipping reset. Decorative ribbon clipping remains; this is not a claim to eliminate all Community review warnings.
+
+## Documentation and cover
+
+- Refresh both English and Traditional Chinese READMEs with a concise linked overview, paired bilingual examples, checkbox syntax, all callout colors/styles, collapsible Question examples and highlight color sheets.
+- Replace the cover with an actual Obsidian screenshot of **Welcome to Animal Island Cozy**, including a clean demo file explorer, expanded Properties and current callout appearance. Include its editable Markdown note in the examples ZIP.
+- Keep the README's general dark-theme overview; detailed dark comparison images are retained for local QA.
+
+## Updating and validation
+
+Existing preferences for unchanged setting IDs are retained. The old Quote Background/No background setting is replaced: users who previously chose No background should set **Quote background opacity to 0**. Border opacity defaults apply when no saved override is present.
+
+Reviewed locally in Obsidian 1.14.5 using dedicated demo/QA vaults, with Reading/Live Preview checks and rendered light/dark CSS galleries. Checked setting-schema IDs, ranges, palette options, image files, README links and release packaging. This is not a full cross-platform or physical-device regression pass. The Calendar companion is unchanged.
+
+## 本次更新
+
+- 新增文字螢光標記的 14 色選擇與 0–6px 圓角；預設黃色、6px，閱讀與編輯模式皆適用。
+- Language 固定第一，其餘設定群組按英文字母排序；新設定附中英文標籤。
+- 修正圓角／圓形 checkbox 的區別與勾號置中，可調外框粗細，預設 2px。
+- 保留舊版 callout 配色，只有 Warning 使用黃色、Question 保留橙色；標題與圖示有色，移除圖示圓底，正文維持原樣。
+- Callout 預設無背景、無框；新增背景不透明度與外框粗細，保留卡片、虛線與側邊色條。
+- 引用的有／無背景改為不透明度滑桿，預設 0.14；0 為無背景。引用可獨立選擇 14 種緞帶配色。
+- 修正 Properties 連結與外側對齊，箭頭保持可見；改善編輯模式標題側線高度及兩種模式的數字／圓點清單間距。
+- 更新中英文 README、完整配色／樣式圖、Question 折疊示例與新版首圖，新增可編輯的 Welcome to Animal Island Cozy 示範筆記。
+- 原本選擇引用「無背景」的使用者，更新後請將引用背景不透明度設為 0；其他未更名的設定保留。日曆插件沒有更新。
+
+Design based on [Animal Island UI](https://guokaigdg.github.io/animal-island-ui/) by [guokaigdg](https://github.com/guokaigdg), adapted by Tiffany Iong.
+
+---
+
 # Animal Island Cozy 0.1.5 Beta
 
 ## Spacing fixes

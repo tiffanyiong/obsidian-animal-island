@@ -1,239 +1,211 @@
 # Animal Island Cozy for Obsidian
 
-低飽和配色、紙張背景、緞帶文件名，以及柔和圓角組成的 Obsidian 主題。靈感來自 [animal-island-ui](https://github.com/guokaigdg/animal-island-ui)，以原生 Obsidian CSS 重新實作，沒有載入 React 元件庫。
+溫暖紙張、柔和配色、緞帶文件名與圓角介面。以 **guokaigdg** 的 [Animal Island UI](https://guokaigdg.github.io/animal-island-ui/) 為設計基礎，由 Tiffany Iong 改編。
 
-## 使用 Style Settings 自訂主題
+[安裝與自訂](#安裝與自訂) · [範例](#範例) · [待辦與提示框](#待辦與提示框) · [樣式圖鑑](#樣式圖鑑) · [日曆](#日曆) · [備註與致謝](#備註與致謝)
 
-安裝 **Animal Island Cozy** 後會套用預設外觀。若要調整檔名標題的造型與顏色、背景、字體、分頁、表格、分隔線等樣式，需要另外安裝 **[Style Settings](https://community.obsidian.md/plugins/obsidian-style-settings)** 社群插件：
+[English](README.md)
 
-1. 開啟 **設定 → 社群插件 → 瀏覽**。
-2. 搜尋 **Style Settings**，按「安裝」，再按「啟用」。
-3. 前往 **設定 → Style Settings → Animal Island Cozy**。
-4. 展開想調整的分類，更改選項後即可看到效果。
+![Animal Island Cozy — Welcome note in Obsidian](screenshot.png)
 
-![Obsidian Style Settings：Animal Island Cozy 分類與檔名標題控制項](docs/images/style-settings-obsidian.png)
+[開啟首圖示範筆記](examples/Welcome%20to%20Animal%20Island%20Cozy.md)
 
-*乾淨示範 vault 中的實際 Obsidian 設定頁。展開 Filename title（檔名標題）即可調整造型、顏色與大小。*
+## 安裝與自訂
 
-建議先從「介面配色」「字體」「背景」和「檔名標題」開始。檔名標題控制筆記頂部的裝飾標題；正文 H1–H6 標題有各自的設定。
+1. **設定 → 外觀 → 主題 → 管理**，搜尋並套用 **[Animal Island Cozy](https://community.obsidian.md/themes/animal-island-notes)**。
+2. 安裝並啟用 **[Style Settings](https://community.obsidian.md/plugins/obsidian-style-settings)**（第三方插件）。
+3. 開啟 **設定 → Style Settings → Animal Island Cozy**，調整外觀。
 
-**Style Settings** 提供主題的自訂控制項；可選的 **[Animal Island Calendar](https://community.obsidian.md/plugins/animal-island-calendar)** 則提供配套日期／時間選擇器，以及本主題設定的獨立語言切換。
+主題不依賴插件；Style Settings 提供自訂選項。首圖展示左側檔案欄、Properties、奶油紙張、彩色標題與表格；外觀可在 Style Settings 調整。
 
-**目前狀態：0.1.4 初始測試版。** 目前已驗證 macOS / Obsidian 1.14.5；手機、其他桌面系統及最低宣告版本 1.5.0 尚未完成實測。
+![Style Settings](docs/images/style-settings-obsidian.png)
 
-[完整樣式指南](docs/STYLE_GUIDE.zh-TW.md) · [English setting reference](docs/SETTINGS.en.md) · [發佈說明](RELEASE_NOTES.md)
+## 範例
 
-## 設計來源與致謝：Animal Island UI
+[English Markdown](examples/Animal%20Island%20Example%20-%20English.md) · [繁體中文 Markdown](examples/Animal%20Island%20Example%20-%20中文.md) · [Download ZIP](https://github.com/tiffanyiong/obsidian-animal-island/releases/latest/download/animal-island-examples.zip)
 
-**這個 Obsidian 主題是依照 [Animal Island UI](https://guokaigdg.github.io/animal-island-ui/) 建立的，原作者是 [guokaigdg](https://github.com/guokaigdg)。** 暖色配色、緞帶標題、柔和圓角、紙張背景與趣味細節的原始 UI 設計，皆應歸功於原作者。
+ZIP 請保留目錄結構，以閱讀模式開啟。左英文、右繁中，皆為實際 Obsidian 截圖。
 
-[原版 UI 展示](https://guokaigdg.github.io/animal-island-ui/) · [原始 GitHub 專案](https://github.com/guokaigdg/animal-island-ui) · [Animal Island UI Skill](https://guokaigdg.github.io/animal-island-ui/#/skill)
+### 正文、文字效果與待辦
 
-Tiffany Iong 將這套設計改寫為 Obsidian CSS 主題與配套月曆。這是獨立移植專案，不是原作者的官方 Obsidian 版本。原專案 MIT 著作權與完整授權保留於 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。
+![正文、文字效果與待辦](docs/images/example-pair-reading.png)
 
-## 外觀特色
+### 表格
 
-- 六種整體底色：奶油、鼠尾草、玫瑰、薰衣草、霧藍、沙杏，另可自訂。
-- App 重點色獨立選擇；外框與內容面板可分色。
-- 四種文件名造型；13 種彩色標題加羊皮紙配色，正文 H1–H6 獨立設定。
-- 紙張圓點、方格和彩糖碎背景，以及六種 Markdown 分隔線。
-- 圓角表格、淡色斑馬紋、橫直虛線與整列 hover。
-- 程式碼與標籤依 App 底色搭配專屬色盤，包含深色模式。
-- 離線內嵌 Nunito；介面、正文和程式碼可各選字體。
-- 可選的 Animal Island Calendar：圓點紙張背景、小尺寸月曆、日期時間選擇。
+![表格](docs/images/example-pair-tables.png)
 
-## 下載中英文 Markdown 使用範例
+### Java 與 JSON
 
-[英文範例](examples/Animal%20Island%20Example%20-%20English.md) · [繁體中文範例](examples/Animal%20Island%20Example%20-%20中文.md) · [完整範例 ZIP](https://github.com/tiffanyiong/obsidian-animal-island/releases/download/0.1.4/animal-island-examples.zip)
+![Java 與 JSON](docs/images/example-pair-code.png)
 
-可在 GitHub 用 **Download raw file** 下載 `.md`，放進 vault 後切換閱讀模式；保留檔名即可使用內部快速跳轉。若用 ZIP，請保留 `examples/` 和 `docs/images/` 的相對位置，圖片圓角範例才會顯示；也可以把圖片連結換成自己的圖片。
+### 固定分隔線
 
-兩份筆記都包含 H1–H6、文字標記、待辦、表格、Java／JSON、標籤、提示框、引用、六種分隔線和六種背景。新 vault 中請將 `island-date`、`island-empty-date` 設為「日期」，`island-time` 設為「日期與時間」；配套月曆需要另外啟用。
+![固定分隔線](docs/images/example-pair-dividers.png)
 
-### Markdown 筆記實際效果
+## 待辦與提示框
 
-以下是兩份可下載 `.md` 在乾淨示範 vault 裡的 **Obsidian 閱讀模式實際截圖**，使用預設奶油／方格配色，與下方單獨元件比較圖分開展示。
+### Checkbox
 
-| English | 繁體中文 |
-| --- | --- |
-| **正文與待辦** ![英文正文與待辦](docs/images/example-en-reading.png) | **正文與待辦** ![中文正文與待辦](docs/images/example-zh-reading.png) |
-| **表格** ![英文表格](docs/images/example-en-tables.png) | **表格** ![中文表格](docs/images/example-zh-tables.png) |
-| **Java／JSON** ![英文程式碼](docs/images/example-en-code.png) | **Java／JSON** ![中文程式碼](docs/images/example-zh-code.png) |
-| **分隔線** ![英文分隔線](docs/images/example-en-dividers.png) | **分隔線** ![中文分隔線](docs/images/example-zh-dividers.png) |
+**Images and tasks → Checkbox shape**：Rounded（圓角）／Circle（圓形）。**Checkbox border width**：0–3px，預設 2px。
 
-## 樣式圖片圖鑑
+```md
+- [ ] Read a chapter
+- [x] Write one useful note
+```
 
-到 **設定 → Style Settings → Animal Island Cozy** 調整。以下比較圖直接用本版本的主題 CSS 渲染，並非原 UI 官網截圖；總覽和月曆則使用乾淨示範 vault 的 Obsidian 實際畫面。圖示範代表性設定值，實際排版仍會隨螢幕和設定改變。
+![Checkbox syntax](docs/images/checkbox-syntax.png)
 
-### 整體底色、程式碼與標籤配色
+僅支援標準未完成／已完成造型；`[/]`、`[-]`、`[*]` 沒有專屬圖示。
 
-介面底色提供奶油、鼠尾草、玫瑰、薰衣草、霧藍與沙杏；程式碼和標籤會自動搭配。
+### Callouts
 
-![整體底色、程式碼與標籤配色](docs/images/palettes.png)
+```md
+> [!tip] A little reminder
+> Write one useful thought.
+```
 
-### 獨立 App 主色
+內建語法，不需插件。預設只有彩色標題與圖示，無背景、無外框；Warning 為黃色，Question 為橙色。
 
-薄荷、粉、紫、藍、桃與綠主色，可與底色獨立混搭。
+![Callout types · 提示框類型](docs/images/callout-syntax.png)
 
-![獨立 App 主色](docs/images/accents.png)
+在 **Style Settings → Callouts and quotes** 調整：
 
-### 四種文件名稱造型
+- **Callout style**：Card／Side accent／Dashed。
+- **Callout background opacity**：0–1，預設 0；0 為無背景。
+- **Callout border width**：0–4px，預設 0；側邊色條為設定值的兩倍寬。
 
-雙層緞帶、緞帶、折角與簡潔文字，只套用最上方文件名，不影響正文 H1–H6。
+下圖示範各種搭配；外框為 0 時，三種樣式都不顯示框線。
 
-![四種文件名稱造型](docs/images/title-shapes.png)
+#### 樣式與設定值
 
-### 全部文件名稱配色
+![Callout styles · 提示框樣式](docs/images/callout-styles.png)
 
-13 種彩色加羊皮紙配色，與 App 底色獨立選擇。
+#### 全部配色 × 樣式
 
-![全部文件名稱配色](docs/images/title-colors.png)
+![All callout colors × styles · 全部提示框配色與樣式](docs/images/callout-colors-styles.png)
 
-### 六種紙張背景
+#### 可折疊 Question
 
-純色、奶油圓點、薄荷圓點、粉色圓點、方格與彩糖碎。圖中用 18% 濃度顯示紋理；預設方格是 9%。
+`+` 預設展開，`-` 預設收合；點標題切換。其他 callout 類型也可使用相同語法。
 
-![六種紙張背景](docs/images/backgrounds.png)
+```md
+> [!question]+ A question / 一個問題
+> Answer / 回答
 
-### 六種 Markdown 分隔線
+> [!question]- More details / 更多細節
+> Answer / 回答
+```
 
-一般 Markdown `---` 可顯示薄荷圓點、細實線、大地虛線、細密虛線、金色波浪或薄荷曲線。
+![Question expanded and collapsed · 問題展開與收合](docs/images/callout-question-fold.png)
 
-![六種 Markdown 分隔線](docs/images/dividers.png)
 
-### 表格：斑馬紋、表頭與虛線
+## 樣式圖鑑
 
-斑馬紋／乾淨表格，配跟隨底色／薄荷表頭；橫列與直欄皆有淡虛線，hover 時整列變色。
+### 整體配色、程式碼與標籤
 
-![表格：斑馬紋、表頭與虛線](docs/images/tables.png)
+**App colors → Interface background palette**：奶油、鼠尾草、玫瑰、薰衣草、霧藍、沙杏，或自訂色。
 
-### 文件分頁與目錄選取
+![整體配色、程式碼與標籤](docs/images/palettes.png)
 
-圓角紙片、膠囊與底線分頁，以及柔和、薄荷與描邊選取。側欄圖示不套用文件分頁造型。
+### 獨立主色
 
-![文件分頁與目錄選取](docs/images/navigation.png)
+**App colors → App accent palette**：薄荷、粉紅、紫、藍、蜜桃、綠，或自訂色。
 
-### Properties 屬性與提示卡片
+![獨立主色](docs/images/accents.png)
 
-屬性面板可用卡片、虛線與平面；提示框可用卡片、側邊色條或虛線。
+### 文件名造型
 
-![Properties 屬性與提示卡片](docs/images/panels.png)
+**Filename title → Title style**：雙層緞帶、緞帶、折角、純文字；正文標題另行設定。
 
-### 標籤造型與正文標題
+![文件名造型](docs/images/title-shapes.png)
 
-標籤提供實色、描邊、淡底；正文標題可用簡潔、底線與側邊標記。
+### 文件名配色
 
-![標籤造型與正文標題](docs/images/tags-headings.png)
+**Filename title → Title palette**：13 組彩色與羊皮紙色，可獨立於介面配色。
 
-### 輸入框、按鈕與待辦
+![文件名配色](docs/images/title-colors.png)
 
-膠囊／圓角輸入框，立體／平面主要按鈕，以及待辦勾選框造型。
+### 紙張背景
 
-![輸入框、按鈕與待辦](docs/images/controls.png)
+**Background → Note background**：純色、奶油點、薄荷點、粉紅點、方格、彩屑；可調濃度與間距。
 
-### 引用、無邊框氣泡與字體
+![紙張背景](docs/images/backgrounds.png)
 
-引用提供卡片與純文字；hover 提示使用無邊框有機氣泡。介面、正文、程式碼字體可分別設定，Nunito 已離線內嵌。
+### 分隔線
 
-![引用、無邊框氣泡與字體](docs/images/quotes-tooltips.png)
+**Dividers → Divider style**：六種造型。段落間獨立寫一行 `---` 即可使用。
+
+![分隔線](docs/images/dividers.png)
+
+### 表格
+
+**Tables**：斑馬紋／乾淨、配套色／薄荷表頭、虛線格線、整列 hover，可調間距。
+
+![表格](docs/images/tables.png)
+
+### 分頁與導覽
+
+**Directory and tabs**：紙張／膠囊／底線分頁；柔和／薄荷／描邊選取效果。
+
+![分頁與導覽](docs/images/navigation.png)
+
+### 屬性
+
+**Properties**：卡片／虛線／平面。
+
+![屬性樣式](docs/images/properties-styles.png)
+
+### 標籤與正文標題
+
+**Tags**：實色／描邊／淡底。**Body headings**：純文字／底線／側邊色條。
+
+![標籤與正文標題](docs/images/tags-headings.png)
+
+### 控制項與待辦
+
+**Controls**：膠囊／圓角、立體／平面按鈕。**Images and tasks**：圓角／圓形核取方塊。
+
+![控制項與待辦](docs/images/controls.png)
+
+### 引用、氣泡與字型
+
+**Callouts and quotes → 引用背景不透明度**：0–1，預設 0.14；0 為無背景。**引用顏色**：14 種緞帶配色，可獨立選擇。
+
+柔和氣泡；介面、正文與程式碼字型分開設定，Nunito 離線內建。
+
+![引用、氣泡與字型](docs/images/quotes-tooltips.png)
 
 ### 深色模式
 
-到 Obsidian 外觀設定切換深色；程式碼、標籤與表格仍會跟隨底色搭配。
+**設定 → 外觀 → 基礎配色 → 深色。**
 
 ![深色模式](docs/images/dark.png)
 
-### 月曆：日期與日期時間
+### 文字螢光標記
 
-配套插件另行安裝。純日期欄位只顯示日期；日期時間欄位會增加時間控制。選擇後按「確定」才儲存，清空也需確認，關閉或 Escape 會取消。更換日期會保留原有時間。以下是 Obsidian 實際截圖。
+**Text highlight → Highlight color (ribbon palette)**：以 `==文字==` 標記，閱讀與編輯模式皆適用；提供緞帶相同的 14 色，預設黃色。 **螢光標記圓角**：0–6px，預設 6px；0 為直角。
 
-| 日期 | 日期與時間 |
-| --- | --- |
-| ![日期選擇器實際畫面](docs/images/calendar-obsidian.png) | ![含時間控制的月曆實際畫面](docs/images/datetime-obsidian.png) |
+![14 highlight colors — light mode / 14 色螢光標記](docs/images/highlight-colors-light.png)
 
-Language 可選跟隨 Obsidian、English、繁體中文、简体中文；獨立語言切換需要配套插件，不改 Obsidian 本身選單語言。其餘字級、寬度、間距、圓角和動態等數值控制請看[完整指南](docs/STYLE_GUIDE.zh-TW.md)；靜態圖片並未窮舉每個滑桿數值。
 
-## 安裝主題
+## 日曆
 
-1. 將 `manifest.json`、`theme.css` 和授權文件放入：
+另行安裝 **[Animal Island Calendar](https://community.obsidian.md/plugins/animal-island-calendar)**，使用 Properties 日期／時間選擇器與獨立設定語言切換。它不是行程規劃工具。
 
-   ```text
-   <你的 vault>/.obsidian/themes/Animal Island Cozy/
-   ```
+屬性類型選 **Date** 或 **Date & time**。**Confirm** 儲存、**Clear** 暫存清空；Escape／關閉取消。改日期會保留時間。
 
-2. 在 Obsidian 開啟 **設定 → 外觀 → 主題**，選擇 **Animal Island Cozy**。
-3. 若主題未出現，重新啟動 Obsidian；明暗模式由「外觀 → 基礎配色」控制。
-4. 從社群插件安裝並啟用 **Style Settings**，再到 **設定 → Style Settings → Animal Island Cozy** 調整外觀。
+![Date picker](docs/images/calendar-obsidian.png)
 
-只安裝主題也能使用預設外觀；Style Settings 提供自訂選項。這是獨立主題，不需要同時啟用其他主題或另外疊加 CSS snippet。
+![Date and time picker](docs/images/datetime-obsidian.png)
 
-**語言選擇：** 獨立語言切換、下拉選項翻譯與即時更新需要可選的 Animal Island Calendar 配套插件。它只在執行時處理本主題設定，不修改 Style Settings 檔案。
+## 備註與致謝
 
-## 首次啟用的預設外觀
+全部選項：[設定參考](docs/SETTINGS.en.md) · [中文樣式指南](docs/STYLE_GUIDE.zh-TW.md)。包含字級、正文寬度、行距、表格間距、圓角與動態效果；支援減少動態偏好。
 
-預設採用作者選定的「小島方格書桌」：奶油米色底、海島薄荷重點色、深主框＋淺內容、綠色雙層緞帶檔名、方格紙背景（9%、24px）、膠囊文件分頁、薄荷選取與薄荷曲線分隔線。表格為斑馬紋＋跟隨底色的表頭，程式碼跟隨明暗，標籤使用配套實色。
+手動安裝：將 [Releases](https://github.com/tiffanyiong/obsidian-animal-island/releases/latest) 的 `theme.css`、`manifest.json` 放入 `<vault>/.obsidian/themes/Animal Island Cozy/`。
 
-目錄列高預設 29px，一般對話框圓角 25px，語言跟隨 Obsidian。手機版會套用相同配色，但使用專屬的欄位和間距調整。
+測試環境：macOS／Obsidian 1.14.5；手機已有個別測試與使用者回饋，尚未全面跨平台驗證。無追蹤、外部服務或遠端字型。
 
-首次啟用主題即可看到預設配色、背景和分頁造型，不必先匯入設定；Style Settings 的各項重設也使用這組新預設。有既存偏好的使用者不會被強制覆蓋。
+原始設計：**[Animal Island UI by guokaigdg](https://guokaigdg.github.io/animal-island-ui/)**（[Source](https://github.com/guokaigdg/animal-island-ui) · [Skill](https://guokaigdg.github.io/animal-island-ui/#/skill)）。本主題為獨立改編。
 
-若想完整恢復這套設定，可在 Style Settings 使用 Import，匯入 [default-preset.json](default-preset.json)。匯入前先 Export 備份；這個檔案只包含 Animal Island Cozy 的設定，不包含作者其他主題偏好或 vault 資料。獨立語言功能需要可選配套插件。
-
-## 五分鐘開始
-
-1. **全域主色 → 介面底色**：先選整體底色。
-2. **全域主色 → App 主色配色**：再選連結、選取和按鈕的重點色。
-3. **字體**：設定介面、正文、程式碼的字體清單。
-4. **背景**：選純色、圓點或方格；圖案濃度可先從 8–12% 開始。
-5. **文件名稱**：選雙層緞帶及配色。只影響筆記最上方的檔名，不影響 `#` 正文標題。
-6. 到 **表格、程式碼、標籤** 調整密度與造型；配色會依介面底色搭配。
-
-右側的單項重設按鈕會恢復該控制項的預設值；Animal Island Cozy 標題的整組重設會清除整個主題的自訂設定。Style Settings 的 Export / Import 可備份與還原偏好。更換選項前建議先匯出自己喜歡的組合。
-
-## 配套月曆
-
-月曆是**另外安裝的插件**，不包含在主題 CSS 的執行功能中。安裝插件：[Animal Island Calendar](https://community.obsidian.md/plugins/animal-island-calendar)。獨立專案包含最新[版本下載](https://github.com/tiffanyiong/obsidian-animal-island-calendar/releases)、[安裝說明](https://github.com/tiffanyiong/obsidian-animal-island-calendar#installation)與問題回報；也可開啟 [Obsidian 插件頁](https://community.obsidian.md/plugins/animal-island-calendar)。本主題內的 companion 資料夾是隨主題版本附上的副本。
-
-可在社群插件搜尋 **Animal Island Calendar** 並安裝。若手動安裝：
-
-1. 從日曆獨立專案的 Releases 下載配套檔案 `manifest.json`、`main.js`、`styles.css` 與授權放入：
-
-   ```text
-   <你的 vault>/.obsidian/plugins/animal-island-calendar/
-   ```
-
-2. 重新啟動 Obsidian，在 **設定 → 社群插件** 啟用 **Animal Island Calendar**。
-3. 點筆記 Properties 裡的日期或日期時間欄位。
-4. 選日期後按「確定」才儲存；「清空」也需確認。「今天」先選今天；Escape 或關閉視窗會取消。
-
-改日期時保留原有時間；日期時間欄位也可調整時間。停用插件後恢復系統日期面板。詳見[月曆操作](docs/STYLE_GUIDE.zh-TW.md#月曆操作與鍵盤)。
-
-## 配色邏輯
-
-| 控制項 | 影響 |
-| --- | --- |
-| 介面底色 | 正文、側欄、設定面板、卡片，以及程式碼與標籤的配套色盤 |
-| App 主色配色 | 連結、選取、主要按鈕；也對程式碼和標籤加入細微染色 |
-| 主框與內容框分色 | 頂部分頁、左側工具列與檔案列表／目錄面板之間的層次 |
-| 文件名稱配色 | 獨立於 App 配色，只改裝飾標題 |
-| 表頭／月曆配色 | 對應元件的局部色彩選擇 |
-
-淡薰衣草的淺色自適應程式碼使用灰紫紙張，不再加入主色染色，避免偏藍。自訂底色使用自動混色，可能需要自行調整對比度。
-
-## 文件與相容範圍
-
-完整指南列出全部 **46 個控制項、87 個選單選項**，另有 17 個分類及兩個說明項。文件中的預設值來自主題設定 schema，並非開發者目前 vault 的個人選擇。
-
-- [完整樣式指南與 Markdown 範例](docs/STYLE_GUIDE.zh-TW.md)
-- [English reference: all controls and default values](docs/SETTINGS.en.md)
-- [0.1.4 測試版發佈說明](RELEASE_NOTES.md)
-
-目前的桌面驗證涵蓋閱讀／即時預覽表格、明暗模式、分頁紙片／膠囊區別、日期儲存／清空／取消、保留時間及插件重啟。這不是所有配色、平台或無障礙情境的完整認證。主題不會把筆記變成有拖曳事件的行事曆，也不會增加輪播、上傳或分頁等 React 元件功能。
-
-## 開源與授權
-
-主題使用 MIT License；內嵌 Nunito 使用 SIL Open Font License 1.1。散佈時保留 [LICENSE](LICENSE)、[THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) 和 [Nunito-OFL.txt](Nunito-OFL.txt)。
-
-發佈時只打包主題及配套插件所需檔案，不要包含 vault 筆記、工作區設定、個人 Style Settings 偏好或其他第三方插件。
-
-本專案與 Obsidian 官方無隸屬關係。
+[Release notes](RELEASE_NOTES.md) · [Issues](https://github.com/tiffanyiong/obsidian-animal-island/issues) · [MIT](LICENSE) · [Third-party notices](THIRD_PARTY_NOTICES.md) · [Nunito OFL](Nunito-OFL.txt)

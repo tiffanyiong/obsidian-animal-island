@@ -1,197 +1,211 @@
 # Animal Island Cozy for Obsidian
 
-A cozy home for your notes: warm paper, soft colors, ribbon titles, and gentle rounded shapes. Built based on **Animal Island UI by guokaigdg**, adapted for Obsidian.
+Warm paper, soft colors, ribbon filenames, and rounded details. Based on **[Animal Island UI by guokaigdg](https://guokaigdg.github.io/animal-island-ui/)**, adapted by Tiffany Iong.
 
-![Animal Island Cozy light appearance](screenshot.png)
+[Setup](#setup) · [Examples](#examples) · [Checkboxes & callouts](#checkboxes--callouts) · [Visual guide](#visual-guide) · [Calendar](#calendar) · [Notes & credits](#notes--credits)
 
-[繁體中文](README.zh-TW.md) · [All settings](docs/SETTINGS.en.md) · [完整樣式指南](docs/STYLE_GUIDE.zh-TW.md) · [Release notes](RELEASE_NOTES.md)
+[繁體中文](README.zh-TW.md)
 
-## Customize the theme with Style Settings
+![Animal Island Cozy — Welcome note in Obsidian](screenshot.png)
 
-Installing **Animal Island Cozy** applies its default appearance. To customize filename title shapes and colors, backgrounds, fonts, tabs, tables, dividers, and other styles, install the **[Style Settings](https://community.obsidian.md/plugins/obsidian-style-settings)** community plugin:
+[Open the welcome note](examples/Welcome%20to%20Animal%20Island%20Cozy.md)
 
-1. Open **Settings → Community plugins → Browse**.
-2. Search for **Style Settings**, then select **Install** and **Enable**.
-3. Open **Settings → Style Settings → Animal Island Cozy**.
-4. Expand a section and adjust its options. Changes apply immediately.
+## Setup
 
-![Style Settings in Obsidian: Animal Island Cozy categories and filename title controls](docs/images/style-settings-obsidian.png)
+1. **Settings → Appearance → Themes → Manage:** install **[Animal Island Cozy](https://community.obsidian.md/themes/animal-island-notes)**.
+2. Install and enable **[Style Settings](https://community.obsidian.md/plugins/obsidian-style-settings)** under Community plugins.
+3. Open **Settings → Style Settings → Animal Island Cozy** to customize.
 
-*Actual Obsidian settings page in a clean demo vault. Expand Filename title to change its shape, color, and size.*
+The theme works without plugins; Style Settings unlocks customization. The welcome note shows the file explorer, Properties, paper textures, colored headings and tables. Customize their appearance in Style Settings.
 
-Start with **App colors**, **Fonts**, **Background**, and **Filename title**. Filename title settings change the decorative title at the top of a note; Markdown H1–H6 headings have separate controls.
+![Style Settings](docs/images/style-settings-obsidian.png)
 
-**Style Settings** provides the theme’s customization controls. The optional **[Animal Island Calendar](https://community.obsidian.md/plugins/animal-island-calendar)** plugin adds the matching date/time picker and independent language switching for this theme’s settings.
+## Examples
 
-**Companion plugin:** [Animal Island Calendar](https://community.obsidian.md/plugins/animal-island-calendar) adds the matching Properties date/time picker and optional theme-settings language switching. Install it separately; the theme works without it.
+[English Markdown](examples/Animal%20Island%20Example%20-%20English.md) · [繁體中文 Markdown](examples/Animal%20Island%20Example%20-%20中文.md) · [Download ZIP](https://github.com/tiffanyiong/obsidian-animal-island/releases/latest/download/animal-island-examples.zip)
 
+Keep the ZIP folder structure and open in Reading view. Actual Obsidian captures: English left, 繁體中文 right.
 
-## Design credit — Animal Island UI
+### Text, formatting & tasks
 
-**This Obsidian theme was built based on [Animal Island UI](https://guokaigdg.github.io/animal-island-ui/), created by [guokaigdg](https://github.com/guokaigdg).** The original UI library is the source of the visual direction: warm colors, ribbon titles, soft rounded components, paper backgrounds, and playful details. Full credit for that original UI design belongs to its creator.
-
-- [Original UI showcase](https://guokaigdg.github.io/animal-island-ui/)
-- [Original project and source](https://github.com/guokaigdg/animal-island-ui)
-- [Animal Island UI Skill](https://guokaigdg.github.io/animal-island-ui/#/skill)
-
-Tiffany Iong adapted that design into an Obsidian CSS theme and optional calendar companion. This project is an independent adaptation and is not an official release by the original UI author. The upstream MIT copyright and license are preserved in [third-party notices](THIRD_PARTY_NOTICES.md).
-
-## Features
-
-- Six interface palettes: Cream, Sage, Rose, Lavender, Mist blue, and Sand, plus custom colors. Accent colors and outer frame colors are independent.
-- Four filename title shapes, including layered ribbon tails, with 13 colorful palettes plus Parchment. Body headings have separate controls.
-- Six backgrounds: plain, cream dots, mint dots, pink dots, grid paper, and sprinkles; six decorative Markdown dividers.
-- Rounded tables with soft stripes, dashed row and column separators, and a full-row hover highlight.
-- Coordinated code blocks, inline code, and tags for every app palette, with light and dark modes.
-- Paper, pill, or underline document tabs; customizable file tree, Properties, callouts, controls, tasks, media, and motion.
-- Offline bundled Nunito, with separate interface, body, and code font settings.
-- Optional paper-style date and datetime picker with English, Traditional Chinese, and Simplified Chinese labels.
-
-## Try the example notes
-
-Download the [English Markdown example](examples/Animal%20Island%20Example%20-%20English.md) or the [繁體中文 Markdown example](examples/Animal%20Island%20Example%20-%20中文.md). Use GitHub's **Download raw file**, put both notes in your vault, and switch to Reading view. Keep the filenames if you want their internal jump links to work.
-
-To include the image-corner sample, keep `docs/images/backgrounds.png` beside the `examples` directory as in this repository, or change that image link to your own image. You can also download [animal-island-examples.zip](https://github.com/tiffanyiong/obsidian-animal-island/releases/download/0.1.4/animal-island-examples.zip) and copy its contents into your vault, preserving the folder structure.
-
-The notes include H1–H6, formatted text, task lists, tables, Java/JSON code, tags, callouts, quotes, all six fixed divider examples, six background swatches, and date/datetime Properties. In a new vault, set `island-date` and `island-empty-date` to **Date**, and `island-time` to **Date & time**. The matching picker requires the optional companion.
-
-### Real Markdown notes in Obsidian
-
-These are actual Reading-view screenshots of the downloadable `.md` files in a clean demo vault, using the default cream/grid palette. They complement the isolated CSS comparison sheets below.
-
-| English example | 繁體中文 example |
-| --- | --- |
-| **Text, formatting and tasks** ![English Markdown text and tasks](docs/images/example-en-reading.png) | **正文、文字效果與待辦** ![中文 Markdown 正文與待辦](docs/images/example-zh-reading.png) |
-| **Tables** ![English Markdown table](docs/images/example-en-tables.png) | **表格** ![中文 Markdown 表格](docs/images/example-zh-tables.png) |
-| **Java and JSON code** ![English Markdown code blocks](docs/images/example-en-code.png) | **Java 與 JSON 程式碼** ![中文 Markdown 程式碼](docs/images/example-zh-code.png) |
-| **Fixed divider samples** ![English Markdown divider examples](docs/images/example-en-dividers.png) | **固定分隔線樣本** ![中文 Markdown 分隔線](docs/images/example-zh-dividers.png) |
-
-## Visual style guide
-
-Open **Settings → Style Settings → Animal Island Cozy** to try these styles. The comparison sheets below are rendered from this release's actual theme CSS in isolated samples, rather than screenshots of the original UI library. The overview and calendar images are real Obsidian captures using demo notes. Layout can vary with app version, screen size, and your settings.
-
-### App palettes, code & tags
-
-**App colors → Interface background palette**: Cream, Sage, Rose, Lavender, Mist blue, or Sand. Code blocks and tags coordinate with the chosen surface.
-
-![App palettes, code & tags — Animal Island Cozy for Obsidian](docs/images/palettes.png)
-
-### Independent accent colors
-
-**App colors → App accent palette**: Mint, Pink, Purple, Blue, Peach, or Green. Mix an accent with any interface palette, or use a custom color.
-
-![Independent accent colors — Animal Island Cozy for Obsidian](docs/images/accents.png)
-
-### Filename title shapes
-
-**Filename title → Title style**: Layer, Ribbon, Tab, or Plain. This decorates the note filename; body H1–H6 headings use separate settings.
-
-![Filename title shapes — Animal Island Cozy for Obsidian](docs/images/title-shapes.png)
-
-### All filename colors
-
-**Filename title → Title palette**: 13 colorful palettes plus Parchment. Filename color is independent of your app palette.
-
-![All filename colors — Animal Island Cozy for Obsidian](docs/images/title-colors.png)
-
-### Paper backgrounds
-
-**Background → Note background**: Plain, Cream dots, Mint dots, Pink dots, Grid, or Sprinkles. Adjust pattern strength and spacing; the samples use 18% for visibility, while the default grid uses 9%.
-
-![Paper backgrounds — Animal Island Cozy for Obsidian](docs/images/backgrounds.png)
-
-### Every Markdown divider
-
-**Divider → Divider style**: Mint dots, Fine solid, Earth dashes, Hairline dashes, Golden wave, or Mint squiggle. Insert a normal Markdown `---` between paragraphs to use it.
-
-![Every Markdown divider — Animal Island Cozy for Obsidian](docs/images/dividers.png)
+![Text, formatting & tasks](docs/images/example-pair-reading.png)
 
 ### Tables
 
-**Tables**: choose Striped or Clean, with a matching or mint header. Both include rounded corners and faint dashed row and column separators. Hover a body row to highlight the whole row.
+![Tables](docs/images/example-pair-tables.png)
 
-![Tables — Animal Island Cozy for Obsidian](docs/images/tables.png)
+### Java & JSON
 
-### Document tabs & file navigation
+![Java & JSON](docs/images/example-pair-code.png)
 
-**Navigation and tabs**: compare Paper, Pill, and Underline document tabs; Soft, Mint, and Outline file-tree selection. Sidebar icons are independent of document-tab styling.
+### Fixed dividers
 
-![Document tabs & file navigation — Animal Island Cozy for Obsidian](docs/images/navigation.png)
+![Fixed dividers](docs/images/example-pair-dividers.png)
 
-### Properties & callouts
+## Checkboxes & callouts
 
-**Properties** offers Card, Dashed, or Flat. **Callouts** offers Card, Side accent, or Dashed. Properties width and row height are adjustable.
+### Checkboxes
 
-![Properties & callouts — Animal Island Cozy for Obsidian](docs/images/panels.png)
+**Images and tasks → Checkbox shape:** Rounded / Circle. **Checkbox border width:** 0–3px (default 2px).
 
-### Tag shapes & body headings
+```md
+- [ ] Read a chapter
+- [x] Write one useful note
+```
 
-**Tags**: Filled, Outline, or Soft. **Body headings**: Simple, Underline, or Side marker. Tag colors continue to follow your app palette.
+![Checkbox syntax](docs/images/checkbox-syntax.png)
 
-![Tag shapes & body headings — Animal Island Cozy for Obsidian](docs/images/tags-headings.png)
+Standard unchecked/checked tasks only; `[/]`, `[-]`, and `[*]` have no custom icons.
 
-### Inputs, buttons & tasks
+### Callouts
 
-**Controls**: Pill or Rounded, with Raised or Flat primary buttons. **Tasks**: rounded or circular checkboxes. These are appearance options; normal Obsidian behavior stays the same.
+```md
+> [!tip] A little reminder
+> Write one useful thought.
+```
 
-![Inputs, buttons & tasks — Animal Island Cozy for Obsidian](docs/images/controls.png)
+Built-in Markdown; no plugin needed. Default: colored title and icon, no background or border. Warning is yellow; Question is orange.
 
-### Quotes, tooltips & typography
+![Callout types · 提示框類型](docs/images/callout-syntax.png)
 
-**Quotes**: Card or Plain. Hover hints use borderless organic bubbles with a round direction marker. **Fonts** lets you independently set interface, body, and code font lists; Nunito is bundled offline.
+Customize in **Style Settings → Callouts and quotes**:
 
-![Quotes, tooltips & typography — Animal Island Cozy for Obsidian](docs/images/quotes-tooltips.png)
+- **Callout style:** Card / Side accent / Dashed.
+- **Callout background opacity:** 0–1, default 0; 0 removes the background.
+- **Callout border width:** 0–4px, default 0; Side accent uses twice this width.
+
+Examples below show optional combinations. At border width 0, all three styles have no outline.
+
+#### Styles and settings
+
+![Callout styles · 提示框樣式](docs/images/callout-styles.png)
+
+#### All colors × styles
+
+![All callout colors × styles · 全部提示框配色與樣式](docs/images/callout-colors-styles.png)
+
+#### Collapsible Question
+
+ `+` starts expanded; `-` starts collapsed. Click the title to toggle. Other callout types support the same syntax.
+
+```md
+> [!question]+ A question / 一個問題
+> Answer / 回答
+
+> [!question]- More details / 更多細節
+> Answer / 回答
+```
+
+![Question expanded and collapsed · 問題展開與收合](docs/images/callout-question-fold.png)
+
+
+## Visual guide
+
+### App palettes, code & tags
+
+**App colors → Interface background palette:** Cream, Sage, Rose, Lavender, Mist blue, Sand, or Custom.
+
+![App palettes, code & tags](docs/images/palettes.png)
+
+### Accent colors
+
+**App colors → App accent palette:** Mint, Pink, Purple, Blue, Peach, Green, or Custom.
+
+![Accent colors](docs/images/accents.png)
+
+### Filename shapes
+
+**Filename title → Title style:** Layer, Ribbon, Tab, Plain. Body headings are separate.
+
+![Filename shapes](docs/images/title-shapes.png)
+
+### Filename colors
+
+**Filename title → Title palette:** 13 colors plus Parchment, independent of app colors.
+
+![Filename colors](docs/images/title-colors.png)
+
+### Paper backgrounds
+
+**Background → Note background:** Plain, Cream dots, Mint dots, Pink dots, Grid, Sprinkles. Strength and spacing are adjustable.
+
+![Paper backgrounds](docs/images/backgrounds.png)
+
+### Dividers
+
+**Dividers → Divider style:** six styles. Write `---` on its own line between paragraphs.
+
+![Dividers](docs/images/dividers.png)
+
+### Tables
+
+**Tables:** Striped / Clean; matching or mint headers, dashed separators, row hover, adjustable padding.
+
+![Tables](docs/images/tables.png)
+
+### Tabs & navigation
+
+**Directory and tabs:** Paper / Pill / Underline tabs; Soft / Mint / Outline selection.
+
+![Tabs & navigation](docs/images/navigation.png)
+
+### Properties
+
+**Properties:** Card / Dashed / Flat.
+
+![Properties styles](docs/images/properties-styles.png)
+
+### Tags & headings
+
+**Tags:** Filled / Outline / Soft. **Body headings:** Simple / Underline / Side marker.
+
+![Tags & headings](docs/images/tags-headings.png)
+
+### Controls & tasks
+
+**Controls:** Pill / Rounded; Raised / Flat buttons. **Images and tasks:** Rounded / Circle checkboxes.
+
+![Controls & tasks](docs/images/controls.png)
+
+### Quotes, tooltips & fonts
+
+**Callouts and quotes → Quote background opacity:** 0–1, default 0.14; 0 removes the background. **Quote color:** 14 ribbon colors, selected independently.
+
+Organic tooltips; separate interface, body and code fonts. Nunito is bundled offline.
+
+![Quotes, tooltips & fonts](docs/images/quotes-tooltips.png)
 
 ### Dark mode
 
-Select **Settings → Appearance → Base color scheme → Dark**. Dark surfaces, code, tags, and tables coordinate with the same palette choices. Three examples are shown below.
+**Settings → Appearance → Base color scheme → Dark.**
 
-![Dark mode — Animal Island Cozy for Obsidian](docs/images/dark.png)
+![Dark mode](docs/images/dark.png)
 
-### Calendar: date and date & time
+### Text highlight
 
-Install the optional companion to open this dotted-paper picker from Properties. Date properties show dates only; datetime properties also show the time control. Choose a value and press **Confirm** to save. **Clear** also requires confirmation; Escape or closing cancels. Changing the date preserves the existing time.
+**Text highlight → Highlight color (ribbon palette):** 14 ribbon colors for `==highlighted text==`, in Reading and Live Preview. Default: Yellow. **Corner radius:** 0–6px; default 6px. Set 0 for square corners.
 
-These two images are captured inside Obsidian, not the CSS sample gallery.
+![14 highlight colors — light mode / 14 色螢光標記](docs/images/highlight-colors-light.png)
 
-| Date property | Date & time property |
-| --- | --- |
-| ![Actual Obsidian date picker](docs/images/calendar-obsidian.png) | ![Actual Obsidian datetime picker with time control](docs/images/datetime-obsidian.png) |
 
-**Language** controls this companion and the Animal Island Cozy settings labels: Follow Obsidian, English, 繁體中文, or 简体中文. The optional companion is required for independent settings-language switching. Obsidian's own menus keep their own language.
+## Calendar
 
-The [complete settings reference](docs/SETTINGS.en.md) also covers numeric controls for font size, reading width, line height, navigation density, table padding, media and overlay radii, calendar corners, and motion. Static images show representative values, not every possible slider position. Motion can be enabled or disabled and respects reduced-motion preferences.
+Optional: **[Animal Island Calendar](https://community.obsidian.md/plugins/animal-island-calendar)** adds a Properties date/time picker and independent settings-language switching. It is not an event planner.
 
-## Installation
+Set Properties to **Date** or **Date & time**. **Confirm** saves; **Clear** stages removal; Escape/closing cancels. Changing the date preserves the time.
 
-Until the theme appears in Obsidian's community directory, download `theme.css` and `manifest.json` from [Releases](https://github.com/tiffanyiong/obsidian-animal-island/releases), place them in `<vault>/.obsidian/themes/Animal Island Cozy/`, then select **Settings → Appearance → Themes → Animal Island Cozy**.
+![Date picker](docs/images/calendar-obsidian.png)
 
-The default appearance works without plugins. Install and enable the community plugin **Style Settings** to customize it under **Settings → Style Settings → Animal Island Cozy**. Select light or dark mode in Obsidian's Appearance settings.
+![Date and time picker](docs/images/datetime-obsidian.png)
 
-## Your first island
+## Notes & credits
 
-The default is a cream-and-mint desk with a green layered ribbon title, subtle grid paper (9%, 24px), pill tabs, mint navigation selection, and a mint squiggle divider. Defaults are built into the CSS; importing a preset is unnecessary. Existing saved preferences remain yours.
+More options: [all settings](docs/SETTINGS.en.md) · [中文指南](docs/STYLE_GUIDE.zh-TW.md). Includes font size, reading width, line height, spacing, radii, and motion; reduced-motion preferences are respected.
 
-Start with **App colors**, then **Fonts**, **Background**, and **Filename title**. Change the filename shape independently of Markdown H1–H6 headings. Tables, code blocks, and tags coordinate with the app palette automatically.
+Manual install: copy `theme.css` and `manifest.json` from [Releases](https://github.com/tiffanyiong/obsidian-animal-island/releases/latest) into `<vault>/.obsidian/themes/Animal Island Cozy/`.
 
-The individual reset buttons restore each setting. Export your preferences before using a group reset or importing [default-preset.json](default-preset.json), which contains only this theme's preferences. See the [complete settings reference](docs/SETTINGS.en.md) for all 46 controls across 17 groups.
+Tested on macOS / Obsidian 1.14.5, with targeted mobile checks and user feedback; full cross-platform testing remains incomplete. No analytics, external services, or remote fonts.
 
-## Optional calendar and language companion
+Original design: **[Animal Island UI by guokaigdg](https://guokaigdg.github.io/animal-island-ui/)** ([source](https://github.com/guokaigdg/animal-island-ui) · [Skill](https://guokaigdg.github.io/animal-island-ui/#/skill)). This is an independent adaptation.
 
-The theme does not install executable plugins. **[Animal Island Calendar](https://community.obsidian.md/plugins/animal-island-calendar) is available from the Obsidian plugin directory** and maintained in its [own repository](https://github.com/tiffanyiong/obsidian-animal-island-calendar), with [installation instructions](https://github.com/tiffanyiong/obsidian-animal-island-calendar#installation), [releases](https://github.com/tiffanyiong/obsidian-animal-island-calendar/releases), and an [Obsidian plugin listing](https://community.obsidian.md/plugins/animal-island-calendar). Install and enable it separately from Community plugins. For manual installation, use `main.js`, `manifest.json`, and `styles.css` from the calendar repository’s release in `<vault>/.obsidian/plugins/animal-island-calendar/`, restart Obsidian, and enable the plugin. The [companion folder](companion/animal-island-calendar) here is the copy bundled with this theme release; use the standalone repository for current calendar releases and issues.
-
-Click a date property, choose a day, and press **Confirm**. **Today** selects today; **Clear** stages an empty value. Closing or pressing Escape cancels. Datetime properties also show a time control, and changing the date preserves the existing time. This is a Properties picker, not an event planner.
-
-The companion also activates the theme's independent **Language** choice and translates its settings and option labels at runtime. It works with unmodified Style Settings 1.0.9; no third-party plugin files are patched. Without the companion, upstream Style Settings controls localization. Obsidian's own menus and generic Style Settings buttons are outside this theme's translation scope.
-
-## Compatibility and testing
-
-Initial beta, version 0.1.4. Tested on macOS with Obsidian 1.14.5 and upstream Style Settings 1.0.9, including clean-vault loading and runtime language switching. Date arithmetic, staged saving, cancellation, conflict detection, time preservation, and mobile event interception have automated checks.
-
-Mobile layout fixes have received user testing; the latest iOS native-picker suppression still needs confirmation on a physical device. Windows, Linux, popout windows, minimum supported Obsidian 1.5.0, and a complete accessibility audit remain unverified. Custom colors and third-party snippets can affect contrast and layout. The optional companion adapts to upstream DOM and Style Settings internals, which may change in future versions.
-
-No analytics, external services, or remote font loading are included.
-
-## License and credits
-
-MIT. Inspired by animal-island-ui (MIT); Nunito is bundled under SIL OFL 1.1. Please retain [LICENSE](LICENSE), [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md), and [Nunito-OFL.txt](Nunito-OFL.txt) when redistributing.
+[Release notes](RELEASE_NOTES.md) · [Issues](https://github.com/tiffanyiong/obsidian-animal-island/issues) · [MIT](LICENSE) · [Third-party notices](THIRD_PARTY_NOTICES.md) · [Nunito OFL](Nunito-OFL.txt)

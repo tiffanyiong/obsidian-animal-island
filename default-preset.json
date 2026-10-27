@@ -26,7 +26,6 @@
   "animal-island@@animal-table-header": "animal-table-parchment",
   "animal-island@@animal-table-padding": 12,
   "animal-island@@animal-callout-style": "animal-callout-card",
-  "animal-island@@animal-quote-style": "animal-quote-soft",
   "animal-island@@animal-code-style": "animal-code-adaptive",
   "animal-island@@animal-code-font": 13,
   "animal-island@@animal-tag-style": "animal-tags-filled",
@@ -50,5 +49,12 @@
   "animal-island@@animal-panel-color@@light": "#f4edde",
   "animal-island@@animal-panel-color@@dark": "#373126",
   "animal-island@@animal-custom-accent@@light": "#19c8b9",
-  "animal-island@@animal-custom-accent@@dark": "#42d5c6"
+  "animal-island@@animal-custom-accent@@dark": "#42d5c6",
+  "animal-island@@animal-checkbox-border-width": 2,
+  "animal-island@@animal-callout-border-width": 0,
+  "animal-island@@animal-quote-color": "animal-quote-color-mint",
+  "animal-island@@animal-highlight-color": "animal-highlight-yellow",
+  "animal-island@@animal-highlight-radius": 6,
+  "animal-island@@animal-callout-background-opacity": 0,
+  "animal-island@@animal-quote-background-opacity": 0.14
 }

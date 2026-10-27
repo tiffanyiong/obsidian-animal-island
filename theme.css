@@ -1,6 +1,6 @@
 /*
  * Animal Island Cozy for Obsidian
- * Version 0.1.4
+ * Version 0.1.6
  * A warm, rounded theme adapted from the animal-island-ui design language.
  */
 
@@ -231,44 +231,6 @@ settings:
     format: hex
     default-light: '#19c8b9'
     default-dark: '#42d5c6'
-  - id: animal-fonts-section
-    animalLocale: true
-    title: Fonts
-    title.zh-TW: 字體
-    title.zh: 字體
-    type: heading
-    level: 1
-    collapsed: true
-  - id: animal-font-info
-    animalLocale: true
-    title: Use fonts installed on your device
-    title.zh-TW: 使用裝置上已安裝的字體
-    title.zh: 使用裝置上已安裝的字體
-    description: Enter a font family or a comma-separated fallback list. Examples include PingFang TC, Noto Sans TC, Microsoft JhengHei, and Georgia. Unavailable fonts use the next fallback.
-    description.zh-TW: 可輸入字體名稱或用逗號分隔的備選清單，例如 PingFang TC、Noto Sans TC、Microsoft JhengHei、Georgia。未安裝時會使用備選字體。
-    description.zh: 可輸入字體名稱或用逗號分隔的備選清單，例如 PingFang TC、Noto Sans TC、Microsoft JhengHei、Georgia。未安裝時會使用備選字體。
-    type: info-text
-  - id: animal-font-interface
-    animalLocale: true
-    title: Interface font
-    title.zh-TW: 介面字體
-    title.zh: 介面字體
-    type: variable-text
-    default: '"Nunito", "Noto Sans SC", -apple-system, BlinkMacSystemFont, "PingFang TC", sans-serif'
-  - id: animal-font-body
-    animalLocale: true
-    title: Note font
-    title.zh-TW: 正文字體
-    title.zh: 正文字體
-    type: variable-text
-    default: '"Nunito", "Noto Sans SC", -apple-system, BlinkMacSystemFont, "PingFang TC", sans-serif'
-  - id: animal-font-code
-    animalLocale: true
-    title: Code font
-    title.zh-TW: 程式碼字體
-    title.zh: 程式碼字體
-    type: variable-text
-    default: '"SFMono-Regular", Consolas, "Liberation Mono", monospace'
   - id: animal-background-section
     animalLocale: true
     title: Background · Background
@@ -338,6 +300,505 @@ settings:
     max: 48
     step: 2
     format: px
+  - id: animal-body-section
+    animalLocale: true
+    title: Body headings and reading
+    title.zh-TW: 正文標題與閱讀
+    title.zh: 正文標題與閱讀
+    type: heading
+    level: 1
+    collapsed: true
+  - id: animal-heading-style
+    animalLocale: true
+    title: Body heading style
+    title.zh-TW: 正文標題造型
+    title.zh: 正文標題造型
+    type: class-select
+    allowEmpty: false
+    default: animal-headings-simple
+    options:
+      - label: Simple
+        animalLocale: true
+        label.zh-TW: 純文字
+        label.zh: 純文字
+        value: animal-headings-simple
+      - label: Divider
+        animalLocale: true
+        label.zh-TW: 底線
+        label.zh: 底線
+        value: animal-headings-line
+      - label: Marker
+        animalLocale: true
+        label.zh-TW: 側邊色條
+        label.zh: 側邊色條
+        value: animal-headings-marker
+  - id: animal-reading-width
+    animalLocale: true
+    title: Reading width
+    title.zh-TW: 正文寬度
+    title.zh: 正文寬度
+    type: variable-number-slider
+    default: 760
+    min: 560
+    max: 1040
+    step: 20
+    format: px
+  - id: animal-body-leading
+    animalLocale: true
+    title: Line height
+    title.zh-TW: 正文行距
+    title.zh: 正文行距
+    type: variable-number-slider
+    default: 1.72
+    min: 1.4
+    max: 2
+    step: 0.05
+  - id: animal-calendar-section
+    animalLocale: true
+    title: Calendar companion · DatePicker
+    title.zh-TW: 月曆外掛 · DatePicker
+    title.zh: 月曆外掛 · DatePicker
+    type: heading
+    level: 1
+    collapsed: true
+  - id: animal-calendar-info
+    animalLocale: true
+    title: Requires Animal Island Calendar
+    title.zh-TW: 需啟用 Animal Island Calendar 外掛
+    title.zh: 需啟用 Animal Island Calendar 外掛
+    description: These options style the optional companion calendar, not Chromium's native popup.
+    description.zh-TW: 以下選項套用於配套月曆，不適用原生日期面板。
+    description.zh: 以下選項套用於配套月曆，不適用原生日期面板。
+    type: info-text
+  - id: animal-calendar-radius
+    animalLocale: true
+    title: Date cell corner radius
+    title.zh-TW: 月曆日期格圓角
+    title.zh: 月曆日期格圓角
+    type: variable-number-slider
+    default: 12
+    min: 12
+    max: 18
+    step: 1
+    format: px
+  - id: animal-calendar-color
+    animalLocale: true
+    title: Selected date palette
+    title.zh-TW: 月曆選取配色
+    title.zh: 月曆選取配色
+    type: class-select
+    allowEmpty: false
+    default: animal-calendar-mint
+    options:
+      - label: Mint
+        animalLocale: true
+        label.zh-TW: 薄荷
+        label.zh: 薄荷
+        value: animal-calendar-mint
+      - label: Brown
+        animalLocale: true
+        label.zh-TW: 大地棕
+        label.zh: 大地棕
+        value: animal-calendar-brown
+  - id: animal-callout-section
+    animalLocale: true
+    title: Callouts and quotes · Card
+    title.zh-TW: 提示與引用 · Card
+    title.zh: 提示與引用 · Card
+    type: heading
+    level: 1
+    collapsed: true
+  - id: animal-callout-style
+    animalLocale: true
+    title: Callout style
+    title.zh-TW: 提示區塊造型
+    title.zh: 提示區塊造型
+    type: class-select
+    allowEmpty: false
+    default: animal-callout-card
+    options:
+      - label: Card
+        animalLocale: true
+        label.zh-TW: 圓角卡片
+        label.zh: 圓角卡片
+        value: animal-callout-card
+      - label: Side accent
+        animalLocale: true
+        label.zh-TW: 側邊色條
+        label.zh: 側邊色條
+        value: animal-callout-side
+      - label: Dashed
+        animalLocale: true
+        label.zh-TW: 虛線
+        label.zh: 虛線
+        value: animal-callout-dashed
+  - id: animal-callout-border-width
+    animalLocale: true
+    title: Callout border width
+    title.zh-TW: 提示框外框粗細
+    title.zh: 提示框外框粗細
+    description: 0 removes the border. Side accent uses twice this width.
+    description.zh-TW: 0 為無框；側邊色條使用兩倍寬度。
+    type: variable-number-slider
+    default: 0
+    min: 0
+    max: 4
+    step: 0.5
+    format: px
+  - id: animal-callout-background-opacity
+    animalLocale: true
+    title: Callout background opacity
+    title.zh-TW: 提示框背景不透明度
+    title.zh: 提示框背景不透明度
+    description: 0 is no background; 1 is fully opaque. Independent of border width.
+    description.zh-TW: 0 為無背景；1 為完全不透明，可獨立調整外框粗細。
+    description.zh: 0 为无背景；1 为完全不透明，可独立调整边框粗细。
+    type: variable-number-slider
+    default: 0
+    min: 0
+    max: 1
+    step: 0.05
+  - id: animal-quote-background-opacity
+    animalLocale: true
+    title: Quote background opacity
+    title.zh-TW: 引用背景不透明度
+    title.zh: 引用背景不透明度
+    description: 0 is no background; 1 is fully opaque. Default 0.14 keeps the current light tint.
+    description.zh-TW: 0 為無背景；1 為完全不透明。預設 0.14 保留目前的淡底效果。
+    description.zh: 0 为无背景；1 为完全不透明。默认 0.14 保留目前的淡底效果。
+    type: variable-number-slider
+    default: 0.14
+    min: 0
+    max: 1
+    step: 0.01
+  - id: animal-quote-color
+    animalLocale: true
+    title: Quote color (ribbon palette)
+    title.zh-TW: 引用顏色（緞帶色盤）
+    title.zh: 引用顏色（緞帶色盤）
+    description: Same 14 colors as Filename title. The side line uses the exact color; the background uses a soft tint. Independent of filename color.
+    description.zh-TW: 與文件名稱相同的 14 色。側邊線使用原色，背景使用淡色；可獨立選色。
+    type: class-select
+    allowEmpty: false
+    default: animal-quote-color-mint
+    options:
+      - label: Default green
+        animalLocale: true
+        label.zh-TW: 預設綠
+        label.zh: 預設綠
+        value: animal-quote-color-default-green
+      - label: Pink
+        animalLocale: true
+        label.zh-TW: 粉色
+        label.zh: 粉色
+        value: animal-quote-color-pink
+      - label: Purple
+        animalLocale: true
+        label.zh-TW: 紫色
+        label.zh: 紫色
+        value: animal-quote-color-purple
+      - label: Blue
+        animalLocale: true
+        label.zh-TW: 藍色
+        label.zh: 藍色
+        value: animal-quote-color-blue
+      - label: Yellow
+        animalLocale: true
+        label.zh-TW: 黃色
+        label.zh: 黃色
+        value: animal-quote-color-yellow
+      - label: Orange
+        animalLocale: true
+        label.zh-TW: 橙色
+        label.zh: 橙色
+        value: animal-quote-color-orange
+      - label: Teal
+        animalLocale: true
+        label.zh-TW: 青色
+        label.zh: 青色
+        value: animal-quote-color-mint
+      - label: Green
+        animalLocale: true
+        label.zh-TW: 綠色
+        label.zh: 綠色
+        value: animal-quote-color-green
+      - label: Red
+        animalLocale: true
+        label.zh-TW: 紅色
+        label.zh: 紅色
+        value: animal-quote-color-red
+      - label: Lime
+        animalLocale: true
+        label.zh-TW: 青檸
+        label.zh: 青檸
+        value: animal-quote-color-lime
+      - label: Yellow green
+        animalLocale: true
+        label.zh-TW: 黃綠
+        label.zh: 黃綠
+        value: animal-quote-color-yellow-green
+      - label: Brown
+        animalLocale: true
+        label.zh-TW: 棕色
+        label.zh: 棕色
+        value: animal-quote-color-brown
+      - label: Warm peach pink
+        animalLocale: true
+        label.zh-TW: 暖桃粉
+        label.zh: 暖桃粉
+        value: animal-quote-color-peach
+      - label: Parchment
+        animalLocale: true
+        label.zh-TW: 羊皮紙
+        label.zh: 羊皮紙
+        value: animal-quote-color-parchment
+  - id: animal-code-section
+    animalLocale: true
+    title: Code · CodeBlock
+    title.zh-TW: 程式碼 · CodeBlock
+    title.zh: 程式碼 · CodeBlock
+    type: heading
+    level: 1
+    collapsed: true
+  - id: animal-code-style
+    animalLocale: true
+    title: Code block palette
+    title.zh-TW: 程式碼區塊配色
+    title.zh: 程式碼區塊配色
+    type: class-select
+    allowEmpty: false
+    default: animal-code-adaptive
+    options:
+      - label: Adaptive
+        animalLocale: true
+        label.zh-TW: 跟隨明暗
+        label.zh: 跟隨明暗
+        value: animal-code-adaptive
+      - label: Dark
+        animalLocale: true
+        label.zh-TW: 深色程式碼
+        label.zh: 深色程式碼
+        value: animal-code-dark
+  - id: animal-code-font
+    animalLocale: true
+    title: Code font size
+    title.zh-TW: 程式碼字級
+    title.zh: 程式碼字級
+    type: variable-number-slider
+    default: 13
+    min: 11
+    max: 18
+    step: 1
+    format: px
+  - id: animal-controls-section
+    animalLocale: true
+    title: Controls · Input and Button
+    title.zh-TW: 控制項 · Input 與 Button
+    title.zh: 控制項 · Input 與 Button
+    type: heading
+    level: 1
+    collapsed: true
+  - id: animal-control-style
+    animalLocale: true
+    title: Control shape
+    title.zh-TW: 控制項圓角
+    title.zh: 控制項圓角
+    type: class-select
+    allowEmpty: false
+    default: animal-controls-pill
+    options:
+      - label: Pill
+        animalLocale: true
+        label.zh-TW: 膠囊
+        label.zh: 膠囊
+        value: animal-controls-pill
+      - label: Rounded
+        animalLocale: true
+        label.zh-TW: 小圓角
+        label.zh: 小圓角
+        value: animal-controls-rounded
+  - id: animal-button-depth
+    animalLocale: true
+    title: Primary button depth
+    title.zh-TW: 主按鈕立體效果
+    title.zh: 主按鈕立體效果
+    type: class-select
+    allowEmpty: false
+    default: animal-buttons-raised
+    options:
+      - label: Raised
+        animalLocale: true
+        label.zh-TW: 遊戲按鈕
+        label.zh: 遊戲按鈕
+        value: animal-buttons-raised
+      - label: Flat
+        animalLocale: true
+        label.zh-TW: 平面
+        label.zh: 平面
+        value: animal-buttons-flat
+  - id: animal-overlays-section
+    animalLocale: true
+    title: Dialogs and menus
+    title.zh-TW: 對話框與選單
+    title.zh: 對話框與選單
+    type: heading
+    level: 1
+    collapsed: true
+  - id: animal-overlay-radius
+    animalLocale: true
+    title: Dialog corner radius
+    title.zh-TW: 對話框圓角
+    title.zh: 對話框圓角
+    type: variable-number-slider
+    default: 25
+    min: 12
+    max: 40
+    step: 1
+    format: px
+  - id: animal-motion-style
+    animalLocale: true
+    title: Motion
+    title.zh-TW: 動態效果
+    title.zh: 動態效果
+    type: class-select
+    allowEmpty: false
+    default: animal-motion-soft
+    options:
+      - label: Soft
+        animalLocale: true
+        label.zh-TW: 柔和動態
+        label.zh: 柔和動態
+        value: animal-motion-soft
+      - label: "Off"
+        animalLocale: true
+        label.zh-TW: 關閉
+        label.zh: 關閉
+        value: animal-motion-off
+  - id: animal-navigation-section
+    animalLocale: true
+    title: Directory and tabs
+    title.zh-TW: 目錄與分頁
+    title.zh: 目錄與分頁
+    type: heading
+    level: 1
+    collapsed: true
+  - id: animal-nav-height
+    animalLocale: true
+    title: Directory row height
+    title.zh-TW: 目錄列高度
+    title.zh: 目錄列高度
+    type: variable-number-slider
+    default: 29
+    min: 26
+    max: 40
+    step: 1
+    format: px
+  - id: animal-nav-font
+    animalLocale: true
+    title: Directory font size
+    title.zh-TW: 目錄字級
+    title.zh: 目錄字級
+    type: variable-number-slider
+    default: 13
+    min: 11
+    max: 17
+    step: 1
+    format: px
+  - id: animal-nav-selection
+    animalLocale: true
+    title: Directory selection
+    title.zh-TW: 目錄選取造型
+    title.zh: 目錄選取造型
+    type: class-select
+    allowEmpty: false
+    default: animal-nav-mint
+    options:
+      - label: Soft fill
+        animalLocale: true
+        label.zh-TW: 柔和底色
+        label.zh: 柔和底色
+        value: animal-nav-soft
+      - label: Mint
+        animalLocale: true
+        label.zh-TW: 薄荷底色
+        label.zh: 薄荷底色
+        value: animal-nav-mint
+      - label: Outline
+        animalLocale: true
+        label.zh-TW: 描邊
+        label.zh: 描邊
+        value: animal-nav-outline
+  - id: animal-tab-style
+    animalLocale: true
+    title: Tabs style
+    title.zh-TW: 分頁造型
+    title.zh: 分頁造型
+    type: class-select
+    allowEmpty: false
+    default: animal-tabs-pill
+    options:
+      - label: Soft
+        animalLocale: true
+        label.zh-TW: 圓角紙片
+        label.zh: 圓角紙片
+        value: animal-tabs-soft
+      - label: Pill
+        animalLocale: true
+        label.zh-TW: 膠囊
+        label.zh: 膠囊
+        value: animal-tabs-pill
+      - label: Underline
+        animalLocale: true
+        label.zh-TW: 底線
+        label.zh: 底線
+        value: animal-tabs-line
+  - id: animal-divider-section
+    animalLocale: true
+    title: Dividers · Divider
+    title.zh-TW: 分隔線 · Divider
+    title.zh: 分隔線 · Divider
+    type: heading
+    level: 1
+    collapsed: true
+  - id: animal-divider-style
+    animalLocale: true
+    title: Divider style
+    title.zh-TW: 分隔線造型
+    title.zh: 分隔線造型
+    type: class-select
+    allowEmpty: false
+    default: animal-divider-squiggle
+    options:
+      - label: Dots
+        animalLocale: true
+        label.zh-TW: 點線
+        label.zh: 點線
+        value: animal-divider-dots
+      - label: Thin
+        animalLocale: true
+        label.zh-TW: 細線
+        label.zh: 細線
+        value: animal-divider-thin
+      - label: Dashed
+        animalLocale: true
+        label.zh-TW: 虛線
+        label.zh: 虛線
+        value: animal-divider-dashed
+      - label: Hairline
+        animalLocale: true
+        label.zh-TW: 細密虛線
+        label.zh: 細密虛線
+        value: animal-divider-hairline
+      - label: Yellow wave
+        animalLocale: true
+        label.zh-TW: 黃色波浪
+        label.zh: 黃色波浪
+        value: animal-divider-wave
+      - label: Teal squiggle
+        animalLocale: true
+        label.zh-TW: 薄荷曲線
+        label.zh: 薄荷曲線
+        value: animal-divider-squiggle
   - id: animal-title-section
     animalLocale: true
     title: Filename title
@@ -467,138 +928,95 @@ settings:
     max: 36
     step: 1
     format: px
-
-  - id: animal-body-section
+  - id: animal-fonts-section
     animalLocale: true
-    title: Body headings and reading
-    title.zh-TW: 正文標題與閱讀
-    title.zh: 正文標題與閱讀
+    title: Fonts
+    title.zh-TW: 字體
+    title.zh: 字體
     type: heading
     level: 1
     collapsed: true
-  - id: animal-heading-style
+  - id: animal-font-info
     animalLocale: true
-    title: Body heading style
-    title.zh-TW: 正文標題造型
-    title.zh: 正文標題造型
-    type: class-select
-    allowEmpty: false
-    default: animal-headings-simple
-    options:
-      - label: Simple
-        animalLocale: true
-        label.zh-TW: 純文字
-        label.zh: 純文字
-        value: animal-headings-simple
-      - label: Divider
-        animalLocale: true
-        label.zh-TW: 底線
-        label.zh: 底線
-        value: animal-headings-line
-      - label: Marker
-        animalLocale: true
-        label.zh-TW: 側邊色條
-        label.zh: 側邊色條
-        value: animal-headings-marker
-  - id: animal-reading-width
+    title: Use fonts installed on your device
+    title.zh-TW: 使用裝置上已安裝的字體
+    title.zh: 使用裝置上已安裝的字體
+    description: Enter a font family or a comma-separated fallback list. Examples include PingFang TC, Noto Sans TC, Microsoft JhengHei, and Georgia. Unavailable fonts use the next fallback.
+    description.zh-TW: 可輸入字體名稱或用逗號分隔的備選清單，例如 PingFang TC、Noto Sans TC、Microsoft JhengHei、Georgia。未安裝時會使用備選字體。
+    description.zh: 可輸入字體名稱或用逗號分隔的備選清單，例如 PingFang TC、Noto Sans TC、Microsoft JhengHei、Georgia。未安裝時會使用備選字體。
+    type: info-text
+  - id: animal-font-interface
     animalLocale: true
-    title: Reading width
-    title.zh-TW: 正文寬度
-    title.zh: 正文寬度
-    type: variable-number-slider
-    default: 760
-    min: 560
-    max: 1040
-    step: 20
-    format: px
-  - id: animal-body-leading
+    title: Interface font
+    title.zh-TW: 介面字體
+    title.zh: 介面字體
+    type: variable-text
+    default: '"Nunito", "Noto Sans SC", -apple-system, BlinkMacSystemFont, "PingFang TC", sans-serif'
+  - id: animal-font-body
     animalLocale: true
-    title: Line height
-    title.zh-TW: 正文行距
-    title.zh: 正文行距
-    type: variable-number-slider
-    default: 1.72
-    min: 1.4
-    max: 2
-    step: 0.05
-  - id: animal-navigation-section
+    title: Note font
+    title.zh-TW: 正文字體
+    title.zh: 正文字體
+    type: variable-text
+    default: '"Nunito", "Noto Sans SC", -apple-system, BlinkMacSystemFont, "PingFang TC", sans-serif'
+  - id: animal-font-code
     animalLocale: true
-    title: Directory and tabs
-    title.zh-TW: 目錄與分頁
-    title.zh: 目錄與分頁
+    title: Code font
+    title.zh-TW: 程式碼字體
+    title.zh: 程式碼字體
+    type: variable-text
+    default: '"SFMono-Regular", Consolas, "Liberation Mono", monospace'
+  - id: animal-media-section
+    animalLocale: true
+    title: Images and tasks
+    title.zh-TW: 圖片與待辦
+    title.zh: 圖片與待辦
     type: heading
     level: 1
     collapsed: true
-  - id: animal-nav-height
+  - id: animal-image-radius
     animalLocale: true
-    title: Directory row height
-    title.zh-TW: 目錄列高度
-    title.zh: 目錄列高度
+    title: Image corner radius
+    title.zh-TW: 圖片圓角
+    title.zh: 圖片圓角
     type: variable-number-slider
-    default: 29
-    min: 26
+    default: 24
+    min: 0
     max: 40
-    step: 1
+    step: 2
     format: px
-  - id: animal-nav-font
+  - id: animal-checkbox-border-width
     animalLocale: true
-    title: Directory font size
-    title.zh-TW: 目錄字級
-    title.zh: 目錄字級
+    title: Checkbox border width
+    title.zh-TW: 核取方塊邊框粗細
+    title.zh: 核取方塊邊框粗細
+    description: 0 removes the border.
+    description.zh-TW: 0 為無框。
     type: variable-number-slider
-    default: 13
-    min: 11
-    max: 17
-    step: 1
+    default: 2
+    min: 0
+    max: 3
+    step: 0.5
     format: px
-  - id: animal-nav-selection
+  - id: animal-task-shape
     animalLocale: true
-    title: Directory selection
-    title.zh-TW: 目錄選取造型
-    title.zh: 目錄選取造型
+    title: Checkbox shape
+    title.zh-TW: 核取方塊造型
+    title.zh: 核取方塊造型
     type: class-select
     allowEmpty: false
-    default: animal-nav-mint
+    default: animal-tasks-rounded
     options:
-      - label: Soft fill
+      - label: Rounded
         animalLocale: true
-        label.zh-TW: 柔和底色
-        label.zh: 柔和底色
-        value: animal-nav-soft
-      - label: Mint
+        label.zh-TW: 圓角方形
+        label.zh: 圓角方形
+        value: animal-tasks-rounded
+      - label: Circle
         animalLocale: true
-        label.zh-TW: 薄荷底色
-        label.zh: 薄荷底色
-        value: animal-nav-mint
-      - label: Outline
-        animalLocale: true
-        label.zh-TW: 描邊
-        label.zh: 描邊
-        value: animal-nav-outline
-  - id: animal-tab-style
-    animalLocale: true
-    title: Tabs style
-    title.zh-TW: 分頁造型
-    title.zh: 分頁造型
-    type: class-select
-    allowEmpty: false
-    default: animal-tabs-pill
-    options:
-      - label: Soft
-        animalLocale: true
-        label.zh-TW: 圓角紙片
-        label.zh: 圓角紙片
-        value: animal-tabs-soft
-      - label: Pill
-        animalLocale: true
-        label.zh-TW: 膠囊
-        label.zh: 膠囊
-        value: animal-tabs-pill
-      - label: Underline
-        animalLocale: true
-        label.zh-TW: 底線
-        label.zh: 底線
-        value: animal-tabs-line
+        label.zh-TW: 圓形
+        label.zh: 圓形
+        value: animal-tasks-circle
   - id: animal-properties-section
     animalLocale: true
     title: Properties · Card and Form
@@ -710,95 +1128,6 @@ settings:
     max: 14
     step: 1
     format: px
-  - id: animal-callout-section
-    animalLocale: true
-    title: Callouts and quotes · Card
-    title.zh-TW: 提示與引用 · Card
-    title.zh: 提示與引用 · Card
-    type: heading
-    level: 1
-    collapsed: true
-  - id: animal-callout-style
-    animalLocale: true
-    title: Callout style
-    title.zh-TW: 提示區塊造型
-    title.zh: 提示區塊造型
-    type: class-select
-    allowEmpty: false
-    default: animal-callout-card
-    options:
-      - label: Card
-        animalLocale: true
-        label.zh-TW: 圓角卡片
-        label.zh: 圓角卡片
-        value: animal-callout-card
-      - label: Side accent
-        animalLocale: true
-        label.zh-TW: 側邊色條
-        label.zh: 側邊色條
-        value: animal-callout-side
-      - label: Dashed
-        animalLocale: true
-        label.zh-TW: 虛線
-        label.zh: 虛線
-        value: animal-callout-dashed
-  - id: animal-quote-style
-    animalLocale: true
-    title: Quote style
-    title.zh-TW: 引用造型
-    title.zh: 引用造型
-    type: class-select
-    allowEmpty: false
-    default: animal-quote-soft
-    options:
-      - label: Soft
-        animalLocale: true
-        label.zh-TW: 淡色底
-        label.zh: 淡色底
-        value: animal-quote-soft
-      - label: Plain
-        animalLocale: true
-        label.zh-TW: 純色條
-        label.zh: 純色條
-        value: animal-quote-plain
-  - id: animal-code-section
-    animalLocale: true
-    title: Code · CodeBlock
-    title.zh-TW: 程式碼 · CodeBlock
-    title.zh: 程式碼 · CodeBlock
-    type: heading
-    level: 1
-    collapsed: true
-  - id: animal-code-style
-    animalLocale: true
-    title: Code block palette
-    title.zh-TW: 程式碼區塊配色
-    title.zh: 程式碼區塊配色
-    type: class-select
-    allowEmpty: false
-    default: animal-code-adaptive
-    options:
-      - label: Adaptive
-        animalLocale: true
-        label.zh-TW: 跟隨明暗
-        label.zh: 跟隨明暗
-        value: animal-code-adaptive
-      - label: Dark
-        animalLocale: true
-        label.zh-TW: 深色程式碼
-        label.zh: 深色程式碼
-        value: animal-code-dark
-  - id: animal-code-font
-    animalLocale: true
-    title: Code font size
-    title.zh-TW: 程式碼字級
-    title.zh: 程式碼字級
-    type: variable-number-slider
-    default: 13
-    min: 11
-    max: 18
-    step: 1
-    format: px
   - id: animal-tags-section
     animalLocale: true
     title: Tags · Tag and Badge
@@ -831,222 +1160,110 @@ settings:
         label.zh-TW: 薄荷淡底
         label.zh: 薄荷淡底
         value: animal-tags-soft
-  - id: animal-controls-section
+  - id: animal-highlight-section
     animalLocale: true
-    title: Controls · Input and Button
-    title.zh-TW: 控制項 · Input 與 Button
-    title.zh: 控制項 · Input 與 Button
+    title: Text highlight
+    title.zh-TW: 文字螢光標記
+    title.zh: 文字荧光标记
     type: heading
     level: 1
     collapsed: true
-  - id: animal-control-style
+  - id: animal-highlight-radius
     animalLocale: true
-    title: Control shape
-    title.zh-TW: 控制項圓角
-    title.zh: 控制項圓角
-    type: class-select
-    allowEmpty: false
-    default: animal-controls-pill
-    options:
-      - label: Pill
-        animalLocale: true
-        label.zh-TW: 膠囊
-        label.zh: 膠囊
-        value: animal-controls-pill
-      - label: Rounded
-        animalLocale: true
-        label.zh-TW: 小圓角
-        label.zh: 小圓角
-        value: animal-controls-rounded
-  - id: animal-button-depth
-    animalLocale: true
-    title: Primary button depth
-    title.zh-TW: 主按鈕立體效果
-    title.zh: 主按鈕立體效果
-    type: class-select
-    allowEmpty: false
-    default: animal-buttons-raised
-    options:
-      - label: Raised
-        animalLocale: true
-        label.zh-TW: 遊戲按鈕
-        label.zh: 遊戲按鈕
-        value: animal-buttons-raised
-      - label: Flat
-        animalLocale: true
-        label.zh-TW: 平面
-        label.zh: 平面
-        value: animal-buttons-flat
-  - id: animal-divider-section
-    animalLocale: true
-    title: Dividers · Divider
-    title.zh-TW: 分隔線 · Divider
-    title.zh: 分隔線 · Divider
-    type: heading
-    level: 1
-    collapsed: true
-  - id: animal-divider-style
-    animalLocale: true
-    title: Divider style
-    title.zh-TW: 分隔線造型
-    title.zh: 分隔線造型
-    type: class-select
-    allowEmpty: false
-    default: animal-divider-squiggle
-    options:
-      - label: Dots
-        animalLocale: true
-        label.zh-TW: 點線
-        label.zh: 點線
-        value: animal-divider-dots
-      - label: Thin
-        animalLocale: true
-        label.zh-TW: 細線
-        label.zh: 細線
-        value: animal-divider-thin
-      - label: Dashed
-        animalLocale: true
-        label.zh-TW: 虛線
-        label.zh: 虛線
-        value: animal-divider-dashed
-      - label: Hairline
-        animalLocale: true
-        label.zh-TW: 細密虛線
-        label.zh: 細密虛線
-        value: animal-divider-hairline
-      - label: Yellow wave
-        animalLocale: true
-        label.zh-TW: 黃色波浪
-        label.zh: 黃色波浪
-        value: animal-divider-wave
-      - label: Teal squiggle
-        animalLocale: true
-        label.zh-TW: 薄荷曲線
-        label.zh: 薄荷曲線
-        value: animal-divider-squiggle
-  - id: animal-calendar-section
-    animalLocale: true
-    title: Calendar companion · DatePicker
-    title.zh-TW: 月曆外掛 · DatePicker
-    title.zh: 月曆外掛 · DatePicker
-    type: heading
-    level: 1
-    collapsed: true
-  - id: animal-calendar-info
-    animalLocale: true
-    title: Requires Animal Island Calendar
-    title.zh-TW: 需啟用 Animal Island Calendar 外掛
-    title.zh: 需啟用 Animal Island Calendar 外掛
-    description: These options style the optional companion calendar, not Chromium's native popup.
-    description.zh-TW: 以下選項套用於配套月曆，不適用原生日期面板。
-    description.zh: 以下選項套用於配套月曆，不適用原生日期面板。
-    type: info-text
-  - id: animal-calendar-radius
-    animalLocale: true
-    title: Date cell corner radius
-    title.zh-TW: 月曆日期格圓角
-    title.zh: 月曆日期格圓角
+    title: Highlight corner radius
+    title.zh-TW: 螢光標記圓角
+    title.zh: 荧光标记圆角
+    description: 0 gives square corners; 6 keeps the current soft corners.
+    description.zh-TW: 0 為直角；6 保留目前的柔和圓角。
+    description.zh: 0 为直角；6 保留目前的柔和圆角。
     type: variable-number-slider
-    default: 12
-    min: 12
-    max: 18
+    default: 6
+    min: 0
+    max: 6
     step: 1
     format: px
-  - id: animal-calendar-color
+  - id: animal-highlight-color
     animalLocale: true
-    title: Selected date palette
-    title.zh-TW: 月曆選取配色
-    title.zh: 月曆選取配色
+    title: Highlight color (ribbon palette)
+    title.zh-TW: 螢光標記顏色（緞帶色盤）
+    title.zh: 荧光标记颜色（缎带色盘）
+    description: Background for ==highlighted text== in Reading and Live Preview. Same 14 colors as Filename title; selected independently.
+    description.zh-TW: 設定 ==文字== 在閱讀與編輯模式的背景色；與文件名相同的 14 色，可獨立選擇。
+    description.zh: 设置 ==文字== 在阅读与编辑模式的背景色；与文件名相同的 14 色，可独立选择。
     type: class-select
     allowEmpty: false
-    default: animal-calendar-mint
+    default: animal-highlight-yellow
     options:
-      - label: Mint
+      - label: Default green
         animalLocale: true
-        label.zh-TW: 薄荷
-        label.zh: 薄荷
-        value: animal-calendar-mint
+        label.zh-TW: 預設綠
+        label.zh: 預設綠
+        value: animal-highlight-default-green
+      - label: Pink
+        animalLocale: true
+        label.zh-TW: 粉色
+        label.zh: 粉色
+        value: animal-highlight-pink
+      - label: Purple
+        animalLocale: true
+        label.zh-TW: 紫色
+        label.zh: 紫色
+        value: animal-highlight-purple
+      - label: Blue
+        animalLocale: true
+        label.zh-TW: 藍色
+        label.zh: 藍色
+        value: animal-highlight-blue
+      - label: Yellow
+        animalLocale: true
+        label.zh-TW: 黃色
+        label.zh: 黃色
+        value: animal-highlight-yellow
+      - label: Orange
+        animalLocale: true
+        label.zh-TW: 橙色
+        label.zh: 橙色
+        value: animal-highlight-orange
+      - label: Teal
+        animalLocale: true
+        label.zh-TW: 青色
+        label.zh: 青色
+        value: animal-highlight-mint
+      - label: Green
+        animalLocale: true
+        label.zh-TW: 綠色
+        label.zh: 綠色
+        value: animal-highlight-green
+      - label: Red
+        animalLocale: true
+        label.zh-TW: 紅色
+        label.zh: 紅色
+        value: animal-highlight-red
+      - label: Lime
+        animalLocale: true
+        label.zh-TW: 青檸
+        label.zh: 青檸
+        value: animal-highlight-lime
+      - label: Yellow green
+        animalLocale: true
+        label.zh-TW: 黃綠
+        label.zh: 黃綠
+        value: animal-highlight-yellow-green
       - label: Brown
         animalLocale: true
-        label.zh-TW: 大地棕
-        label.zh: 大地棕
-        value: animal-calendar-brown
-  - id: animal-overlays-section
-    animalLocale: true
-    title: Dialogs and menus
-    title.zh-TW: 對話框與選單
-    title.zh: 對話框與選單
-    type: heading
-    level: 1
-    collapsed: true
-  - id: animal-overlay-radius
-    animalLocale: true
-    title: Dialog corner radius
-    title.zh-TW: 對話框圓角
-    title.zh: 對話框圓角
-    type: variable-number-slider
-    default: 25
-    min: 12
-    max: 40
-    step: 1
-    format: px
-  - id: animal-motion-style
-    animalLocale: true
-    title: Motion
-    title.zh-TW: 動態效果
-    title.zh: 動態效果
-    type: class-select
-    allowEmpty: false
-    default: animal-motion-soft
-    options:
-      - label: Soft
+        label.zh-TW: 棕色
+        label.zh: 棕色
+        value: animal-highlight-brown
+      - label: Warm peach pink
         animalLocale: true
-        label.zh-TW: 柔和動態
-        label.zh: 柔和動態
-        value: animal-motion-soft
-      - label: "Off"
+        label.zh-TW: 暖桃粉
+        label.zh: 暖桃粉
+        value: animal-highlight-peach
+      - label: Parchment
         animalLocale: true
-        label.zh-TW: 關閉
-        label.zh: 關閉
-        value: animal-motion-off
-  - id: animal-media-section
-    animalLocale: true
-    title: Images and tasks
-    title.zh-TW: 圖片與待辦
-    title.zh: 圖片與待辦
-    type: heading
-    level: 1
-    collapsed: true
-  - id: animal-image-radius
-    animalLocale: true
-    title: Image corner radius
-    title.zh-TW: 圖片圓角
-    title.zh: 圖片圓角
-    type: variable-number-slider
-    default: 24
-    min: 0
-    max: 40
-    step: 2
-    format: px
-  - id: animal-task-shape
-    animalLocale: true
-    title: Checkbox shape
-    title.zh-TW: 核取方塊造型
-    title.zh: 核取方塊造型
-    type: class-select
-    allowEmpty: false
-    default: animal-tasks-rounded
-    options:
-      - label: Rounded
-        animalLocale: true
-        label.zh-TW: 圓角方形
-        label.zh: 圓角方形
-        value: animal-tasks-rounded
-      - label: Circle
-        animalLocale: true
-        label.zh-TW: 圓形
-        label.zh: 圓形
-        value: animal-tasks-circle
+        label.zh-TW: 羊皮紙
+        label.zh: 羊皮紙
+        value: animal-highlight-parchment
 */
 
 body {
@@ -1110,7 +1327,7 @@ body {
   --input-radius: var(--animal-radius-pill);
   --button-radius: var(--animal-radius-pill);
   --tab-radius-active: var(--animal-radius-sm);
-  --checkbox-radius: 7px;
+  --checkbox-radius: 3px;
   --toggle-radius: var(--animal-radius-pill);
   --modal-radius: 36px 52px 42px 48px / 44px 36px 52px 40px;
 
@@ -1606,8 +1823,8 @@ button.mod-warning:hover {
 }
 
 input[type="checkbox"] {
-  border: 2px solid var(--animal-border-strong);
-  border-radius: 7px;
+  border: var(--animal-checkbox-border-width, 2px) solid var(--animal-border-strong);
+  border-radius: 3px;
 }
 
 input[type="checkbox"]:checked {
@@ -1735,12 +1952,11 @@ body .inline-title:not(h1, h2, h3, h4, h5, h6):not(.markdown-rendered) {
   color: var(--animal-title-ink);
   background: var(--animal-title-front);
   box-shadow: -5px -5px 0 var(--animal-title-back);
-  clip-path: none;
   font-size: var(--animal-title-size);
   font-weight: 800;
   line-height: 1.4;
   letter-spacing: 0.01em;
-  text-decoration: none;
+  text-decoration-line: none;
   overflow-wrap: anywhere;
 }
 body .inline-title:not(h1, h2, h3, h4, h5, h6):not(.markdown-rendered) { margin-top: 0.4em; }
@@ -1820,7 +2036,7 @@ body.animal-title-plain .inline-title:not(h1, h2, h3, h4, h5, h6):not(.markdown-
 .cm-highlight {
   padding: 0.05em 0.28em;
   background: var(--text-highlight-bg);
-  border-radius: 6px;
+  border-radius: clamp(0px, var(--animal-highlight-radius, 6px), 6px);
 }
 
 .markdown-rendered blockquote {
@@ -1861,7 +2077,7 @@ a.tag,
   border-radius: var(--animal-radius-pill);
   font-size: 0.82em;
   font-weight: 700;
-  text-decoration: none;
+  text-decoration-line: none;
   transition: background-color var(--animal-duration-fast) var(--animal-ease),
     transform var(--animal-duration-fast) var(--animal-ease);
 }
@@ -2053,8 +2269,8 @@ input[type="datetime-local"]::-webkit-calendar-picker-indicator {
 /* Callouts */
 .callout {
   padding: 16px;
-  background: color-mix(in srgb, rgb(var(--callout-color)) 12%, var(--background-primary));
-  border: 2px solid color-mix(in srgb, rgb(var(--callout-color)) 52%, var(--animal-border));
+  background: rgba(var(--callout-color), clamp(0, var(--animal-callout-background-opacity, 0), 1));
+  border: var(--animal-callout-border-width, 0px) solid color-mix(in srgb, rgb(var(--callout-color)) 52%, var(--animal-border));
   border-radius: var(--animal-radius-lg);
   box-shadow: none;
 }
@@ -2066,8 +2282,8 @@ input[type="datetime-local"]::-webkit-calendar-picker-indicator {
 
 .callout-icon {
   padding: 5px;
-  border-radius: var(--animal-radius-sm);
-  background: color-mix(in srgb, rgb(var(--callout-color)) 16%, transparent);
+  border-radius: 0;
+  background: transparent;
 }
 
 /* Code */
@@ -2425,9 +2641,9 @@ body.animal-tabs-line .mod-root .workspace-tab-header { border-radius: 0; backgr
 body.animal-tabs-line .mod-root .workspace-tab-header.is-active { background: var(--background-primary); box-shadow: inset 0 -3px var(--animal-primary); }
 body.animal-properties-dashed .metadata-container { border-style: dashed; }
 body.animal-properties-flat .metadata-container { background: transparent; border-color: transparent; padding-inline: 0; }
-body.animal-callout-side .callout { border-width: 0 0 0 4px; border-radius: 0 16px 16px 0; }
+body.animal-callout-side .callout { border-width: 0 0 0 calc(var(--animal-callout-border-width, 0px) * 2); border-radius: 0 16px 16px 0; }
 body.animal-callout-dashed .callout { border-style: dashed; }
-body.animal-quote-plain .markdown-rendered blockquote { background: transparent; border-radius: 0; }
+
 body .markdown-rendered pre, body .cm-s-obsidian .HyperMD-codeblock { font-size: var(--animal-code-font, 13px); }
 body.animal-code-dark { --code-background: #242c36; --code-normal: #e7ddc7; --code-comment: #a7af9c; --code-keyword: #c7abef; --code-function: #82d5bb; --code-string: #efce83; --code-value: #e9a582; }
 body.animal-code-dark .markdown-rendered pre { background: var(--code-background); color: var(--code-normal); }
@@ -3570,3 +3786,187 @@ body .metadata-container .metadata-properties-heading .collapse-indicator {
   padding: 0;
   margin: 0;
 }
+
+
+/* Match link Properties to the same first-line box as labels and text inputs. */
+body:not(.is-mobile) .metadata-container .metadata-property {
+  --input-height: 26px;
+}
+body:not(.is-mobile) .metadata-container .metadata-property-icon {
+  height: 26px;
+  padding-block: 0;
+}
+body:not(.is-mobile) .metadata-container .metadata-property-value {
+  align-items: flex-start;
+}
+body .metadata-container .metadata-property-value .metadata-link {
+  box-sizing: border-box;
+  min-width: 0;
+  min-height: var(--input-height);
+  padding: 1px 6px;
+  border: 1px solid transparent;
+  align-items: flex-start;
+}
+body .metadata-container .metadata-property-value .metadata-link-inner {
+  font-size: inherit;
+  line-height: calc(var(--input-height) - 4px);
+}
+body .metadata-container .metadata-property-value .metadata-link-flair {
+  min-height: calc(var(--input-height) - 4px);
+  padding-block: 0;
+}
+
+/* Center the native check mask inside the theme's two-pixel checkbox border. */
+body input[type="checkbox"]:checked::after {
+  top: 50%;
+  inset-inline-start: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  -webkit-mask-position: center;
+  mask-position: center;
+}
+
+/* Keep the Properties disclosure discoverable without requiring hover. */
+body .metadata-container .metadata-properties-heading .collapse-indicator {
+  opacity: 1;
+}
+
+/* Paint editor heading markers only over content, excluding CodeMirror's top padding. */
+body.animal-headings-marker .markdown-source-view.mod-cm6 .cm-line.HyperMD-header {
+  border-inline-start-color: transparent;
+  background-image: linear-gradient(var(--animal-primary), var(--animal-primary));
+  background-origin: content-box;
+  background-position: -15px 0;
+  background-size: 3px 100%;
+  background-repeat: no-repeat;
+}
+body.mod-rtl.animal-headings-marker .markdown-source-view.mod-cm6 .cm-line.HyperMD-header,
+body.animal-headings-marker .markdown-source-view.mod-cm6 .cm-line.HyperMD-header[dir="rtl"] {
+  background-position: calc(100% + 15px) 0;
+}
+
+/* Semantic title/icon colors; body text and card surfaces remain independent. */
+body .callout-title,
+body .callout-title-inner,
+body .callout-title .callout-icon,
+body .callout-title .callout-icon .svg-icon {
+  color: rgb(var(--callout-color));
+}
+body .callout-title .callout-icon {
+  width: 1.5em;
+  min-width: 1.5em;
+  height: 1.5em;
+  margin-block: 0;
+  border-radius: 0;
+  background: transparent;
+}
+body .callout-title .callout-icon .svg-icon {
+  width: 1.15em;
+  height: 1.15em;
+}
+
+/* Quote palette mirrors filename ribbon colors without coupling their choices. */
+body {
+  --animal-quote-color: #7fd4bc;
+  --blockquote-border-color: var(--animal-quote-color);
+  --blockquote-background-color: color-mix(in srgb, var(--animal-quote-color) calc(clamp(0, var(--animal-quote-background-opacity, 0.14), 1) * 100%), transparent);
+}
+body.animal-quote-color-default-green { --animal-quote-color: #20c933; }
+body.animal-quote-color-pink { --animal-quote-color: #f7a3b3; }
+body.animal-quote-color-purple { --animal-quote-color: #b77aeb; }
+body.animal-quote-color-blue { --animal-quote-color: #8899ef; }
+body.animal-quote-color-yellow { --animal-quote-color: #f6cf64; }
+body.animal-quote-color-orange { --animal-quote-color: #e99161; }
+body.animal-quote-color-mint { --animal-quote-color: #7fd4bc; }
+body.animal-quote-color-green { --animal-quote-color: #8bc88c; }
+body.animal-quote-color-red { --animal-quote-color: #ff6d70; }
+body.animal-quote-color-lime { --animal-quote-color: #cbdc4d; }
+body.animal-quote-color-yellow-green { --animal-quote-color: #ece34b; }
+body.animal-quote-color-brown { --animal-quote-color: #9c865a; }
+body.animal-quote-color-peach { --animal-quote-color: #e58b75; }
+body.animal-quote-color-parchment { --animal-quote-color: var(--animal-bg-content); }
+
+/* Share the same document Properties inset in Reading and Live Preview. */
+body:not(.is-mobile) .workspace-leaf-content[data-type="markdown"] .markdown-reading-view .metadata-container,
+body:not(.is-mobile) .workspace-leaf-content[data-type="markdown"] .markdown-source-view.mod-cm6 .cm-sizer > .metadata-container {
+  transform: none;
+  margin-inline: 0;
+  width: min(100%, var(--animal-properties-width, 640px));
+  max-width: min(100%, var(--animal-properties-width, 640px));
+}
+
+/* Markdown ==highlight== colors, independently selected from the ribbon palette. */
+body {
+  --animal-highlight-color: #f6cf64;
+}
+body.theme-light {
+  --text-highlight-bg: color-mix(in srgb, var(--animal-highlight-color) 40%, transparent);
+}
+body.theme-dark {
+  --text-highlight-bg: color-mix(in srgb, var(--animal-highlight-color) 30%, transparent);
+}
+body.animal-highlight-default-green { --animal-highlight-color: #20c933; }
+body.animal-highlight-pink { --animal-highlight-color: #f7a3b3; }
+body.animal-highlight-purple { --animal-highlight-color: #b77aeb; }
+body.animal-highlight-blue { --animal-highlight-color: #8899ef; }
+body.animal-highlight-yellow { --animal-highlight-color: #f6cf64; }
+body.animal-highlight-orange { --animal-highlight-color: #e99161; }
+body.animal-highlight-mint { --animal-highlight-color: #7fd4bc; }
+body.animal-highlight-green { --animal-highlight-color: #8bc88c; }
+body.animal-highlight-red { --animal-highlight-color: #ff6d70; }
+body.animal-highlight-lime { --animal-highlight-color: #cbdc4d; }
+body.animal-highlight-yellow-green { --animal-highlight-color: #ece34b; }
+body.animal-highlight-brown { --animal-highlight-color: #9c865a; }
+body.animal-highlight-peach { --animal-highlight-color: #e58b75; }
+body.animal-highlight-parchment { --animal-highlight-color: var(--animal-bg-content); }
+
+/* Keep Live Preview markers in place and tighten their following text gap. */
+body .markdown-source-view.mod-cm6.is-live-preview .cm-line:not(.HyperMD-task-line) > :is(.cm-formatting-list-ol, .cm-formatting-list-ul) {
+  position: relative;
+  inset-inline-start: -0.4em;
+  margin-inline-end: -0.4em;
+}
+
+/* Bullet tokens already have a compact native advance; preserve that text gap. */
+body .markdown-source-view.mod-cm6.is-live-preview .cm-line:not(.HyperMD-task-line) > .cm-formatting-list-ul {
+  margin-inline-end: 0;
+}
+
+/* Keep Reading list markers in place, with a tighter gap than task checkboxes. */
+body .markdown-rendered :is(ol, ul) > li:not(.task-list-item) {
+  margin-inline-start: calc(3ch - 0.4em);
+}
+body .markdown-rendered :is(ol ol, ul ul, ol ul, ul ol) > li:not(.task-list-item) {
+  margin-inline-start: calc(var(--list-indent) - 0.4em);
+}
+body .markdown-rendered ol > li:not(.task-list-item)::marker {
+  content: "";
+}
+body .markdown-rendered ol > li:not(.task-list-item)::before {
+  content: counter(list-item) ".";
+  position: absolute;
+  inset-inline-start: calc(var(--checkbox-size) * -1.5 + 0.4em);
+  width: calc(var(--checkbox-size) * 1.5);
+  color: var(--list-marker-color);
+  font-variant-numeric: tabular-nums;
+  text-align: start;
+}
+body .markdown-rendered ul > li:not(.task-list-item) > .list-bullet {
+  margin-inline-start: calc(var(--checkbox-size) * -1.5 + 0.4em);
+  width: var(--checkbox-size);
+}
+body .markdown-rendered ul > li:not(.task-list-item) > .list-bullet::after {
+  inset-inline-start: 0;
+}
+
+/* Preserve native callout colors; distinguish Warning from orange Question. */
+body { --callout-warning: var(--color-yellow-rgb); }
+
+/* RGB bridge for native color tokens across Obsidian versions. */
+body .callout:is([data-callout="note"], [data-callout="info"]) { --callout-color: var(--color-blue-rgb, 8, 109, 221); }
+body .callout:is([data-callout="tip"], [data-callout="hint"], [data-callout="important"]) { --callout-color: var(--color-cyan-rgb, 0, 191, 188); }
+body .callout:is([data-callout="success"], [data-callout="check"], [data-callout="done"]) { --callout-color: var(--color-green-rgb, 8, 185, 78); }
+body .callout:is([data-callout="question"], [data-callout="help"], [data-callout="faq"]) { --callout-color: var(--color-orange-rgb, 236, 117, 0); }
+body .callout:is([data-callout="warning"], [data-callout="caution"], [data-callout="attention"]) { --callout-color: var(--color-yellow-rgb, 224, 172, 0); }
+body .callout:is([data-callout="danger"], [data-callout="error"]) { --callout-color: var(--color-red-rgb, 233, 49, 71); }
