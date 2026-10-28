@@ -1,3 +1,24 @@
+# Animal Island Cozy 0.1.7
+
+## CSS maintenance
+
+- Remove two redundant text-decoration resets on filenames and tags; use Obsidian’s tag decoration variables to preserve normal and hover styling.
+- No intended changes to appearance, colors, layout, settings or defaults. Calendar is unchanged.
+- Targets two reported Community warnings (32 → 30 expected). The final count depends on the Community rescan.
+
+## Validation
+
+Compared 24 light/dark combinations covering four filename styles and three tag styles, including tag hover and editor hashtags, using the installed Obsidian CSS. Stable before/after screenshots had zero differing pixels in both modes. This is a targeted visual check, not a complete cross-platform regression pass.
+
+## 本次更新
+
+- 移除檔案名稱與標籤的兩項重複文字裝飾重設，改用 Obsidian 標籤變數保留一般及滑鼠懸停樣式。
+- 外觀、配色、排版、設定及預設值維持原樣；日曆插件未變更。
+- 針對兩項 Community 警告進行清理，預期由 32 降至 30；實際數量以重新掃描為準。
+- 比較 24 組淺色／深色、檔案名稱及標籤組合，包含懸停與編輯器標籤；穩定截圖的像素差異皆為 0。非完整跨平台回歸測試。
+
+---
+
 # Animal Island Cozy 0.1.6
 
 ## Highlights and customization

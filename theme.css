@@ -1,6 +1,6 @@
 /*
  * Animal Island Cozy for Obsidian
- * Version 0.1.6
+ * Version 0.1.7
  * A warm, rounded theme adapted from the animal-island-ui design language.
  */
 
@@ -1956,7 +1956,6 @@ body .inline-title:not(h1, h2, h3, h4, h5, h6):not(.markdown-rendered) {
   font-weight: 800;
   line-height: 1.4;
   letter-spacing: 0.01em;
-  text-decoration-line: none;
   overflow-wrap: anywhere;
 }
 body .inline-title:not(h1, h2, h3, h4, h5, h6):not(.markdown-rendered) { margin-top: 0.4em; }
@@ -2077,7 +2076,6 @@ a.tag,
   border-radius: var(--animal-radius-pill);
   font-size: 0.82em;
   font-weight: 700;
-  text-decoration-line: none;
   transition: background-color var(--animal-duration-fast) var(--animal-ease),
     transform var(--animal-duration-fast) var(--animal-ease);
 }
@@ -3970,3 +3968,9 @@ body .callout:is([data-callout="success"], [data-callout="check"], [data-callout
 body .callout:is([data-callout="question"], [data-callout="help"], [data-callout="faq"]) { --callout-color: var(--color-orange-rgb, 236, 117, 0); }
 body .callout:is([data-callout="warning"], [data-callout="caution"], [data-callout="attention"]) { --callout-color: var(--color-yellow-rgb, 224, 172, 0); }
 body .callout:is([data-callout="danger"], [data-callout="error"]) { --callout-color: var(--color-red-rgb, 233, 49, 71); }
+
+/* Use Obsidian's tag decoration variables instead of redundant element resets. */
+body {
+  --tag-decoration: none;
+  --tag-decoration-hover: none;
+}
