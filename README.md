@@ -109,7 +109,13 @@ Examples below show optional combinations. At border width 0, all three styles h
 
 ## Visual guide
 
+**Upgrading:** existing saved colors are preserved. Set both **App accent palette** and **Filename title → Title palette** to **Match interface palette** to enable automatic pairing.
+
+Filename title → Title palette → **Match interface palette** pairs the ribbon with Rose, Lavender, Sage, Mist blue or Sand. Cream keeps the original default green; a manually selected title color overrides this pairing.
+
 ### App palettes, code & tags
+
+App accent palette → **Match interface palette** automatically pairs Rose with pink, Lavender with purple, Sage with green, Mist blue with blue, and Sand with peach. Cream uses island mint. Choose a specific accent for an independent override. It colors primary buttons and their depth, links and text selection. Markdown highlights and Highlighter plugin colors have their own controls.
 
 **App colors → Interface background palette:** Cream, Sage, Rose, Lavender, Mist blue, Sand, or Custom.
 

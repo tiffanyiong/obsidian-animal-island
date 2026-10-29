@@ -109,7 +109,13 @@ ZIP 請保留目錄結構，以閱讀模式開啟。左英文、右繁中，皆�
 
 ## 樣式圖鑑
 
+**舊版升級：**已儲存的選色會保留。請將 **App accent palette** 與 **Filename title → Title palette** 都改為 **跟隨介面色盤**，啟用自動配對。
+
+Filename title → Title palette → **跟隨介面色盤**：緞帶自動配對 Rose、Lavender、Sage、Mist blue、Sand；Cream 保留原本預設綠色。也可手動選擇獨立的緞帶顏色。
+
 ### 整體配色、程式碼與標籤
+
+App accent palette → **跟隨介面色盤**：Rose 自動配粉紅、Lavender 配紫色、Sage 配綠色、Mist blue 配藍色、Sand 配蜜桃；Cream 配海島薄荷。也可手動指定其他重點色，套用於主要按鈕及立體陰影、連結和文字選取色。Markdown 螢光標記及 Highlighter 插件配色各有自己的設定。
 
 **App colors → Interface background palette**：奶油、鼠尾草、玫瑰、薰衣草、霧藍、沙杏，或自訂色。
 

@@ -1,3 +1,33 @@
+# Animal Island Cozy 0.1.10
+
+## Automatic palette matching
+
+- Add **Match interface palette** to App accent palette and Filename title → Title palette. Rose pairs with pink, Lavender with purple, Sage with green, Mist blue with blue, and Sand with peach.
+- Cream keeps its original green filename ribbon and island-mint app accent. Custom surfaces fall back to this pairing; manual and custom accent choices remain available.
+- Primary button depth now follows the chosen app accent instead of retaining a fixed teal shadow.
+- Remove the circular backing behind macOS Settings dropdown arrows, preserving native arrows.
+- Update English and Traditional Chinese README and the default preset. Callout colors, opacity, borders and Markdown/plugin highlight controls remain unchanged.
+
+**Upgrading:** existing saved accent and title colors are preserved. Select **Match interface palette** in both settings to opt into automatic matching.
+
+## Validation
+
+Passed 28 light/dark × surface × automatic/manual CSS cases. Verified native Obsidian 1.14.5 settings options, live Rose → Sage changes updating the main window, dark Sage and Cream’s original green ribbon. Verified unchanged body/callout colors and transparent dropdown backing. Targeted desktop testing; no mobile/cross-platform pass.
+
+## 本次更新
+
+- App accent palette 與 Filename title → Title palette 新增 **跟隨介面色盤**：Rose 配粉紅、Lavender 配紫、Sage 配綠、Mist blue 配藍、Sand 配蜜桃。
+- Cream 保留原本綠色文件名緞帶及海島薄荷重點色；自訂底色使用此預設，也可手動指定緞帶或自訂重點色。
+- 主要按鈕的立體陰影會跟隨 App Accent，不再固定為舊青綠色。
+- 移除 macOS 設定下拉箭頭後的圓形底色，保留原生箭頭。
+- 更新中英文 README 與預設配置；提示框配色、透明度、外框及 Markdown／插件螢光標記設定維持不變。
+
+**舊版升級：**已儲存的重點色與標題選色會保留；請將上述兩項都改為 **跟隨介面色盤**，啟用自動配對。
+
+已通過 28 組淺／深色、底色與自動／手動覆寫 CSS 檢查，並在原生 Obsidian 1.14.5 驗證選項、Rose → Sage 即時同步、深色 Sage、Cream 預設綠，以及正文／提示框不變、下拉圓底透明。屬桌面針對性測試，未做手機／跨平台完整驗證。
+
+---
+
 # Animal Island Cozy 0.1.9
 
 ## Sea-island callouts

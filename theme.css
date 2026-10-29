@@ -1,6 +1,6 @@
 /*
  * Animal Island Cozy for Obsidian
- * Version 0.1.9
+ * Version 0.1.10
  * A warm, rounded theme adapted from the animal-island-ui design language.
  */
 
@@ -177,13 +177,18 @@ settings:
     title: App accent palette
     title.zh-TW: App 主色配色
     title.zh: App 主色配色
-    description: Changes shared accents, links, active navigation, primary buttons and selection colors. Component-specific palettes stay independent.
-    description.zh-TW: 同步調整全域重點色、連結、目錄選取、主按鈕與選取色；元件各自指定的配色仍可獨立選擇。
-    description.zh: 同步調整全域重點色、連結、目錄選取、主按鈕與選取色；元件各自指定的配色仍可獨立選擇。
+    description: Match interface palette pairs Rose, Lavender, Sage, Mist blue and Sand with their matching accents. Choose another accent to override. Component palettes stay independent.
+    description.zh-TW: 選擇「跟隨介面色盤」可自動配對底色與重點色；也可手動覆寫。同步影響連結、主按鈕與文字選取色，元件色盤保持獨立。
+    description.zh: 選擇「跟隨介面色盤」可自動配對底色與重點色；也可手動覆寫。同步影響連結、主按鈕與文字選取色，元件色盤保持獨立。
     type: class-select
     allowEmpty: false
-    default: animal-accent-mint
+    default: animal-accent-auto
     options:
+      - label: Match interface palette
+        animalLocale: true
+        label.zh-TW: 跟隨介面色盤
+        label.zh: 跟随界面色盘
+        value: animal-accent-auto
       - label: Island mint
         animalLocale: true
         label.zh-TW: 海島薄荷
@@ -845,8 +850,13 @@ settings:
     title.zh: 標題配色
     type: class-select
     allowEmpty: false
-    default: animal-title-default-green
+    default: animal-title-auto
     options:
+      - label: Match interface palette
+        animalLocale: true
+        label.zh-TW: 跟隨介面色盤
+        label.zh: 跟随界面色盘
+        value: animal-title-auto
       - label: Default green
         animalLocale: true
         label.zh-TW: 預設綠
@@ -1272,6 +1282,7 @@ body {
   --animal-primary-hover: #3dd4c6;
   --animal-primary-active: #11a89b;
   --animal-primary-bg: #e6f9f6;
+  --animal-button-shadow: #0b9d91;
   --animal-text: #794f27;
   --animal-text-body: #725d42;
   --animal-text-secondary: #9f927d;
@@ -1739,6 +1750,11 @@ select:focus,
   transform: translateY(-1px);
 }
 
+/* Preserve native arrow artwork; suppress the macOS settings arrow's circular backing. */
+body select.dropdown {
+  --dropdown-icon-background: transparent;
+}
+
 select,
 .dropdown {
   background-repeat: no-repeat;
@@ -1785,18 +1801,18 @@ button.mod-cta {
   color: #fffdf3;
   background: var(--animal-primary);
   border: 0;
-  box-shadow: 0 5px 0 #0b9d91;
+  box-shadow: 0 5px 0 var(--animal-button-shadow);
 }
 
 button.mod-cta:hover {
   background: var(--animal-primary-hover);
-  box-shadow: 0 6px 0 #0b9d91;
+  box-shadow: 0 6px 0 var(--animal-button-shadow);
   transform: translateY(-1px);
 }
 
 button.mod-cta:active {
   background: var(--animal-primary-active);
-  box-shadow: 0 1px 0 #0b9d91;
+  box-shadow: 0 1px 0 var(--animal-button-shadow);
   transform: translateY(3px);
 }
 
@@ -1873,6 +1889,37 @@ body {
   --animal-title-size: 26px;
   --animal-title-front: #20c933;
   --animal-title-back: #159a26;
+  --animal-title-ink: #ffffff;
+}
+/* Automatic filename palette follows the interface surface, independently of title shape. */
+body.animal-title-auto {
+  --animal-title-front: #20c933;
+  --animal-title-back: #159a26;
+  --animal-title-ink: #ffffff;
+}
+body.animal-title-auto.animal-surface-rose {
+  --animal-title-front: #f7a3b3;
+  --animal-title-back: #df6580;
+  --animal-title-ink: #ffffff;
+}
+body.animal-title-auto.animal-surface-lavender {
+  --animal-title-front: #b77aeb;
+  --animal-title-back: #844ac3;
+  --animal-title-ink: #ffffff;
+}
+body.animal-title-auto.animal-surface-sage {
+  --animal-title-front: #8bc88c;
+  --animal-title-back: #508c51;
+  --animal-title-ink: #ffffff;
+}
+body.animal-title-auto.animal-surface-blue {
+  --animal-title-front: #8899ef;
+  --animal-title-back: #566ad3;
+  --animal-title-ink: #ffffff;
+}
+body.animal-title-auto.animal-surface-sand {
+  --animal-title-front: #e58b75;
+  --animal-title-back: #b75d36;
   --animal-title-ink: #ffffff;
 }
 body.animal-title-default-green {
@@ -2755,7 +2802,15 @@ body .markdown-reading-view .markdown-preview-view,
 }
 
 /* Global accent palettes. Component-specific color choices remain independent. */
-body.animal-accent-mint, body:where(:not([class*="animal-accent-"])) { --animal-accent-seed: #19c8b9; }
+body.animal-accent-mint { --animal-accent-seed: #19c8b9; }
+/* Automatic pairing; explicit accent choices below stay independent. */
+body:is(.animal-accent-auto, :not([class*="animal-accent-"])) { --animal-accent-seed: #19c8b9; }
+body:is(.animal-accent-auto, :not([class*="animal-accent-"])).animal-surface-rose { --animal-accent-seed: #cb6d8c; }
+body:is(.animal-accent-auto, :not([class*="animal-accent-"])).animal-surface-lavender { --animal-accent-seed: #9872c4; }
+body:is(.animal-accent-auto, :not([class*="animal-accent-"])).animal-surface-sage { --animal-accent-seed: #6d9958; }
+body:is(.animal-accent-auto, :not([class*="animal-accent-"])).animal-surface-blue { --animal-accent-seed: #548eb7; }
+body:is(.animal-accent-auto, :not([class*="animal-accent-"])).animal-surface-sand { --animal-accent-seed: #ce8352; }
+
 body.animal-accent-pink { --animal-accent-seed: #cb6d8c; }
 body.animal-accent-purple { --animal-accent-seed: #9872c4; }
 body.animal-accent-blue { --animal-accent-seed: #548eb7; }
@@ -2767,6 +2822,7 @@ body[class*="animal-accent-"], body:where(:not([class*="animal-accent-"])) {
   --animal-primary-hover: color-mix(in srgb, var(--animal-accent-seed) 80%, #fffbe7);
   --animal-primary-active: color-mix(in srgb, var(--animal-accent-seed) 78%, #493c2c);
   --animal-primary-bg: color-mix(in srgb, var(--animal-accent-seed) 13%, var(--animal-bg));
+  --animal-button-shadow: var(--animal-primary-active);
   --animal-sidebar-active: color-mix(in srgb, var(--animal-accent-seed) 23%, var(--animal-bg-secondary));
   --animal-sidebar-hover: color-mix(in srgb, var(--animal-accent-seed) 11%, var(--animal-bg-secondary));
   --text-selection: color-mix(in srgb, var(--animal-accent-seed) 26%, transparent);
