@@ -64,15 +64,17 @@ ZIP 請保留目錄結構，以閱讀模式開啟。左英文、右繁中，皆�
 > Write one useful thought.
 ```
 
-內建語法，不需插件。預設只有彩色標題與圖示，無背景、無外框；Warning 為黃色，Question 為橙色。
+內建語法，不需插件。預設為彩色標題與圖示、1px 外框及 10% 背景不透明度；Warning 為黃色，Question 為橙色。
+
+下方配色示例使用不透明度 0、外框 0；圖鑑展示不同設定組合，不一定是預設值。
 
 ![Callout types · 提示框類型](docs/images/callout-syntax.png)
 
 在 **Style Settings → Callouts and quotes** 調整：
 
 - **Callout style**：Card／Side accent／Dashed。
-- **Callout background opacity**：0–1，預設 0；0 為無背景。
-- **Callout border width**：0–4px，預設 0；側邊色條為設定值的兩倍寬。
+- **Callout background opacity**：0–1，預設 0.1；0 為無背景。
+- **Callout border width**：0–4px，預設 1px；側邊色條為設定值的兩倍寬。
 
 下圖示範各種搭配；外框為 0 時，三種樣式都不顯示框線。
 

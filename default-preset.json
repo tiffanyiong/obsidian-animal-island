@@ -51,10 +51,10 @@
   "animal-island@@animal-custom-accent@@light": "#19c8b9",
   "animal-island@@animal-custom-accent@@dark": "#42d5c6",
   "animal-island@@animal-checkbox-border-width": 2,
-  "animal-island@@animal-callout-border-width": 0,
+  "animal-island@@animal-callout-border-width": 1,
   "animal-island@@animal-quote-color": "animal-quote-color-mint",
   "animal-island@@animal-highlight-color": "animal-highlight-yellow",
   "animal-island@@animal-highlight-radius": 6,
-  "animal-island@@animal-callout-background-opacity": 0,
+  "animal-island@@animal-callout-background-opacity": 0.1,
   "animal-island@@animal-quote-background-opacity": 0.14
 }

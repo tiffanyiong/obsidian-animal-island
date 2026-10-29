@@ -47,8 +47,8 @@ Open **Settings → Style Settings → Animal Island Cozy**. Language comes firs
 | Setting / ID | Options or range | Default |
 | --- | --- | --- |
 | Callout style<br>`animal-callout-style` | Card, Side accent, Dashed | Card |
-| Callout border width<br>`animal-callout-border-width` | 0–4px; step 0.5 | 0 |
-| Callout background opacity<br>`animal-callout-background-opacity` | 0–1; step 0.05 | 0 |
+| Callout border width<br>`animal-callout-border-width` | 0–4px; step 0.5 | 1 |
+| Callout background opacity<br>`animal-callout-background-opacity` | 0–1; step 0.05 | 0.1 |
 | Quote background opacity<br>`animal-quote-background-opacity` | 0–1; step 0.01 | 0.14 |
 | Quote color (ribbon palette)<br>`animal-quote-color` | Default green, Pink, Purple, Blue, Yellow, Orange, Teal, Green, Red, Lime, Yellow green, Brown, Warm peach pink, Parchment | Teal |
 ## Code · CodeBlock
@@ -131,6 +131,6 @@ Open **Settings → Style Settings → Animal Island Cozy**. Language comes firs
 
 ## Background controls
 
-Callout opacity defaults to 0 (transparent), border width to 0. Side accent uses twice the selected border width. Quote opacity defaults to 0.14; 0 removes its background while retaining the side line. Both quote and text-highlight colors have the same 14 options as the filename ribbon.
+Callout opacity defaults to 0.1 (10%), border width to 1px. Side accent uses twice the selected border width. Quote opacity defaults to 0.14; 0 removes its background while retaining the side line. Both quote and text-highlight colors have the same 14 options as the filename ribbon.
 
 The old Quote Background/No background dropdown has been replaced. If you previously used No background, set **Quote background opacity** to **0** after updating. Other saved setting IDs remain unchanged.

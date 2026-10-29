@@ -64,15 +64,17 @@ Standard unchecked/checked tasks only; `[/]`, `[-]`, and `[*]` have no custom ic
 > Write one useful thought.
 ```
 
-Built-in Markdown; no plugin needed. Default: colored title and icon, no background or border. Warning is yellow; Question is orange.
+Built-in Markdown; no plugin needed. Default: colored title and icon, a 1px border and 10% background opacity. Warning is yellow; Question is orange.
+
+Color examples below use opacity 0 and border width 0. Gallery settings are illustrative, not necessarily the defaults.
 
 ![Callout types · 提示框類型](docs/images/callout-syntax.png)
 
 Customize in **Style Settings → Callouts and quotes**:
 
 - **Callout style:** Card / Side accent / Dashed.
-- **Callout background opacity:** 0–1, default 0; 0 removes the background.
-- **Callout border width:** 0–4px, default 0; Side accent uses twice this width.
+- **Callout background opacity:** 0–1, default 0.1; 0 removes the background.
+- **Callout border width:** 0–4px, default 1px; Side accent uses twice this width.
 
 Examples below show optional combinations. At border width 0, all three styles have no outline.
 

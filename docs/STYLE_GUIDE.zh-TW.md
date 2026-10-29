@@ -123,7 +123,9 @@ Properties 是筆記 frontmatter 的欄位面板。寬度設定上限仍受可�
 | 選項 | 樣式／可調值 | 預設 |
 | --- | --- | --- |
 | 提示區塊造型<br>`animal-callout-style` | 圓角卡片、側邊色條、虛線 | 圓角卡片 |
-| 引用造型<br>`animal-quote-style` | 淡色底、純色條 | 淡色底 |
+| 提示框外框粗細<br>`animal-callout-border-width` | 0–4px；0 為無框 | 1px |
+| 提示框背景不透明度<br>`animal-callout-background-opacity` | 0–1；0 為無背景 | 0.1（10%） |
+| 引用背景不透明度<br>`animal-quote-background-opacity` | 0–1；0 為無背景 | 0.14 |
 
 ### 11. 程式碼 · CodeBlock
 

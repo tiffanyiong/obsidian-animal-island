@@ -1,6 +1,6 @@
 /*
  * Animal Island Cozy for Obsidian
- * Version 0.1.7
+ * Version 0.1.8
  * A warm, rounded theme adapted from the animal-island-ui design language.
  */
 
@@ -440,7 +440,7 @@ settings:
     description: 0 removes the border. Side accent uses twice this width.
     description.zh-TW: 0 為無框；側邊色條使用兩倍寬度。
     type: variable-number-slider
-    default: 0
+    default: 1
     min: 0
     max: 4
     step: 0.5
@@ -454,7 +454,7 @@ settings:
     description.zh-TW: 0 為無背景；1 為完全不透明，可獨立調整外框粗細。
     description.zh: 0 为无背景；1 为完全不透明，可独立调整边框粗细。
     type: variable-number-slider
-    default: 0
+    default: 0.1
     min: 0
     max: 1
     step: 0.05
@@ -2267,8 +2267,8 @@ input[type="datetime-local"]::-webkit-calendar-picker-indicator {
 /* Callouts */
 .callout {
   padding: 16px;
-  background: rgba(var(--callout-color), clamp(0, var(--animal-callout-background-opacity, 0), 1));
-  border: var(--animal-callout-border-width, 0px) solid color-mix(in srgb, rgb(var(--callout-color)) 52%, var(--animal-border));
+  background: rgba(var(--callout-color), clamp(0, var(--animal-callout-background-opacity, 0.1), 1));
+  border: var(--animal-callout-border-width, 1px) solid color-mix(in srgb, rgb(var(--callout-color)) 52%, var(--animal-border));
   border-radius: var(--animal-radius-lg);
   box-shadow: none;
 }
@@ -2639,7 +2639,7 @@ body.animal-tabs-line .mod-root .workspace-tab-header { border-radius: 0; backgr
 body.animal-tabs-line .mod-root .workspace-tab-header.is-active { background: var(--background-primary); box-shadow: inset 0 -3px var(--animal-primary); }
 body.animal-properties-dashed .metadata-container { border-style: dashed; }
 body.animal-properties-flat .metadata-container { background: transparent; border-color: transparent; padding-inline: 0; }
-body.animal-callout-side .callout { border-width: 0 0 0 calc(var(--animal-callout-border-width, 0px) * 2); border-radius: 0 16px 16px 0; }
+body.animal-callout-side .callout { border-width: 0 0 0 calc(var(--animal-callout-border-width, 1px) * 2); border-radius: 0 16px 16px 0; }
 body.animal-callout-dashed .callout { border-style: dashed; }
 
 body .markdown-rendered pre, body .cm-s-obsidian .HyperMD-codeblock { font-size: var(--animal-code-font, 13px); }

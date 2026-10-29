@@ -1,3 +1,26 @@
+# Animal Island Cozy 0.1.8
+
+## Callout defaults
+
+- Set the default callout border width to **1px** and background opacity to **0.1 (10%)**.
+- Apply matching defaults in Style Settings, CSS fallbacks and the importable default preset. Side accent retains twice the selected border width.
+- Update English and Traditional Chinese documentation. Existing saved overrides are preserved: reset these two controls to use the new defaults, or set both to 0 for no border/background.
+- Callout colors, quote settings and Calendar are unchanged.
+
+## Validation
+
+Verified the setting defaults, preset values, CSS fallbacks and release packaging. No new visual rendering or cross-platform regression test was performed for this defaults-only update.
+
+## 本次更新
+
+- 提示框外框預設改為 **1px**，背景不透明度預設改為 **0.1（10%）**。
+- 同步更新 Style Settings、CSS 預設值、可匯入的預設配置與中英文說明。側邊色條維持設定外框寬度的兩倍。
+- 已儲存的自訂設定會保留；重設這兩項即可使用新預設，兩項都設為 0 可維持無框、無背景。
+- 提示框配色、引用設定與日曆插件維持不變。
+- 已核對設定、預設配置、CSS 預設值及發布檔案；本次未重新進行畫面渲染或跨平台回歸測試。
+
+---
+
 # Animal Island Cozy 0.1.7
 
 ## CSS maintenance
