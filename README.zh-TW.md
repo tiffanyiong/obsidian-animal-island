@@ -64,9 +64,15 @@ ZIP 請保留目錄結構，以閱讀模式開啟。左英文、右繁中，皆�
 > Write one useful thought.
 ```
 
-內建語法，不需插件。預設為彩色標題與圖示、1px 外框及 10% 背景不透明度；Warning 為黃色，Question 為橙色。
+內建語法，不需插件。預設為彩色標題與圖示、1px 外框及 10% 背景不透明度；海島配色搭配淡色底、清楚的標題與原生圖示。
 
-下方配色示例使用不透明度 0、外框 0；圖鑑展示不同設定組合，不一定是預設值。
+新版圖鑑使用目前預設值（1px 外框、10% 背景），另有明確標示的無框示例；圖片為主題 CSS 渲染預覽。
+
+**配色：**Note 海鹽藍、Info 海灣藍、Tip／Hint／Important 海島藍綠、Abstract 青綠、Success 柔綠、Warning 奶油黃、Danger／Failure／Bug 珊瑚紅、Quote 沙褐。只有 Question 使用奶茶棕；Help／FAQ 保留沙灘杏。
+
+**範例提示框：**`[!example]` 使用青檸緞帶配色與原生清單圖示；`[!example]-` 預設收合，`[!example]+` 預設展開。
+
+[在 Obsidian 開啟完整提示框與別名示範](examples/All%20callouts.md)。
 
 ![Callout types · 提示框類型](docs/images/callout-syntax.png)
 

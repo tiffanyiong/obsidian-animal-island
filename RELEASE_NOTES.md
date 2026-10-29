@@ -1,3 +1,28 @@
+# Animal Island Cozy 0.1.9
+
+## Sea-island callouts
+
+- Refresh all built-in callouts with the approved sea-island palette: sea-salt Note, bay-blue Info, island-teal Tip/Hint/Important, sea-glass Abstract, soft-green Success, butter-yellow Warning, coral Danger/Failure/Bug, sand Quote and Lime Example.
+- Give Question its own milk-tea brown; Help/FAQ retain sand apricot. Light mode uses darker title/icon ink; dark mode keeps brighter accents. Body text and native icons are preserved.
+- Fix missing Example and other built-in colors caused by Obsidian color-token format differences.
+- Preserve all settings and defaults: 1px border, 10% background opacity, user overrides and quote controls.
+- Refresh English and Traditional Chinese README callout galleries, including all types, styles and foldable Questions. Add editable Markdown examples.
+
+## Validation
+
+Checked native Obsidian Reading View, Live Preview, dark mode and Question expansion. Verified computed light/dark colors for 16 displayed types/aliases, matching title/icon colors, unchanged body colors, settings metadata and default preset. Regenerated eight CSS gallery screenshots. Targeted desktop checks only; no mobile/cross-platform pass.
+
+## 本次更新
+
+- 全部內建提示框整理為海島配色：Note 海鹽藍、Info 海灣藍、Tip／Hint／Important 海島藍綠、Abstract 青綠、Success 柔綠、Warning 奶油黃、Danger／Failure／Bug 珊瑚紅、Quote 沙褐、Example 青檸。
+- Question 單獨採用奶茶棕，Help／FAQ 保留沙灘杏。淺色模式使用較深標題與圖示，深色模式保留明亮配色；正文和原生圖示維持原樣。
+- 修復 Obsidian 色彩變數格式差異造成的 Example 等內建類型顏色缺失。
+- 所有設定、預設外框 1px、背景不透明度 10%、使用者自訂值與引用設定保持不變。
+- 重做中英文 README 的提示框配色、樣式與折疊問題圖鑑，新增可編輯 Markdown 示例。
+- 已檢查原生閱讀／即時預覽、深色模式及 Question 展開；核對 16 個展示類型／別名的淺深色計算結果、標題圖示一致、正文與設定未變，重做八張 CSS 圖鑑。屬桌面針對性驗證，未做手機／跨平台完整測試。
+
+---
+
 # Animal Island Cozy 0.1.8
 
 ## Callout defaults

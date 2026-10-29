@@ -1,6 +1,6 @@
 # Animal Island Cozy Markdown examples
 
-Open either note in Obsidian with the Animal Island Cozy theme enabled. Use Reading view for fixed HTML divider/background swatches. Both files are independent, editable examples with matching sections in English and Traditional Chinese.
+Open an example note in Obsidian with the Animal Island Cozy theme enabled. Use Reading view for fixed HTML divider/background swatches. Both files are independent, editable examples with matching sections in English and Traditional Chinese.
 
 - [English](Animal%20Island%20Example%20-%20English.md)
 - [繁體中文](Animal%20Island%20Example%20-%20中文.md)
@@ -12,3 +12,7 @@ Design based on [Animal Island UI by guokaigdg](https://guokaigdg.github.io/anim
 ## Welcome note
 
 [Welcome to Animal Island Cozy](Welcome%20to%20Animal%20Island%20Cozy.md) is the note used for the theme’s cover screenshot.
+
+## Callout gallery
+
+[All callouts / 完整提示框圖鑑](All%20callouts.md) includes all 13 native types, aliases, and foldable Questions. Question uses milk-tea brown; Help / FAQ use sand apricot.

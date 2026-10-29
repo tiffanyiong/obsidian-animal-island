@@ -64,9 +64,15 @@ Standard unchecked/checked tasks only; `[/]`, `[-]`, and `[*]` have no custom ic
 > Write one useful thought.
 ```
 
-Built-in Markdown; no plugin needed. Default: colored title and icon, a 1px border and 10% background opacity. Warning is yellow; Question is orange.
+Built-in Markdown; no plugin needed. Default: colored title and icon, a 1px border and 10% background opacity. Sea-island colors pair pastel surfaces with readable titles and native icons.
 
-Color examples below use opacity 0 and border width 0. Gallery settings are illustrative, not necessarily the defaults.
+The refreshed gallery uses the current defaults (1px border, 10% background), except the explicitly labeled borderless example. These are rendered CSS previews.
+
+**Palette:** Note uses sea-salt blue; Info bay blue; Tip / Hint / Important island teal; Abstract sea-glass teal; Success soft green; Warning butter yellow; Danger / Failure / Bug coral; Quote sand. Question alone uses milk-tea brown; Help / FAQ retain sand apricot.
+
+**Example:** `[!example]` uses the Lime ribbon color and the native list icon. Use `[!example]-` to start collapsed or `[!example]+` to start expanded.
+
+[Open all callouts and aliases in Obsidian](examples/All%20callouts.md).
 
 ![Callout types · 提示框類型](docs/images/callout-syntax.png)
 

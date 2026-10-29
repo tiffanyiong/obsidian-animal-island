@@ -1,6 +1,6 @@
 /*
  * Animal Island Cozy for Obsidian
- * Version 0.1.8
+ * Version 0.1.9
  * A warm, rounded theme adapted from the animal-island-ui design language.
  */
 
@@ -3958,16 +3958,28 @@ body .markdown-rendered ul > li:not(.task-list-item) > .list-bullet::after {
   inset-inline-start: 0;
 }
 
-/* Preserve native callout colors; distinguish Warning from orange Question. */
-body { --callout-warning: var(--color-yellow-rgb); }
-
-/* RGB bridge for native color tokens across Obsidian versions. */
-body .callout:is([data-callout="note"], [data-callout="info"]) { --callout-color: var(--color-blue-rgb, 8, 109, 221); }
-body .callout:is([data-callout="tip"], [data-callout="hint"], [data-callout="important"]) { --callout-color: var(--color-cyan-rgb, 0, 191, 188); }
-body .callout:is([data-callout="success"], [data-callout="check"], [data-callout="done"]) { --callout-color: var(--color-green-rgb, 8, 185, 78); }
-body .callout:is([data-callout="question"], [data-callout="help"], [data-callout="faq"]) { --callout-color: var(--color-orange-rgb, 236, 117, 0); }
-body .callout:is([data-callout="warning"], [data-callout="caution"], [data-callout="attention"]) { --callout-color: var(--color-yellow-rgb, 224, 172, 0); }
-body .callout:is([data-callout="danger"], [data-callout="error"]) { --callout-color: var(--color-red-rgb, 233, 49, 71); }
+/* Sea-island callouts: pastel surfaces, readable light-mode title/icon ink.
+   Native icons and all user opacity/border controls remain unchanged.
+   RGB triplets bridge the theme styles across Obsidian color-token formats. */
+body .callout:is([data-callout="note"]) { --callout-color: 168, 216, 232; --animal-callout-ink: #397c94; }
+body .callout:is([data-callout="abstract"], [data-callout="summary"], [data-callout="tldr"]) { --callout-color: 168, 216, 209; --animal-callout-ink: #397e76; }
+body .callout:is([data-callout="info"]) { --callout-color: 148, 190, 207; --animal-callout-ink: #376b86; }
+body .callout:is([data-callout="todo"]) { --callout-color: 168, 216, 232; --animal-callout-ink: #397c94; }
+/* Tip / Hint / Important share the approved island teal accent and title styling. */
+body .callout:is([data-callout="tip"], [data-callout="hint"], [data-callout="important"]) { --callout-color: 25, 200, 185; --animal-callout-ink: #219e94; }
+body .callout:is([data-callout="success"], [data-callout="check"], [data-callout="done"]) { --callout-color: 172, 212, 181; --animal-callout-ink: #497b57; }
+body .callout:is([data-callout="help"], [data-callout="faq"]) { --callout-color: 232, 195, 160; --animal-callout-ink: #ac7035; }
+/* Question-only milk-tea palette trial; Help / FAQ retain their current colors. */
+body .callout[data-callout="question"] { --callout-color: 216, 195, 165; --animal-callout-ink: #8b6545; }
+body .callout:is([data-callout="warning"], [data-callout="caution"], [data-callout="attention"]) { --callout-color: 234, 215, 131; --animal-callout-ink: #92721b; }
+body .callout:is([data-callout="failure"], [data-callout="fail"], [data-callout="missing"]) { --callout-color: 232, 170, 163; --animal-callout-ink: #ac4f49; }
+body .callout:is([data-callout="danger"], [data-callout="error"]) { --callout-color: 232, 170, 163; --animal-callout-ink: #ac4f49; }
+body .callout:is([data-callout="bug"]) { --callout-color: 232, 170, 163; --animal-callout-ink: #ac4f49; }
+body .callout:is([data-callout="example"]) { --callout-color: 203, 220, 77; --animal-callout-ink: #4e5b24; }
+body .callout:is([data-callout="quote"], [data-callout="cite"]) { --callout-color: 196, 186, 167; --animal-callout-ink: #76664f; }
+body:not(.theme-dark) .callout:is([data-callout="note"], [data-callout="abstract"], [data-callout="summary"], [data-callout="tldr"], [data-callout="info"], [data-callout="todo"], [data-callout="tip"], [data-callout="hint"], [data-callout="important"], [data-callout="success"], [data-callout="check"], [data-callout="done"], [data-callout="question"], [data-callout="help"], [data-callout="faq"], [data-callout="warning"], [data-callout="caution"], [data-callout="attention"], [data-callout="failure"], [data-callout="fail"], [data-callout="missing"], [data-callout="danger"], [data-callout="error"], [data-callout="bug"], [data-callout="example"], [data-callout="quote"], [data-callout="cite"]) :is(.callout-title, .callout-title-inner, .callout-title .callout-icon, .callout-title .callout-icon .svg-icon) {
+  color: var(--animal-callout-ink);
+}
 
 /* Use Obsidian's tag decoration variables instead of redundant element resets. */
 body {
