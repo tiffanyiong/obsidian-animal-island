@@ -201,6 +201,14 @@ Organic tooltips; separate interface, body and code fonts. Nunito is bundled off
 
 ![14 highlight colors — light mode / 14 色螢光標記](docs/images/highlight-colors-light.png)
 
+#### Optional: Easy Text Highlighter
+
+My **[Easy Text Highlighter](https://community.obsidian.md/plugins/easy-text-highlighter)** plugin adds a selection toolbar with colored highlights, straight and wavy underlines, plus a sidebar to collect, filter and export excerpts. Works in Reading View and Live Preview without changing your original Markdown.
+
+[![Easy Text Highlighter toolbar and sidebar with Animal Island Cozy](docs/images/easy-text-highlighter.jpg)](https://community.obsidian.md/plugins/easy-text-highlighter)
+
+**[Add to Obsidian](https://community.obsidian.md/plugins/easy-text-highlighter)** → choose **Add to Obsidian**, then install and enable the plugin. Its colors are configured separately from the theme’s Markdown highlights.
+
 
 ## Calendar
 

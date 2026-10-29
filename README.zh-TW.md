@@ -201,6 +201,14 @@ App accent palette → **跟隨介面色盤**：Rose 自動配粉紅、Lavender 
 
 ![14 highlight colors — light mode / 14 色螢光標記](docs/images/highlight-colors-light.png)
 
+#### 選用插件：Easy Text Highlighter
+
+我製作的 **[Easy Text Highlighter](https://community.obsidian.md/plugins/easy-text-highlighter)** 提供選取工具列、彩色螢光標記、直線與波浪底線，以及收集、篩選和匯出摘錄的側欄。支援閱讀模式與即時預覽，保留原始 Markdown 不變。
+
+[![Easy Text Highlighter 工具列與摘錄側欄，搭配 Animal Island Cozy](docs/images/easy-text-highlighter.jpg)](https://community.obsidian.md/plugins/easy-text-highlighter)
+
+**[加入 Obsidian](https://community.obsidian.md/plugins/easy-text-highlighter)** → 點選 **Add to Obsidian**，再安裝並啟用插件。插件配色與主題的 Markdown 螢光標記分開設定。
+
 
 ## 日曆
 
