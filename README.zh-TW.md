@@ -211,3 +211,14 @@ ZIP 請保留目錄結構，以閱讀模式開啟。左英文、右繁中，皆�
 原始設計：**[Animal Island UI by guokaigdg](https://guokaigdg.github.io/animal-island-ui/)**（[Source](https://github.com/guokaigdg/animal-island-ui) · [Skill](https://guokaigdg.github.io/animal-island-ui/#/skill)）。本主題為獨立改編。
 
 [Release notes](RELEASE_NOTES.md) · [Issues](https://github.com/tiffanyiong/obsidian-animal-island/issues) · [MIT](LICENSE) · [Third-party notices](THIRD_PARTY_NOTICES.md) · [Nunito OFL](Nunito-OFL.txt)
+
+## 相關主題與插件
+
+可依需要搭配使用：
+
+| 專案 | 類型 | 用途 |
+| --- | --- | --- |
+| [Animal Island Calendar](https://github.com/tiffanyiong/obsidian-animal-island-calendar) | 插件 | 筆記 Properties 的日期與時間選擇器。 |
+| [Easy Text Highlighter](https://github.com/tiffanyiong/easy-text-highlighter) | 插件 | 標記 Markdown 與 PDF 文字，整理摘錄並匯出。 |
+
+兩款插件也可搭配其他主題使用，並不強制安裝 Animal Island Cozy。

@@ -211,3 +211,14 @@ Tested on macOS / Obsidian 1.14.5, with targeted mobile checks and user feedback
 Original design: **[Animal Island UI by guokaigdg](https://guokaigdg.github.io/animal-island-ui/)** ([source](https://github.com/guokaigdg/animal-island-ui) · [Skill](https://guokaigdg.github.io/animal-island-ui/#/skill)). This is an independent adaptation.
 
 [Release notes](RELEASE_NOTES.md) · [Issues](https://github.com/tiffanyiong/obsidian-animal-island/issues) · [MIT](LICENSE) · [Third-party notices](THIRD_PARTY_NOTICES.md) · [Nunito OFL](Nunito-OFL.txt)
+
+## Related theme & plugins
+
+Optional companions for your Obsidian vault:
+
+| Project | Type | What it adds |
+| --- | --- | --- |
+| [Animal Island Calendar](https://github.com/tiffanyiong/obsidian-animal-island-calendar) | Plugin | A date and time picker for note Properties. |
+| [Easy Text Highlighter](https://github.com/tiffanyiong/easy-text-highlighter) | Plugin | Highlight Markdown and PDF text, collect excerpts, and export them. |
+
+The plugins also work with other themes; Animal Island Cozy is optional.
