@@ -4042,3 +4042,26 @@ body {
   --tag-decoration: none;
   --tag-decoration-hover: none;
 }
+
+/* Rendered lists: a bullet followed directly by one problem number needs an intrinsic marker.
+   Leave regular ordered lists (including paragraph items) on the original layout. */
+body :is(.markdown-preview-view, .markdown-source-view.mod-cm6.is-live-preview .callout) ul > li > ol[start]:has(> li:only-child):not(:has(> li > p)) {
+  margin: 0;
+  padding: 0;
+  border-inline-start: 0;
+}
+body :is(.markdown-preview-view, .markdown-source-view.mod-cm6.is-live-preview .callout) ul > li > ol[start]:has(> li:only-child):not(:has(> li > p))::before {
+  content: none;
+}
+body :is(.markdown-preview-view, .markdown-source-view.mod-cm6.is-live-preview .callout) ul > li > ol[start] > li:only-child:not(:has(> p)) {
+  margin-inline-start: 0;
+  list-style-position: inside;
+}
+body :is(.markdown-preview-view, .markdown-source-view.mod-cm6.is-live-preview .callout) ul > li > ol[start] > li:only-child:not(:has(> p))::marker {
+  content: normal;
+  color: var(--text-normal);
+  font-variant-numeric: tabular-nums;
+}
+body :is(.markdown-preview-view, .markdown-source-view.mod-cm6.is-live-preview .callout) ul > li > ol[start] > li:only-child:not(:has(> p))::before {
+  content: none;
+}

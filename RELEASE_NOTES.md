@@ -1,3 +1,27 @@
+# Animal Island Cozy 0.1.11
+
+## Bug fixes
+
+- Fix overlapping four-digit problem numbers in Reading View lists such as `- 2236. Problem title`.
+- Remove the extra indentation guide and reduce the bullet-to-number gap for these entries.
+- Fix the same overlap in rendered callout lists in Editing View (Live Preview).
+- Preserve the existing layout of regular ordered lists, nested bullets, and task lists.
+
+## Validation
+
+Verified both modes in desktop Obsidian 1.15.0, including callouts, quotes, nested lists, tasks, and long wrapped text. Mobile and other desktop platforms were not tested.
+
+## 錯誤修正
+
+- 修正 Reading View 中 `- 2236. 題目名稱` 這類清單的四位題號與文字重疊。
+- 移除這類項目多餘的縮排導線，縮小圓點與題號之間的距離。
+- 修正 Editing View（Live Preview）已渲染 callout 清單的相同重疊問題。
+- 保留一般有序清單、巢狀圓點及待辦清單原有排版。
+
+已在桌面版 Obsidian 1.15.0 驗證兩個模式，涵蓋 callout、引用、巢狀清單、待辦及長句換行；未測試手機及其他桌面平台。
+
+---
+
 # Animal Island Cozy 0.1.10
 
 ## Automatic palette matching
