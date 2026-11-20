@@ -1,3 +1,27 @@
+# Animal Island Cozy 0.1.12
+
+## CSS maintenance
+
+- Consolidate repeated checks for single-item problem lists. Reduce `:has()` occurrences from eight to two while retaining the four-digit number and spacing fixes from 0.1.11.
+- Combine the editor heading underline declarations into one shorthand with the same color and offset.
+- Remove a duplicate checkbox mask-position declaration. Keep the centered native check mark through the WebKit property used by Obsidian.
+- No palette, spacing, checkbox shape, or settings changes are intended. The community Review total remains subject to Obsidian's next scan; this release does not claim a confirmed total of 30.
+
+## Validation
+
+Compared computed element and pseudo-element styles before and after the change in desktop Obsidian 1.15.0 across 10 fixtures/width combinations. Also passed 20 comparisons in iOS 26.3 Simulator Safari/WebKit at 320, 375, 390, 430, and 768 px, with light/dark colors and rounded/circle checkboxes. No differences were found. Checked Reading View and Live Preview in desktop Obsidian. Mobile checks used rendered HTML fixtures with Obsidian's base CSS, not the Obsidian iOS app or a physical phone. Older mobile browser engines and Android were not tested.
+
+## CSS 整理
+
+- 合併單項題號清單的重複判斷，將 `:has()` 出現次數由八次減至兩次，保留 0.1.11 的四位題號及間距修正。
+- 將編輯模式標題底線合併為同一宣告，保留原本顏色與偏移距離。
+- 移除 checkbox 重複的遮罩位置宣告，保留 Obsidian 使用的 WebKit 屬性，使勾選圖示維持置中。
+- 本次不調整配色、間距、checkbox 形狀或設定。社群 Review 總數須待 Obsidian 重新掃描，本版不宣稱已確認降至 30 個。
+
+桌面 Obsidian 1.15.0 的 10 組樣式比對，以及 iOS 26.3 模擬器 Safari/WebKit 的 20 組比對均未發現差異。手機測試寬度為 320、375、390、430、768 px，涵蓋明暗配色與圓角／圓形 checkbox；桌面另檢查 Reading View 與 Live Preview。手機使用 Obsidian 基礎 CSS 的 HTML 渲染測試，並非 Obsidian iOS app 或真機；未測試舊版手機引擎與 Android。
+
+---
+
 # Animal Island Cozy 0.1.11
 
 ## Bug fixes

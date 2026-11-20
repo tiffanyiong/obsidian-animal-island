@@ -2671,7 +2671,7 @@ body.animal-headings-line .markdown-rendered :is(h1,h2,h3,h4,h5,h6) {
   padding-bottom: 0.2em;
   border-bottom: 2px solid var(--animal-primary);
 }
-body.animal-headings-line .HyperMD-header { text-decoration-line: underline; text-decoration-color: var(--animal-primary); text-underline-offset: 5px; }
+body.animal-headings-line .HyperMD-header { text-decoration: underline var(--animal-primary); text-underline-offset: 5px; }
 body.animal-headings-marker .markdown-rendered :is(h1,h2,h3,h4,h5,h6),
 body.animal-headings-marker .HyperMD-header { border-inline-start: 3px solid var(--animal-primary); padding-inline-start: 10px; }
 body :is(.tree-item-self, .nav-file-title, .nav-folder-title) {
@@ -3878,7 +3878,6 @@ body input[type="checkbox"]:checked::after {
   height: 100%;
   transform: translate(-50%, -50%);
   -webkit-mask-position: center;
-  mask-position: center;
 }
 
 /* Keep the Properties disclosure discoverable without requiring hover. */
@@ -4045,23 +4044,24 @@ body {
 
 /* Rendered lists: a bullet followed directly by one problem number needs an intrinsic marker.
    Leave regular ordered lists (including paragraph items) on the original layout. */
-body :is(.markdown-preview-view, .markdown-source-view.mod-cm6.is-live-preview .callout) ul > li > ol[start]:has(> li:only-child):not(:has(> li > p)) {
+body :is(.markdown-preview-view, .markdown-source-view.mod-cm6.is-live-preview .callout) ul > li > ol[start]:not(:empty):not(:has(> li ~ li, > li > p)) {
   margin: 0;
   padding: 0;
   border-inline-start: 0;
-}
-body :is(.markdown-preview-view, .markdown-source-view.mod-cm6.is-live-preview .callout) ul > li > ol[start]:has(> li:only-child):not(:has(> li > p))::before {
-  content: none;
-}
-body :is(.markdown-preview-view, .markdown-source-view.mod-cm6.is-live-preview .callout) ul > li > ol[start] > li:only-child:not(:has(> p)) {
-  margin-inline-start: 0;
-  list-style-position: inside;
-}
-body :is(.markdown-preview-view, .markdown-source-view.mod-cm6.is-live-preview .callout) ul > li > ol[start] > li:only-child:not(:has(> p))::marker {
-  content: normal;
-  color: var(--text-normal);
-  font-variant-numeric: tabular-nums;
-}
-body :is(.markdown-preview-view, .markdown-source-view.mod-cm6.is-live-preview .callout) ul > li > ol[start] > li:only-child:not(:has(> p))::before {
-  content: none;
+
+  &::before {
+    content: none;
+  }
+  & > li:only-child {
+    margin-inline-start: 0;
+    list-style-position: inside;
+  }
+  & > li:only-child::marker {
+    content: normal;
+    color: var(--text-normal);
+    font-variant-numeric: tabular-nums;
+  }
+  & > li:only-child::before {
+    content: none;
+  }
 }
